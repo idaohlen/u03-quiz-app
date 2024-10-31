@@ -36,8 +36,11 @@ h1{
 }
 
 h2{
-    margin-bottom: 4rem;
     margin-top: 5rem;
+}
+
+.highscore-section{
+    width: 50%;
 }
 
 .highscore-section h2 {
@@ -49,12 +52,12 @@ h2{
 
 .highscore-table {
     background-color: #d3d3d3;
-    padding: 0rem 3rem;
     border-radius: 5px;
 }
 
 .highscore-table table {
     width: 100%;
+    margin-top: 2rem;
 }
 
 .highscore-table td {
@@ -64,10 +67,8 @@ h2{
 }
 
 .highscore-table__tr{
-    background-color: aquamarine;
     display: flex;
     justify-content: space-between;
-
 }
 
 
