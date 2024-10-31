@@ -1,1 +1,75 @@
-@import "base.css"
+@import "base.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 7rem;
+    margin-top: 20px;
+}
+
+.button-container{
+    margin: 20px;
+}
+
+.button-container__button, .button-container__start {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+}
+
+h2{
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+.highscore-section h2 {
+    font-size: 1.8em;
+    color: #000;
+    text-shadow: 1px 1px 2px #ddd;
+    margin-bottom: 15px;
+}
+
+.highscore-table {
+    background-color: #d3d3d3;
+    padding: 0rem 3rem;
+    border-radius: 5px;
+}
+
+.highscore-table table {
+    width: 100%;
+}
+
+.highscore-table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.highscore-table__tr{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
