@@ -1,0 +1,4676 @@
+[{
+  "_id": {
+    "$oid": "667a80b79f5f94550435091b"
+  },
+  "text": "Vem var det som målade Nattvakten?",
+  "correctAnswer": "Rembrandt van Rijn",
+  "incorrectAnswers": [
+    "Hieronymus Bosch",
+    "Johannes Vermeer"
+  ],
+  "tags": [
+    "Konst"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 17,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 11,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435091d"
+  },
+  "text": "Vad heter kärleksgudinnan i den Grekiska mytologin?",
+  "correctAnswer": "Afrodite",
+  "incorrectAnswers": [
+    "Venus",
+    "Hera"
+  ],
+  "tags": [
+    "Religion & Mytologi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435091f"
+  },
+  "text": "Vad kallas tornet i anslutning till moskébyggnaden från vilket böneutropen görs?",
+  "correctAnswer": "Minaret",
+  "incorrectAnswers": [
+    "Menora",
+    "Madrasa"
+  ],
+  "tags": [
+    "Religion & Mytologi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 11,
+  "correctAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350921"
+  },
+  "text": "Vem skrev Hemsöborna?",
+  "correctAnswer": "August Strindberg",
+  "incorrectAnswers": [
+    "Elsa Beskow",
+    "Margareta Garpe"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350929"
+  },
+  "text": "Vad heter sångaren i gruppen Kent som även delar namn med sångaren i Hardcore Superstar?",
+  "correctAnswer": "Joakim Berg",
+  "incorrectAnswers": [
+    "Ola Salo",
+    "Andreas \"Dregen\" Svensson"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435092b"
+  },
+  "text": "Vad heter Australiens huvudstad?",
+  "correctAnswer": "Canberra",
+  "incorrectAnswers": [
+    "Sydney",
+    "Melbourne"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435092d"
+  },
+  "text": "Vad heter den kända 1,2 km långa promenadgatan i Barcelona?",
+  "correctAnswer": "Las Ramblas",
+  "incorrectAnswers": [
+    "Paseo de Gracia",
+    "Calle Fuencarral"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435092f"
+  },
+  "text": "Vilket år föll Berlinmuren?",
+  "correctAnswer": "1989",
+  "incorrectAnswers": [
+    "1992",
+    "1886"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350931"
+  },
+  "text": "Vad är det för skillnad på sill och strömming?",
+  "correctAnswer": "Traditionellt har man kallat sill som fångats norr om Kalmarsundet för strömming",
+  "incorrectAnswers": [
+    "Traditionellt har man kallat sill som är över 20 centimeter lång för strömming",
+    "Traditionellt har man kallat sill som fångats i Sveriges floder för strömming"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350933"
+  },
+  "text": "Hur många invånare har USA (2024)?",
+  "correctAnswer": "341 miljoner",
+  "incorrectAnswers": [
+    "420 miljoner",
+    "256 miljoner"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350935"
+  },
+  "text": "Vad kallas den punkt där gränsen mellan Sverige, Norge och Finland sammanfaller?",
+  "correctAnswer": "Treriksröset",
+  "incorrectAnswers": [
+    "Triumviratet",
+    "Treenigheten"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 0,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350937"
+  },
+  "text": "Vad kallas de nord-sydliga gatorna på Manhattan?",
+  "correctAnswer": "Avenues",
+  "incorrectAnswers": [
+    "Boulevards",
+    "Boroughs"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 0,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350939"
+  },
+  "text": "Röda khmererna styrde i ett land i Sydostasien under 70-talet och dödade miljontals människor. Vilket land?",
+  "correctAnswer": "Kambodja",
+  "incorrectAnswers": [
+    "Vietnam",
+    "Laos"
+  ],
+  "tags": [
+    "Geografi",
+    "Historia",
+    "Politik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435093b"
+  },
+  "text": "Vilken är Sveriges sydligaste stad?",
+  "correctAnswer": "Trelleborg",
+  "incorrectAnswers": [
+    "Ystad",
+    "Simrishamn"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Medium",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435093d"
+  },
+  "text": "Vad heter gummistövlar på engelska?",
+  "correctAnswer": "Wellingtons",
+  "incorrectAnswers": [
+    "Trenchies",
+    "Auckies"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435093f"
+  },
+  "text": "Vad krävs för att få simborgarmärket?",
+  "correctAnswer": "Simma 200 meter på ett valfritt sätt",
+  "incorrectAnswers": [
+    "Simma 500 meter på ett valfritt sätt",
+    "Simma 100 meter på varje av de fyra simsätten (bröstsim, ryggsim, fjärsilsim, frisim)"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350941"
+  },
+  "text": "Vem skrev romanen Robinson Kruse?",
+  "correctAnswer": "Daniel Defoe",
+  "incorrectAnswers": [
+    "Jonathan Swift",
+    "A.A. Milne"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350943"
+  },
+  "text": "Vilken europeisk stad hette fram till 1925 Kristiania?",
+  "correctAnswer": "Oslo",
+  "incorrectAnswers": [
+    "Köpenhamn",
+    "Århus"
+  ],
+  "tags": [
+    "Historia",
+    "Geografi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350945"
+  },
+  "text": "Ekonomichef förkortas CFO på engelska. Vad står akronymen CFO för?",
+  "correctAnswer": "Chief Financial Officer",
+  "incorrectAnswers": [
+    "Central Finance Officer",
+    "Chief Fiscal Official"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350947"
+  },
+  "text": "SMS kan vi skicka med våra mobiltelefoner. Men vad står förkortningen SMS för?",
+  "correctAnswer": "Short Message Service",
+  "incorrectAnswers": [
+    "Send Message System",
+    "System (of) Messages Services"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350949"
+  },
+  "text": "Vad hette presidenten som fick avgå efter den så kallade Watergateaffären?",
+  "correctAnswer": "Richard M Nixon",
+  "incorrectAnswers": [
+    "Ronald Reagan",
+    "Gerald Ford"
+  ],
+  "tags": [
+    "Historia",
+    "Politik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435094b"
+  },
+  "text": "I vilket land var Idi Amin diktator?",
+  "correctAnswer": "Uganda",
+  "incorrectAnswers": [
+    "Tchad",
+    "Sudan"
+  ],
+  "tags": [
+    "Historia",
+    "Geografi",
+    "Politik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 6,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435094d"
+  },
+  "text": "Vad är Golgata?",
+  "correctAnswer": "Den kulle där Jesus korsfästes",
+  "incorrectAnswers": [
+    "Det hebreiska namnet för Klagomuren i Jerusalem",
+    "Det är namnet för templet i Jerusalem i gamla testamentet"
+  ],
+  "tags": [
+    "Religion & Mytologi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435094f"
+  },
+  "text": "Vad heter författaren och tennisoraklet som var domare i TV-programmet På Spåret?",
+  "correctAnswer": "Björn Hellberg",
+  "incorrectAnswers": [
+    "Ingvar Oldsberg",
+    "Fredrik Lindström"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350951"
+  },
+  "text": "Hur förkortades Östtyskland med tre bokstäver?",
+  "correctAnswer": "DDR",
+  "incorrectAnswers": [
+    "CCP",
+    "RAF"
+  ],
+  "tags": [
+    "Geografi",
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 5,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350953"
+  },
+  "text": "Vem var Sovjetunionens första ledare?",
+  "correctAnswer": "Vladimir Lenin",
+  "incorrectAnswers": [
+    "Joseph Stalin",
+    "Leon Trotsky"
+  ],
+  "tags": [
+    "Historia",
+    "Politik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 4,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350955"
+  },
+  "text": "I vilket land ligger Antwerpen?",
+  "correctAnswer": "Belgien",
+  "incorrectAnswers": [
+    "Nederländerna",
+    "Luxemburg"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350957"
+  },
+  "text": "Vad betyder förkortningen ”lol” på internetslang?",
+  "correctAnswer": "Laughing out loud",
+  "incorrectAnswers": [
+    "Lots of Love",
+    "Lots of laughs"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350959"
+  },
+  "text": "Hans riktiga namn är Marshall Bruce Mathers III. Under vilket artistnamn känner vi honom?",
+  "correctAnswer": "Eminem",
+  "incorrectAnswers": [
+    "Dr. Dre",
+    "50 Cent"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435095d"
+  },
+  "text": "Vad heter floden som rinner förbi Köln?",
+  "correctAnswer": "Rhen",
+  "incorrectAnswers": [
+    "Donau",
+    "Elbe"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350961"
+  },
+  "text": "Vad kallas ett ord som exempelvis naturrutan, som blir samma både fram och baklänges?",
+  "correctAnswer": "Palindrom",
+  "incorrectAnswers": [
+    "Homonym",
+    "Parallax"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350963"
+  },
+  "text": "Vad hette Beatles manager?",
+  "correctAnswer": "Brian Epstein",
+  "incorrectAnswers": [
+    "Jeffrey Epstein",
+    "Jacob Epstein"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350965"
+  },
+  "text": "Albert Einstein formulerade ekvationen E=mc2. Vad står bokstaven E för?",
+  "correctAnswer": "Energi",
+  "incorrectAnswers": [
+    "Excitation",
+    "Entropi"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350967"
+  },
+  "text": "Vilken planet ligger närmast solen?",
+  "correctAnswer": "Merkurius",
+  "incorrectAnswers": [
+    "Venus",
+    "Jupiter"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350969"
+  },
+  "text": "I vilken stad dog och begravdes Jim Morrison?",
+  "correctAnswer": "Paris",
+  "incorrectAnswers": [
+    "New York",
+    "London"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435096b"
+  },
+  "text": "Hur många rutor finns det på ett schackbräde?",
+  "correctAnswer": "64 st",
+  "incorrectAnswers": [
+    "100 st",
+    "81 st"
+  ],
+  "tags": [
+    "Spel"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 5,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435096d"
+  },
+  "text": "Vad heter i nordisk mytologi den slutliga striden som leder till jordens undergång?",
+  "correctAnswer": "Ragnarök",
+  "incorrectAnswers": [
+    "Jörmungandr",
+    "Nibelungen"
+  ],
+  "tags": [
+    "Religion & Mytologi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435096f"
+  },
+  "text": "I vilken delstat ligger Boston, där även universitetet MIT finns?",
+  "correctAnswer": "Massachusetts",
+  "incorrectAnswers": [
+    "Connecticut",
+    "Michigan"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350971"
+  },
+  "text": "Vad heter den basiska separatistiska rebellgruppen som vill skapa en självständig baskisk stat?",
+  "correctAnswer": "ETA",
+  "incorrectAnswers": [
+    "RAF",
+    "IRA"
+  ],
+  "tags": [
+    "Historia",
+    "Politik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350973"
+  },
+  "text": "Vad kallar man en person som spelar orgel?",
+  "correctAnswer": "Organist",
+  "incorrectAnswers": [
+    "Orgelist",
+    "Orgelanist"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350975"
+  },
+  "text": "Mellan vilka städer går Vasaloppet?",
+  "correctAnswer": "Sälen och Mora",
+  "incorrectAnswers": [
+    "Sälen och Malung",
+    "Mora och Orsa"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "incorrectAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350977"
+  },
+  "text": "Vad heter konststilen som utvecklades av Georges Braque och Pablo Picasso?",
+  "correctAnswer": "Kubismen",
+  "incorrectAnswers": [
+    "Surrealism",
+    "Postmodernism"
+  ],
+  "tags": [
+    "Konst"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 6,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350979"
+  },
+  "text": "Vad heter svensken som tillsammans med dansken Janus Frils grundade Skype?",
+  "correctAnswer": "Niklas Zennström",
+  "incorrectAnswers": [
+    "Daniel Ek",
+    "Markus Persson"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 5,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435097b"
+  },
+  "text": "Vilket parti tillhörde Tysklands före detta förbundskansler Angela Merkel?",
+  "correctAnswer": "CDU (Christlich Demokratische Union Deutschlands)",
+  "incorrectAnswers": [
+    "SPD (Sozialdemokratische Partei Deutschlands)",
+    "AFD (Alternative für Deutschland)"
+  ],
+  "tags": [
+    "Politik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435097d"
+  },
+  "text": "Vad betyder FAQ?",
+  "correctAnswer": "Frequently Asked Questions",
+  "incorrectAnswers": [
+    "Fast Answers Queried",
+    "Fortis Animus Quaestio"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "correctAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435097f"
+  },
+  "text": "Vad heter författaren till böckerna om James Bond?",
+  "correctAnswer": "Ian Flemming",
+  "incorrectAnswers": [
+    "Tom Clancy",
+    "Dennis Lehane"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350981"
+  },
+  "text": "Med vilken artist förknippar man med Ziggy Stardust?",
+  "correctAnswer": "David Bowie",
+  "incorrectAnswers": [
+    "Elton John",
+    "Jon Bon Jovi"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350983"
+  },
+  "text": "Vad heter Nordkoreas ledare? (2024)",
+  "correctAnswer": "Kim Jong-Un",
+  "incorrectAnswers": [
+    "Kim Jong-Il",
+    "Kim Il-Sung"
+  ],
+  "tags": [
+    "Geografi",
+    "Politik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350985"
+  },
+  "text": "Vad heter huvudstaden i USA?",
+  "correctAnswer": "Washington DC",
+  "incorrectAnswers": [
+    "Philadelphia",
+    "Chicago"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350987"
+  },
+  "text": "Vad heter Kinas största stad?",
+  "correctAnswer": "Shanghai",
+  "incorrectAnswers": [
+    "Beijing",
+    "Guangzhou"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f945504350989"
+  },
+  "text": "Vad heter ubåtens kapten i Jules Vernes roman ”En världsomsegling under havet?",
+  "correctAnswer": "Kapten Nemo",
+  "incorrectAnswers": [
+    "Kapten Nero",
+    "Kapten Marko"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435098b"
+  },
+  "text": "Vad heter Rumäniens huvudstad?",
+  "correctAnswer": "Bukarest",
+  "incorrectAnswers": [
+    "Budapest",
+    "Sofia"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b79f5f94550435098d"
+  },
+  "text": "Vad är ”Flickorna i Avignon”?",
+  "correctAnswer": "En målning av Pablo Picasso",
+  "incorrectAnswers": [
+    "En bok av Alexandre Dumas",
+    "En pjäs av William Shakespeare"
+  ],
+  "tags": [
+    "Kultur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 4,
+  "difficulty": "Medium",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f94550435098f"
+  },
+  "text": "Vilket av de här länderna gränsar inte mot Luxemburg?",
+  "correctAnswer": "Nederländerna",
+  "incorrectAnswers": [
+    "Tyskland",
+    "Belgien"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 5,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350991"
+  },
+  "text": "Vad kallas drinken som består av rom och cola med ett annat namn?",
+  "correctAnswer": "Cuba Libre",
+  "incorrectAnswers": [
+    "Muscow Mule",
+    "Dark & Stormy"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350993"
+  },
+  "text": "Hur många pjäser har respektive spelare när man inleder ett parti schack?",
+  "correctAnswer": "16",
+  "incorrectAnswers": [
+    "15",
+    "20"
+  ],
+  "tags": [
+    "Spel"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 9,
+  "incorrectAnswerCount": 5,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350995"
+  },
+  "text": "Om en dansk har halvfjerds äpplen i en korg, hur många äpplen har han då?",
+  "correctAnswer": "70 stycken",
+  "incorrectAnswers": [
+    "20 stycken",
+    "40 stycken"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350997"
+  },
+  "text": "Hur många exemplar måste en skiva sälja för att man ska kunna säga att den har sålt ”guld”?",
+  "correctAnswer": "20 000 exemplar",
+  "incorrectAnswers": [
+    "50 000 exemplar",
+    "100 000 exemplar"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 4,
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350999"
+  },
+  "text": "Vilken kompositör skrev operan 'La Traviata'?",
+  "correctAnswer": "Giuseppe Verdi",
+  "incorrectAnswers": [
+    "Giacomo Puccini",
+    "Ferdinando Bertoni"
+  ],
+  "tags": [
+    "Kultur"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 7,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f94550435099b"
+  },
+  "text": "Vilken Puccini-opera handlar om en tragisk kärlekshistoria mellan en japansk geisha och en amerikansk marinofficer?",
+  "correctAnswer": "Madama Butterfly",
+  "incorrectAnswers": [
+    "Turandot",
+    "La Bohème"
+  ],
+  "tags": [
+    "Kultur"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 5,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f94550435099d"
+  },
+  "text": "Vilken opera av Bizet berättar historien om en soldats dödsdömda kärlek till en rom?",
+  "correctAnswer": "Carmen",
+  "incorrectAnswers": [
+    "Pärlfiskarna",
+    "Don Procopio"
+  ],
+  "tags": [
+    "Kultur"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 8,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f94550435099f"
+  },
+  "text": "Vem skrev den episka dikten 'Det förlorade paradiset'?",
+  "correctAnswer": "John Milton",
+  "incorrectAnswers": [
+    "John Donne",
+    "Geoffrey Chaucer"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Hard",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509a1"
+  },
+  "text": "Vilken 1500-talsförfattare är mest känd för \"Don Quijote\"?",
+  "correctAnswer": "Miguel de Cervantes",
+  "incorrectAnswers": [
+    "Lope de Vega",
+    "Garcilaso de la Vega"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509a3"
+  },
+  "text": "Vem skrev den satiriska romanen \"Gullivers resor\"?",
+  "correctAnswer": "Jonathan Swift",
+  "incorrectAnswers": [
+    "Daniel Defoe",
+    "Mark Twain"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "incorrectAnswerCount": 2,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509a5"
+  },
+  "text": "Vilken fransk upplysningsfilosof är känd för pikareskromanen \"Candide\"?",
+  "correctAnswer": "M. de Voltaire",
+  "incorrectAnswers": [
+    "Jean-Jacques Rousseau",
+    "Denis Diderot"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509a9"
+  },
+  "text": "Vem är filosofen och författaren som skrev \"Leviathan\" och som anses vara en av grundarna av modern politisk filosofi?",
+  "correctAnswer": "Thomas Hobbes",
+  "incorrectAnswers": [
+    "John Locke",
+    "Jean-Jacques Rousseau"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509ab"
+  },
+  "text": "Vilken 1600-talspoet är känd för den metafysiska dikten \"A Valediction: Forbidding Mourning\"?",
+  "correctAnswer": "John Donne",
+  "incorrectAnswers": [
+    "Andrew Marvell",
+    "George Herbert"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509ad"
+  },
+  "text": "Vilken rappare släppte det ikoniska albumet \"The Chronic\" 1992?",
+  "correctAnswer": "Dr. Dre",
+  "incorrectAnswers": [
+    "Tupac Shakur",
+    "Nas"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509af"
+  },
+  "text": "Vilken kvinnlig rappare var känd för sina hits \"U.N.I.T.Y.\" och \"Ladies First\"?",
+  "correctAnswer": "Queen Latifah",
+  "incorrectAnswers": [
+    "Missy Elliott",
+    "Lil' Kim"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509b1"
+  },
+  "text": "Vilken rappares debutalbum hette \"Illmatic\"?",
+  "correctAnswer": "Nas",
+  "incorrectAnswers": [
+    "The Notorious B.I.G.",
+    "Jay-Z"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509b3"
+  },
+  "text": "Vem var den ledande artisten i gruppen A Tribe Called Quest?",
+  "correctAnswer": "Q-Tip",
+  "incorrectAnswers": [
+    "Ice Cube",
+    "Method Man"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509b5"
+  },
+  "text": "Vilken rappare släppte låten \"California Love\" med Dr. Dre?",
+  "correctAnswer": "Tupac Shakur",
+  "incorrectAnswers": [
+    "Snoop Dogg",
+    "Ice-T"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509b7"
+  },
+  "text": "Vilken rappare släppte 'Ice Ice Baby' som var den första hiphop-singel att nå Billboard Hot 100?",
+  "correctAnswer": "Vanilla Ice",
+  "incorrectAnswers": [
+    "Ice-T",
+    "Ice Cube"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "correctAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509b9"
+  },
+  "text": "Vilken svensk grupp hade en hit med \"The Sign\" 1993?",
+  "correctAnswer": "Ace of Base",
+  "incorrectAnswers": [
+    "Roxette",
+    "The Cardigans"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509bb"
+  },
+  "text": "Vilket tyskt band är känt för sin hit \"Mr. Vain\" från 1993?",
+  "correctAnswer": "Culture Beat",
+  "incorrectAnswers": [
+    "La Bouche",
+    "Snap!"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509bd"
+  },
+  "text": "Vilken Eurodance-grupp släppte låten \"Blue (Da Ba Dee)\" 1999?",
+  "correctAnswer": "Eiffel 65",
+  "incorrectAnswers": [
+    "Aqua",
+    "Vengaboys"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509bf"
+  },
+  "text": "Vilken dansk-norsk grupp är känd för sin hit \"Barbie Girl\" från 1997?",
+  "correctAnswer": "Aqua",
+  "incorrectAnswers": [
+    "Ace of Base",
+    "Snap!"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509c1"
+  },
+  "text": "Vilken Eurodance-grupp släppte låten \"Boom, Boom, Boom, Boom!!\" 1998?",
+  "correctAnswer": "Vengaboys",
+  "incorrectAnswers": [
+    "Aqua",
+    "Ace of Base"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 5,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509c3"
+  },
+  "text": "Vilken Eurodance-akt är känd för sin hitlåt \"It's My Life\"?",
+  "correctAnswer": "Dr. Alban",
+  "incorrectAnswers": [
+    "La Bouche",
+    "E-Type"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509c5"
+  },
+  "text": "Vilken låt av Corona blev en massiv Eurodance-hit 1993?",
+  "correctAnswer": "The Rhythm of the Night",
+  "incorrectAnswers": [
+    "Rhythm Is a Dancer",
+    "Feel the Rhythm"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509c7"
+  },
+  "text": "Gruppen Rednex är kända för låten 'Cotton Eye Joe' och deras blandning av eurodance och countrymusik. Var är gruppen från?",
+  "correctAnswer": "Sverige",
+  "incorrectAnswers": [
+    "Tyskland",
+    "Finland"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509c9"
+  },
+  "text": "Vilken låt av Aqua blev en världshit 1997?",
+  "correctAnswer": "Barbie Girl",
+  "incorrectAnswers": [
+    "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+    "What Is Love?"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509cb"
+  },
+  "text": "Martin Erikson, kanske mer känd under artistnamnet E-Type, har drivit en vikingakrog i Gamla Stan, Stockholm sedan 2011. Vad heter denna vikingakrog?",
+  "correctAnswer": "Aifur",
+  "incorrectAnswers": [
+    "Särimner",
+    "Hugin och Munin"
+  ],
+  "tags": [
+    "Mat & Dryck",
+    "Musik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509cd"
+  },
+  "text": "Zlatan Ibrahimović är född och uppvuxen i Malmö och spelade där under hela sin Sverigekarriär, men blev 2019 delägare i ett Stockholmslag, vilket skapade en del kontrovers. Vilket Stockholmslag blev Zlatan delägare av?",
+  "correctAnswer": "Hammarby IF",
+  "incorrectAnswers": [
+    "AIK",
+    "Djurgårdens IF"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509cf"
+  },
+  "text": "Från vilket nuvarande land kommer Zlatan Ibrahimovićs far Šefik Ibrahimović?",
+  "correctAnswer": "Bosnien och Hercegovina",
+  "incorrectAnswers": [
+    "Serbien",
+    "Kroatien"
+  ],
+  "tags": [
+    "Sport",
+    "Geografi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509d1"
+  },
+  "text": "I vilket nuvarande land var Marie Curie född?",
+  "correctAnswer": "Polen",
+  "incorrectAnswers": [
+    "Frankrike",
+    "Ryssland"
+  ],
+  "tags": [
+    "Geografi",
+    "Natur & Vetenskap",
+    "Historia"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 5,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509d3"
+  },
+  "text": "Vem var den första personen som blev tilldelad Nobelpriset två gånger?",
+  "correctAnswer": "Marie Curie",
+  "incorrectAnswers": [
+    "Linus Pauling",
+    "John Bardeen"
+  ],
+  "tags": [
+    "Natur & Vetenskap",
+    "Historia"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509d5"
+  },
+  "text": "Hur många personer har blivit tilldelade Nobelpriset två eller fler gånger?",
+  "correctAnswer": "4",
+  "incorrectAnswers": [
+    "1",
+    "7"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509d7"
+  },
+  "text": "Vilken av dessa kategorier är inte en av de fem Nobelpriskategorier som Alfred Nobel fastställde i sitt testamente?",
+  "correctAnswer": "Ekonomi",
+  "incorrectAnswers": [
+    "Fred",
+    "Litteratur"
+  ],
+  "tags": [
+    "Natur & Vetenskap",
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509d9"
+  },
+  "text": "Jorden har haft många olika namn genom historien. Vilket av dem här är ett av de namn som användes på Latin?",
+  "correctAnswer": "Terra",
+  "incorrectAnswers": [
+    "Luna",
+    "Mundo"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509db"
+  },
+  "text": "Vem var premiärminister i Storbritannien mellan 1997 och 2007?",
+  "correctAnswer": "Tony Blair",
+  "incorrectAnswers": [
+    "David Cameron",
+    "Margaret Thatcher"
+  ],
+  "tags": [
+    "Politik",
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509dd"
+  },
+  "text": "Vilket yrke hade Florence Nightingale?",
+  "correctAnswer": "Sjuksköterska",
+  "incorrectAnswers": [
+    "Operasångerska",
+    "Nunna"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509df"
+  },
+  "text": "Vad heter mannen bakom dokumentärerna \"Fahrenheit 9/11\" och \"Sicko\"?",
+  "correctAnswer": "Michael Moore",
+  "incorrectAnswers": [
+    "Louis Theroux",
+    "Ken Burns"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509e1"
+  },
+  "text": "Vad heter grisen i fornnordisk mytologi som slaktades varje dag och blev uppäten för att morgonen efter återuppstå hel och levande?",
+  "correctAnswer": "Särimner",
+  "incorrectAnswers": [
+    "Sleipner",
+    "Jörmungandr"
+  ],
+  "tags": [
+    "Religion & Mytologi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509e3"
+  },
+  "text": "Vad betyder förkortningen \"brb\" på internetslang?",
+  "correctAnswer": "Be Right Back",
+  "incorrectAnswers": [
+    "Bathroom Break",
+    "Be Ready Boys"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509e5"
+  },
+  "text": "Vilken drink får du om du blandar cachaca, lime, rörsocker och is?",
+  "correctAnswer": "Caipirinha",
+  "incorrectAnswers": [
+    "Negroni",
+    "Chimarrão"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 4,
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509e7"
+  },
+  "text": "JAS 39 Gripen är ett av de stridsflygplan som Saab AB producerar, men vad står JAS för?",
+  "correctAnswer": "Jakt, Attack, Spaning",
+  "incorrectAnswers": [
+    "Jord- och sjöangreppssystem",
+    "Just Another Stridsflygplan"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 3
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509e9"
+  },
+  "text": "ABBA sjöng 1974 om Waterloo. Vart ligger Waterloo?",
+  "correctAnswer": "Belgien",
+  "incorrectAnswers": [
+    "England",
+    "Nederländerna"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "incorrectAnswerCount": 1,
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509eb"
+  },
+  "text": "Vem var president i USA under majoriteten av andra världskriget?",
+  "correctAnswer": "Franklin D. Roosevelt",
+  "incorrectAnswers": [
+    "Dwight D. Eisenhower",
+    "John F. Kennedy"
+  ],
+  "tags": [
+    "Politik",
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509ed"
+  },
+  "text": "Vad heter fotbollsstadion i Barcelona som är hemmaarena för FC Barcelona?",
+  "correctAnswer": "Camp Nou",
+  "incorrectAnswers": [
+    "Stadio Olimpico",
+    "Parc des Princes"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509ef"
+  },
+  "text": "Vad kallas lågt tidvatten med ett annat ord?",
+  "correctAnswer": "Ebb",
+  "incorrectAnswers": [
+    "Flod",
+    "Tide"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509f1"
+  },
+  "text": "Hur länge har man varit gifta när man firar guldbröllop?",
+  "correctAnswer": "50 år",
+  "incorrectAnswers": [
+    "25 år",
+    "30 år"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509f3"
+  },
+  "text": "Vad är en sufflör?",
+  "correctAnswer": "En person som hjälper skådespelare/sångare med texthjälp under föreställningar, om dessa glömmer bort sina repliker/sångtexter",
+  "incorrectAnswers": [
+    "En person som yrkesmässigt tillverkar finare bakverk, exempelvis bakelser, tårtor, konfektyr, praliner och kakor",
+    "En person som är anställd av ett kasino för att leda och övervaka spelet vid exempelvis bordsspel som Black Jack, poker eller roulette."
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509f5"
+  },
+  "text": "Siddhartha Gautama var en man som dog runt år 540 f.Kr. Han är kanske mer känd under ett annat namn och var en viktig person för en viss religion. Vilket är Gautamas mer kända namn?",
+  "correctAnswer": "Buddha",
+  "incorrectAnswers": [
+    "Tutankhamun",
+    "Baháʼu'lláh"
+  ],
+  "tags": [
+    "Religion & Mytologi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 7,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509f7"
+  },
+  "text": "Svullo var en svensk skådespelare, sångare och komiker. Vad var hans egentliga namn?",
+  "correctAnswer": "Mikael Dubois",
+  "incorrectAnswers": [
+    "Olle Sarri",
+    "Sven Ullenius"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509f9"
+  },
+  "text": "Vad heter sångaren i gruppen Coldplay?",
+  "correctAnswer": "Chris Martin",
+  "incorrectAnswers": [
+    "Adam Levine",
+    "Alex Turner"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509fb"
+  },
+  "text": "Vem målade tavlan Skriet?",
+  "correctAnswer": "Edvard Munch",
+  "incorrectAnswers": [
+    "Vincent Van Gogh",
+    "Carl Larsson"
+  ],
+  "tags": [
+    "Konst"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 8,
+  "correctAnswerCount": 8,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509fd"
+  },
+  "text": "Vad heter den andra boken i Stieg Larssons Millenniumtrilogi?",
+  "correctAnswer": "Flickan som lekte med elden",
+  "incorrectAnswers": [
+    "Flickan med draktatueringen",
+    "Luftslottet som sprängdes"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f9455043509ff"
+  },
+  "text": "Vad innebär begreppet remi när man spelar schack?",
+  "correctAnswer": "Att partiet slutar oavgjort",
+  "incorrectAnswers": [
+    "Ett specialdrag i schack där man i ett drag flyttar kungen och ett av tornen.",
+    "Det är ett specialdrag där motståndarens bonde under vissa omständigheter kan tas, som endast kan utföras direkt efter att motståndaren flyttat två steg med bonden från dess startposition"
+  ],
+  "tags": [
+    "Spel"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 6,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350a03"
+  },
+  "text": "Om man tävlar i America's Cup, vilken sport tävlar man då i?",
+  "correctAnswer": "Kappsegling",
+  "incorrectAnswers": [
+    "Golf",
+    "Tennis"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "correctAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350a05"
+  },
+  "text": "Vad är BMW en förkortning för?",
+  "correctAnswer": "Bayerische Motoren Werke",
+  "incorrectAnswers": [
+    "Baden-Württembergische Motorisiert Wagen",
+    "Bremer Mietwagen"
+  ],
+  "tags": [
+    "Fordon",
+    "Språk"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 6,
+  "incorrectAnswerCount": 3,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350a09"
+  },
+  "text": "Vilket av dessa länder är inte bland de tio största i världen?",
+  "correctAnswer": "Sydafrika",
+  "incorrectAnswers": [
+    "Kazakstan",
+    "Argentina"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350a0b"
+  },
+  "text": "Vilken är världens största sjö?",
+  "correctAnswer": "Kaspiska Sjön",
+  "incorrectAnswers": [
+    "Bajkalsjön",
+    "Victoriasjön"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "incorrectAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667a80b89f5f945504350a0d"
+  },
+  "text": "I vilket land finns fyra av de tio största sjöarna i världen?",
+  "correctAnswer": "Kanada",
+  "incorrectAnswers": [
+    "Kina",
+    "Ryssland"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 4,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a0f"
+  },
+  "text": "Ungefär hur många sjöar finns det i Sverige, med en yta större än en hektar?",
+  "correctAnswer": "100 000",
+  "incorrectAnswers": [
+    "10 000",
+    "1 000"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a11"
+  },
+  "text": "Vilken är den djupaste sjön i världen?",
+  "correctAnswer": "Baikalsjön",
+  "incorrectAnswers": [
+    "Malawisjön",
+    "Vostoksjön"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a13"
+  },
+  "text": "I vilken världsdel hittar vi bergskedjan Andera?",
+  "correctAnswer": "Sydamerika",
+  "incorrectAnswers": [
+    "Asien",
+    "Afrika"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a15"
+  },
+  "text": "Vilken är den högsta bergstoppen utanför Asien?",
+  "correctAnswer": "Aconcagua i Sydamerika",
+  "incorrectAnswers": [
+    "Denali i Nordamerika",
+    "Mount Kilimanjaro i Afrika"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a17"
+  },
+  "text": "Vilken är den högsta bergstoppen i Europa?",
+  "correctAnswer": "Elbrus",
+  "incorrectAnswers": [
+    "Mont Blanc",
+    "Matterhorn"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a19"
+  },
+  "text": "Vilken bergskedja brukar kallas \"Världens tak\"?",
+  "correctAnswer": "Pamir",
+  "incorrectAnswers": [
+    "Himalaya",
+    "Anderna"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a1b"
+  },
+  "text": "Mount Everest, världens högsta berg, ligger på gränsen mellan vilka två länder?",
+  "correctAnswer": "Kina och Nepal",
+  "incorrectAnswers": [
+    "Kina och Indien",
+    "Nepal och Indien"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a1d"
+  },
+  "text": "Vilken av dessa bergstoppar finns i bergskedjan Skanderna?",
+  "correctAnswer": "Kebnekaise",
+  "incorrectAnswers": [
+    "Hoverla",
+    "Toubkal"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a1f"
+  },
+  "text": "Vad heter filmen från 2023 som kretsar kring flygolyckan i Anderna 1972, där passagerarna från krashen tvingades till kannibalism för att överleva?",
+  "correctAnswer": "Society of the Snow",
+  "incorrectAnswers": [
+    "Snowpiercer",
+    "Snow Angels"
+  ],
+  "tags": [
+    "Geografi",
+    "TV & Film"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Easy",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a21"
+  },
+  "text": "Vad heter den norska skräckfilmen från 2009 där ett gäng vänner väcker zombienazister när de hittar en guldskatt under en skidsemester?",
+  "correctAnswer": "Død snø",
+  "incorrectAnswers": [
+    "Dawn of the Living Snow",
+    "Snøen lever"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a23"
+  },
+  "text": "Vilket namn fick Ruben Östlunds kritikerrosade film Turist utomlands?",
+  "correctAnswer": "Force Majeure",
+  "incorrectAnswers": [
+    "Voir dire",
+    "Judge Rapporteur"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a25"
+  },
+  "text": "Vilken av dessa latinska fraser översätts till \"Kom ihåg att du är dödlig\"?",
+  "correctAnswer": "Memento Mori",
+  "incorrectAnswers": [
+    "Dies Irae",
+    "Mortui Vivos Docent"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a27"
+  },
+  "text": "Vilken latinsk fras betyder \"tom tavla\" och syftar på en humanfilosofisk teori som hävdar att människan föds utan förutbestämda egenskaper?",
+  "correctAnswer": "Tabula Rasa",
+  "incorrectAnswers": [
+    "Creatio ex nihilo",
+    "Combinatio Nova"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a29"
+  },
+  "text": "'En svensk tiger' av Bertil Almqvist är en bild många känner till, men till vilket syfte användes den först?",
+  "correctAnswer": "Som en del av Sveriges krigspropaganda under andra världskriget",
+  "incorrectAnswers": [
+    "För att attrahera folk till det nyöppnade Kolmårdens Djurpark",
+    "Som omslag till Nette Wermeld Enströms bok om Skanskas mutskandal i Brasilien"
+  ],
+  "tags": [
+    "Kultur"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a2b"
+  },
+  "text": "1964 upptäcktes vikinga 'klotter' från 1000-talet i Hagia Sophia, beläget i dagens Istanbul. Vad tror man att runinskriften betyder?",
+  "correctAnswer": "'Halvdan ristade dessa runor'",
+  "incorrectAnswers": [
+    "'Till minne av Halvdan'",
+    "'Halvdan segrade här'"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "incorrectAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a2d"
+  },
+  "text": "Vad hette livgardet, bestående av mestadels Skandinavier, till de Byzantiska kejsarna?",
+  "correctAnswer": "Väringagardet",
+  "incorrectAnswers": [
+    "Praetoriangardet",
+    "Trabantengardet"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a2f"
+  },
+  "text": "Vilken legendarisk vikingakung har gett namn till en trådlös kommunikationsteknik?",
+  "correctAnswer": "Harald Blåtand",
+  "incorrectAnswers": [
+    "Harald Hårfager",
+    "Ragnar Lodbrok"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a31"
+  },
+  "text": "Vilket år ägde slaget vid Hastings rum? Slaget var en viktig vinst för Vilhelm I's erövringen av England.",
+  "correctAnswer": "14 oktober 1066",
+  "incorrectAnswers": [
+    "12 februari 1444",
+    "16 mars 906"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a33"
+  },
+  "text": "Rosornas krig var ett inbördeskrig mellan vilka två engelska kungahus?",
+  "correctAnswer": "York och Lancaster",
+  "incorrectAnswers": [
+    "Lannister och Tyrell",
+    "Stuart och Tudor"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a35"
+  },
+  "text": "I vilket modernt land styrde Sasaniddynastin från 226e.Kr till 650 e.Kr?",
+  "correctAnswer": "Iran",
+  "incorrectAnswers": [
+    "Etiopien",
+    "Marocko"
+  ],
+  "tags": [
+    "Geografi",
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 6,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a37"
+  },
+  "text": "Vem vann en Oscar för bästa kvinnliga biroll som Fantine i Les Misérables från 2012? Skådespelerskan delar även namn med William Shakespeares fru.",
+  "correctAnswer": "Anne Hathaway",
+  "incorrectAnswers": [
+    "Emma Stone",
+    "Helen Hunt"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a39"
+  },
+  "text": "Vad bytte den tysk-finska internetentreprenör Kim Schmitz namn till 2005?",
+  "correctAnswer": "Kim Dotcom",
+  "incorrectAnswers": [
+    "Mega Kim",
+    "Kim Online"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a3b"
+  },
+  "text": "DC Comics är tillsammans med Marvel Comics två av de största serieförlagen i världen. Men vad står DC för?",
+  "correctAnswer": "Detective Comics",
+  "incorrectAnswers": [
+    "Detroit Collaborative",
+    "David Campiti"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a3d"
+  },
+  "text": "Vlad III Dracula, även känd som Vlad Pålspetsaren, är personen som Bram Stoker baserade vampyren Greve Dracula på i hans roman från 1897. Från vilket nutida land kom Vlad III Dracula?",
+  "correctAnswer": "Rumänien",
+  "incorrectAnswers": [
+    "Bulgarien",
+    "Polen"
+  ],
+  "tags": [
+    "Litteratur",
+    "Historia"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a3f"
+  },
+  "text": "Vilket namn använde vikingarna för staden som idag heter Istanbul?",
+  "correctAnswer": "Miklagård",
+  "incorrectAnswers": [
+    "Jorvik",
+    "Nýja Garðar"
+  ],
+  "tags": [
+    "Historia",
+    "Geografi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a41"
+  },
+  "text": "Vem spelade Buffy Summers i tv-serien Buffy och vampyrerna från 1997-2003?",
+  "correctAnswer": "Sarah Michelle Gellar",
+  "incorrectAnswers": [
+    "Sarah Jessica Parker",
+    "Sarah Jane Morris"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a43"
+  },
+  "text": "Romanen 'Femtio nyanser av honom' toppade bästsäljarlistor över hela världen när den släpptes 2011 och filmatiseringen av romnanen blev en publiksuccé 2015. Femtio nyanser började som en fanfiktion av en populär bokserie, vilken då?",
+  "correctAnswer": "Twilight",
+  "incorrectAnswers": [
+    "The Hunger Games",
+    "Divergent"
+  ],
+  "tags": [
+    "Litteratur",
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a45"
+  },
+  "text": "TV-serien Chernobyl från 2019 som skildrar kärnkraftsolyckan i Tjernobyl blev både en kritiker- och publiksuccé över hela världen. Vem är svensken som har regisserat miniserien?",
+  "correctAnswer": "Johan Renck",
+  "incorrectAnswers": [
+    "Ruben Östlund",
+    "Ludwig Göransson"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a47"
+  },
+  "text": "Ludwig Göransson vann ett stor antal priser runt världen för musiken i vilken film från 2023?",
+  "correctAnswer": "Oppenheimer",
+  "incorrectAnswers": [
+    "Barbie",
+    "Dune: Part Two"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a49"
+  },
+  "text": "Enligt grekiskt mytologi var Sisyfos en kung som blev bestraffad av gudarna för sitt svekfulla och högfärdiga beteende. Vad var det för straff Sisyfos fick?",
+  "correctAnswer": "Att för evigt rulla ett stort stenblock uppför en kulle, bara för att se det störta ner varje gång han var nära toppen",
+  "incorrectAnswers": [
+    "Att för evigt vandra i den stekheta öknen med en oas vid horisonten som aldrig närmar sig",
+    "Att för evigt drunkna i floden Styx utan att kunna nå vattenytan"
+  ],
+  "tags": [
+    "Religion & Mytologi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a4b"
+  },
+  "text": "Törnskator är ett fågelsläkte känt för att göra något speciellt med sina fångade byten. Vad då?",
+  "correctAnswer": "Spetsa deras fångade byten på kvistar och taggtrådar för att bevara oäten mat.",
+  "incorrectAnswers": [
+    "Att dränka deras fångade byten för att avliva bytet",
+    "Att släppa deras byten från hög höjd för att avliva bytet"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a4d"
+  },
+  "text": "\"Octopus\" och \"squid\" är två djur som vanligtvis båda översätts till \"bläckfisk\", men vad är skillnaden mellan \"octopus\" och \"squid\"?",
+  "correctAnswer": "\"Octopuses\" är en ordning i klassen bläckfiskar som har 8 armar. \"Squid\" är en ordning i klassen bläckfiskar som har 10 armar.",
+  "incorrectAnswers": [
+    "\"Octopuses\" är de bläckfiskarter som främst lever i Atlanten och dess angränsande hav, medan \"squid\" är de bläckfiskarter som främst lever i Stilla havet?",
+    "De är olika ord för samma djur. \"Octopus\" kommer från grekiskans \"okto\" vilket betyder åtta, och pous, vilket betyder fot. \"Squid\" kom in i engelskan via upptäcktsresande till Västindien."
+  ],
+  "tags": [
+    "Natur & Vetenskap",
+    "Språk"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy",
+  "correctAnswerCount": 4
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a4f"
+  },
+  "text": "Tom Hanks har vunnit ett stort antal priser för sin medverkan i olika filmer, bland dessa priser finns två Academy Awards, även kallade Oscars, för bästa skådespelare. För vilken av dessa filmer vann han inte en Oscar?",
+  "correctAnswer": "Saving Private Ryan",
+  "incorrectAnswers": [
+    "Forrest Gump",
+    "Philadelphia"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a51"
+  },
+  "text": "Academy Awards, Tony Awards, Golden Globe Awards och Guldbaggen är bara några få av de olika filmpriser som existerar idag. Ett annat filmpris heter Golden Raspberry Awards, vad är det så är ovanligt med Golden Raspberry Awards?",
+  "correctAnswer": "Golden Raspberry Awards delar ut priser till årets sämsta insatser inom filmvärlden.",
+  "incorrectAnswers": [
+    "Nomineringarna till de olika filmpriserna i Golden Raspberry Awards utses endast av barn under tolv år.",
+    "Endast filmer som inte har vunnit något annat filmpris i någon av de andra stora amerikanska filmpriserna är giltiga för att vinna en Golden Raspberry Award."
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a55"
+  },
+  "text": "Vad heter skriftsystemet som används för att skriva koreanska?",
+  "correctAnswer": "Hangul",
+  "incorrectAnswers": [
+    "Kanji",
+    "Katakana"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a57"
+  },
+  "text": "I japanskan används tre olika skriftsystem med olika användningsområden. Vilket av dessa är inte ett av skriftsystemen?",
+  "correctAnswer": "Pinyin",
+  "incorrectAnswers": [
+    "Hiragana",
+    "Kanji"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a59"
+  },
+  "text": "Vilka är de officiella språken i Afghanistan?",
+  "correctAnswer": "Pashto och Dari",
+  "incorrectAnswers": [
+    "Urdu, Pashto och Tajik",
+    "Urdu, Tadzjikiska, Uzbekiska och Pashto"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a5b"
+  },
+  "text": "Till vilken språkgrupp tillhör engelska?",
+  "correctAnswer": "Germanska",
+  "incorrectAnswers": [
+    "Romanska",
+    "Keltiska"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a5d"
+  },
+  "text": "Hur många delstater består USA av?",
+  "correctAnswer": "50",
+  "incorrectAnswers": [
+    "51",
+    "52"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a5f"
+  },
+  "text": "Vilken är den senaste delstaten som anslöt sig till USA?",
+  "correctAnswer": "Hawaii",
+  "incorrectAnswers": [
+    "Alaska",
+    "Puerto Rico"
+  ],
+  "tags": [
+    "Geografi",
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a61"
+  },
+  "text": "Vilken världsdel har flest länder?",
+  "correctAnswer": "Afrika",
+  "incorrectAnswers": [
+    "Asien",
+    "Europa"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 4,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a63"
+  },
+  "text": "Iran-Contras-affären var en politisk skandal under Ronald Reagans presidentskap som kretsade kring att USA sålde vapen till Iran, som var under ett vapenembargo. Det gjordes för att finansiera antikommunistiska gerillarörelser i vilket centralamerikanskt land?",
+  "correctAnswer": "Nicaragua",
+  "incorrectAnswers": [
+    "El Salvador",
+    "Kuba"
+  ],
+  "tags": [
+    "Geografi",
+    "Historia",
+    "Politik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a65"
+  },
+  "text": "Vad hette Japans kejsare under andra världskriget?",
+  "correctAnswer": "Hirohito",
+  "incorrectAnswers": [
+    "Miyamoto",
+    "Hideyoshi"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a67"
+  },
+  "text": "Det finns många som har vunnit Melodifestivalen två gånger, men bara en person som har vunnit Melodifestivalen tre gånger som soloartist. Vem då?",
+  "correctAnswer": "Carola",
+  "incorrectAnswers": [
+    "Charlotte Perrelli",
+    "Ann-Louise Hanson"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 7,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a69"
+  },
+  "text": "Vad heter James Blunts debutalbum från 2004?",
+  "correctAnswer": "Back to Bedlam",
+  "incorrectAnswers": [
+    "American Idiot",
+    "X&Y"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a6b"
+  },
+  "text": "Adele vann en Oscar för ledmotivet till vilken James Bond-film?",
+  "correctAnswer": "Skyfall",
+  "incorrectAnswers": [
+    "Casino Royale",
+    "Spectre"
+  ],
+  "tags": [
+    "Musik",
+    "TV & Film"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a6d"
+  },
+  "text": "Vilken tangentbordslayout använder vanligtvis svenska tangentbord?",
+  "correctAnswer": "QWERTY",
+  "incorrectAnswers": [
+    "Dvorak",
+    "ECMA-23"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "incorrectAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a6f"
+  },
+  "text": "1987 släpptes låten 'Never Gonna Give You Up' och toppade listor runt om i världen. Under 2000-talet blev låten en del av ett internetfenomen. Vem är sångaren?",
+  "correctAnswer": "Rick Astley",
+  "incorrectAnswers": [
+    "Boy George",
+    "George Michael"
+  ],
+  "tags": [
+    "Musik",
+    "Teknik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "incorrectAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a80b99f5f945504350a71"
+  },
+  "text": "Mario och Luigi är troligen de kändaste syskonen från videospelsvärlden. Vad heter Mario och Luigi i efternamn?",
+  "correctAnswer": "Mario",
+  "incorrectAnswers": [
+    "Lamborghini",
+    "Ferrari"
+  ],
+  "tags": [
+    "Spel"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 5,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 12,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a89df2f877f3bc93019dd"
+  },
+  "text": "Vilken av dessa \"nötter\" är egentligen inte en nöt?",
+  "correctAnswer": "Pinjenöt",
+  "incorrectAnswers": [
+    "Jordnöt",
+    " Valnöt"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Medium",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667a8b3a2f877f3bc93019df"
+  },
+  "text": "Vad heter den flod som Caesar år 49 f.Kr korsade vilket ledde till ett inbördeskrig? Floden har också gett namn till ett utryck om att man har nått en punkt där det inte finns någon återvändo.",
+  "correctAnswer": "Rubicon",
+  "incorrectAnswers": [
+    "Po",
+    "Rhone"
+  ],
+  "tags": [
+    "Historia",
+    "Språk"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 5,
+  "incorrectAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a913c2f877f3bc93019e1"
+  },
+  "text": "Vilken titel utsågs Gaius Julius Caesar till en kort tid innan sin död?",
+  "correctAnswer": "Dictator perpetuo - Diktator på livstid",
+  "incorrectAnswers": [
+    "Princeps - Den främste",
+    "Magister militum - Soldaternas ledare"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667a937164c0233dea243526"
+  },
+  "text": "Vad hette den maliske kungen som levde under 1300-talet och som sägs vara en av de rikaste personerna genom tiderna?",
+  "correctAnswer": "Mansa Musa",
+  "incorrectAnswers": [
+    "Timbuktu",
+    "Crassus"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a93cc64c0233dea243528"
+  },
+  "text": "Vilket lag har vunnit Uefa Champions League flest gånger?",
+  "correctAnswer": "Real Madrid CF",
+  "incorrectAnswers": [
+    "AC Milan",
+    "FC Bayern München"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 7,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a94f364c0233dea24352a"
+  },
+  "text": "Vem är det som innehar svenskt rekord för damer i höjdhopp? (2024)",
+  "correctAnswer": "Kajsa Bergqvist",
+  "incorrectAnswers": [
+    "Carolina Klüft",
+    "Ebba Jungmark"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a95a964c0233dea24352c"
+  },
+  "text": "Den amerikanske simmaren Michael Phelps har vunnit flest guldmedaljer i OS genom tiderna. Hur många guldmedaljer har han vunnit?",
+  "correctAnswer": "23",
+  "incorrectAnswers": [
+    "12",
+    "18"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667a973864c0233dea24352e"
+  },
+  "text": "Vilket operativsystem utvecklades Windows från?",
+  "correctAnswer": "MS-DOS",
+  "incorrectAnswers": [
+    "Unix",
+    "OSX"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667a982764c0233dea243530"
+  },
+  "text": "Vad heter grundaren av Amazon som vid flera tillfällen har varit världens rikaste person?",
+  "correctAnswer": "Jeff Bezos",
+  "incorrectAnswers": [
+    "Steve Ballmer",
+    "Warren Buffett"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Easy",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667a9a0e64c0233dea243532"
+  },
+  "text": "Olof Palme var väldigt kritisk mot USA:s agerande i ett visst krig i sitt jultal 1972, vilket ledde till frysning av de diplomatiska relationerna mellan Sverige och USA. Vilket krig var det?",
+  "correctAnswer": "Vietnamkriget",
+  "incorrectAnswers": [
+    "Koreakriget",
+    "Kuwaitkriget"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a9a6364c0233dea243534"
+  },
+  "text": "Vilket brittisk fotbollslag har smeknamnet 'Red Devils'? ",
+  "correctAnswer": "Manchester United",
+  "incorrectAnswers": [
+    "Arsenal",
+    "Liverpool"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667a9dd964c0233dea243536"
+  },
+  "text": "I vilket kök hittar vi 'injera', ett pannkaksliknande tunnbröd som används för att greppa maten?",
+  "correctAnswer": "Etiopien",
+  "incorrectAnswers": [
+    "Senegal",
+    "Mozambique"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 5,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667afac293d317ae154b2971"
+  },
+  "text": "Från vilket land kommer osten 'Gouda'? ",
+  "correctAnswer": "Nederländerna",
+  "incorrectAnswers": [
+    "Frankrike",
+    "Belgien"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667bce8530c17746fb1447c6"
+  },
+  "text": "Vilken konstriktning brukar den mexikanska konstnären Frida Kahlo associeras med?",
+  "correctAnswer": "Surrealism",
+  "incorrectAnswers": [
+    "Suprematism",
+    "Fauvism"
+  ],
+  "tags": [
+    "Konst"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 9,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667bd18b30c17746fb1447c8"
+  },
+  "text": "Vilka är några av kännetecknen för konststilen Rokoko?",
+  "correctAnswer": "Asymmetri, dekorativ överflöd, eleganta, böljande former",
+  "incorrectAnswers": [
+    "Symmetri och proportioner, raka linjer och geometriska former, klassiska element",
+    "Enkelhet och funktionalitet, ren och neutral färgpalett, användning av naturliga material"
+  ],
+  "tags": [
+    "Konst"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "incorrectAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667bd3ae30c17746fb1447cf"
+  },
+  "text": "Vilket är det vanligaste grundämnet i universum?",
+  "correctAnswer": "Väte",
+  "incorrectAnswers": [
+    "Syre",
+    "Helium"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667bd51930c17746fb1447d1"
+  },
+  "text": "Argon, krypton och neon är tre av de grundämnen som ingår i vilken grupp av grundämnen?",
+  "correctAnswer": "Ädelgaser",
+  "incorrectAnswers": [
+    "Halogener",
+    "Alkalimetaller"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667bd68730c17746fb1447d7"
+  },
+  "text": "Inom vilken sport hittar vi grenen 'Bouldering'?",
+  "correctAnswer": "Klättring",
+  "incorrectAnswers": [
+    "Styrkelyft",
+    "Orientering"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667bdad630c17746fb1447d9"
+  },
+  "text": "Mettbrötchen är en lite ovanlig typ av tysk smörgås. Vad hittar man vanligtvis på en mettbrötchen?",
+  "correctAnswer": "Rå fläskfärs och rå lök",
+  "incorrectAnswers": [
+    "Surkål och matjessill",
+    "Lammhjärta och potatissallad"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667bdff730c17746fb1447dd"
+  },
+  "text": "Casu Marzu är en ost från Sardinien som är ökänd världen över. Vad är det som är speciellt med den?",
+  "correctAnswer": "Den innehåller levande insektslarver",
+  "incorrectAnswers": [
+    "Den har blivit utsedd till världens mest illaluktade ost",
+    "Den kommer från vildsvinsmjölk"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667be5e89376584f4ac23861"
+  },
+  "text": "Steve Irwin från Australien var en av världens mest kända djurexperter. År 2006 dog han under inspelningen av en ny dokumentär. Hur dog han?",
+  "correctAnswer": "Han blev spetsad av en spjutrocka i hjärtat.",
+  "incorrectAnswers": [
+    "Han blev stucken av en havsgeting, en av världens farligaste maneter, och fick hjärtstopp",
+    "Han råkade trampa på en stenfisk, som har ett enormt kraftigt gift, som gick till attack"
+  ],
+  "tags": [
+    "Natur & Vetenskap",
+    "TV & Film"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 3,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667be8349376584f4ac23863"
+  },
+  "text": "RAM-minnen är något din dator och telefon behöver för att fungera. Vad står RAM för?",
+  "correctAnswer": "Random Access Memory",
+  "incorrectAnswers": [
+    "Rapid Access Management",
+    "Rapid Access Memory"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Medium",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667be8b89376584f4ac23865"
+  },
+  "text": "Vilken flod är det som bildar gränsen mellan Texas i USA och Mexico?",
+  "correctAnswer": "Rio Grande",
+  "incorrectAnswers": [
+    "Mississippifloden",
+    "Hudsonfloden"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667be9cc9376584f4ac23867"
+  },
+  "text": "Seediq är ett ursprungsfolk från vilket nuvarande land? ",
+  "correctAnswer": "Taiwan",
+  "incorrectAnswers": [
+    "Chile",
+    "Mozambique"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667beab89376584f4ac23869"
+  },
+  "text": "Vilken ö har tidigare kallats Formosa bland européer? ",
+  "correctAnswer": "Taiwan",
+  "incorrectAnswers": [
+    "Sri Lanka",
+    "Borneo"
+  ],
+  "tags": [
+    "Geografi",
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667beee89376584f4ac2386b"
+  },
+  "text": "Vad är balneologi läran om?",
+  "correctAnswer": "Olika typer av bad och deras medicinska betydelse",
+  "incorrectAnswers": [
+    "Om en människas balans och de olika sakerna som påverkar balansen",
+    "Om hur kastade eller avfyrade kroppar projektiler rör sig i lufthavet"
+  ],
+  "tags": [
+    "Natur & Vetenskap",
+    "Språk"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667bf10f9376584f4ac23894"
+  },
+  "text": "Wagyu är ett samlingsnamn för ett antal raser av nötkreatur vars kött är känt världen över för dess kvalitet och högt pris. Ett exempel på detta är Kobebiff, men vilka av de här kommer också från Wagyu nötkreatur?",
+  "correctAnswer": "Matsusaka",
+  "incorrectAnswers": [
+    "Saganaki",
+    "Maguro"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667d1a29073aba78b424f49e"
+  },
+  "text": "Nya Zeelands landslag 'All Blacks' har vunnit flera världsmästerskap i sin sport och är även kända för sin 'haka', en maorisk krigsdans laget brukar utföra innan matcher. Vilken sport spelar 'All Blacks'? ",
+  "correctAnswer": "Rugby",
+  "incorrectAnswers": [
+    "Cricket",
+    "Gaelisk fotboll"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Easy",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667d1e27073aba78b424f4a0"
+  },
+  "text": "CD (Compact Disc)-skiva, PIN (Personal Identification Number)-nummer, Saharaöknen och Mississippifloden är några exempel på ord där beståndsdelarna har samma eller liknande betydelse. Vad kallas denna typ av upprepning? ",
+  "correctAnswer": "Tautologi",
+  "incorrectAnswers": [
+    "Allitteration",
+    "Rekursion"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667d1e8d073aba78b424f4a2"
+  },
+  "text": "I vilken sport spelas 'Davis Cup' varje år?",
+  "correctAnswer": "Tennis",
+  "incorrectAnswers": [
+    "Golf",
+    "Formel 1"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667d1f88073aba78b424f4a4"
+  },
+  "text": "Luke Skywalker heter hjälten i orginaltrilogin av Star Wars-filmerna. Vem spelar Luke Skywalker?",
+  "correctAnswer": "Mark Hamill",
+  "incorrectAnswers": [
+    "Harrison Ford",
+    "Patrick Stewart"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Medium",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667d251a073aba78b424f4ac"
+  },
+  "text": "Disney-filmen Encanto från 2021 handlar om familjen Madrigal och vann en Oscar för bästa animerade film. I vilket land utspelar sig Encanto?",
+  "correctAnswer": "Colombia",
+  "incorrectAnswers": [
+    "Mexico",
+    "Venezuela"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 2
+},
+{
+  "_id": {
+    "$oid": "667d2736073aba78b424f4ae"
+  },
+  "text": "I Pixars film Coco från 2017 hamnar pojken Miguel i trubbel när han blir intresserad av en aktivitet som hans familj har förbjudit i flera generationer. Vad är det för aktivitet Miguel börjar med?",
+  "correctAnswer": "Musik",
+  "incorrectAnswers": [
+    "Dans",
+    "Måla"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667d2ad3073aba78b424f4b5"
+  },
+  "text": "Att Han Solo flög \"Kessel Run på mindre än 12 parsek\" är en välkänd filmtabbe från den första Star Wars-filmen. Varför anses den repliken innehålla ett misstag?",
+  "correctAnswer": "Parsek är ett distansmått",
+  "incorrectAnswers": [
+    "Parsek är en hastighet",
+    "Parsek är en vektor"
+  ],
+  "tags": [
+    "TV & Film",
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667d2dcd073aba78b424f4b7"
+  },
+  "text": "Vilken amerikansk affärsman hyllar Adolf Hitler i sin ökända bok Mein Kampf för hans bidrag till antisemitismen i USA?",
+  "correctAnswer": "Henry Ford",
+  "incorrectAnswers": [
+    "Walt Disney",
+    "Thomas Watson"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667d301a073aba78b424f4be"
+  },
+  "text": "Andra Moseboken är en av de böcker Gamla Testamentet består av och handlar om israeliternas uttåg ur Egypten. Vad är det alternativa namnet för Andra Moseboken?",
+  "correctAnswer": "Exodus",
+  "incorrectAnswers": [
+    "Leviticus",
+    "Hebreerbrevet"
+  ],
+  "tags": [
+    "Religion & Mytologi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667d31a2073aba78b424f4c0"
+  },
+  "text": "Neil Armstrong och Buzz Aldrin är två av de tre ombord på Apollo 11 vid den första bemannade landningen på månen. Vad hette den tredje i besättningen?",
+  "correctAnswer": "Michael Collins",
+  "incorrectAnswers": [
+    "Mark Watney",
+    "Matthew \"Matt\" Kowalski"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 5,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667d3294073aba78b424f4dc"
+  },
+  "text": "Honda och Hyundai är två bilmärken. Från vilket eller vilka länder kommer Honda och Hyundai?",
+  "correctAnswer": "Honda kommer från Japan och Hyundai från Sydkorea",
+  "incorrectAnswers": [
+    "Honda från Sydkorea och Hyundai från Japan",
+    "Båda kommer från Sydkorea"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667d3655073aba78b424f4de"
+  },
+  "text": "Har för funktion har en katalysator i en bensindriven bil? ",
+  "correctAnswer": " Att rena avgaserna som uppstår vid förbränning",
+  "incorrectAnswers": [
+    "Att antända den gasblandning som finns i förbränningsrummet",
+    "Att hålla bilbatteriet laddat"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667d37db073aba78b424f4e6"
+  },
+  "text": "På vilken höjd brukar ett kommersiellt passagerarflygplan flyga?",
+  "correctAnswer": "10 500 till 12 800 meter",
+  "incorrectAnswers": [
+    "35 000 till 42 000 meter",
+    "3400 till 4600 meter"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667d3a4c073aba78b424f4e8"
+  },
+  "text": "Vilket bilföretag startades 1937 av 'Tyska arbetsfronten', arbetsorganisationen som var styrd av nazisterna? ",
+  "correctAnswer": "Volkswagen",
+  "incorrectAnswers": [
+    "Porsche",
+    "BMW"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667d3e91073aba78b424f4ef"
+  },
+  "text": "Vad heter järnvägsnätet i Japan som är känt för sin väldigt snabba och säkra tågtrafik?",
+  "correctAnswer": "Shinkansen",
+  "incorrectAnswers": [
+    "Sapsan",
+    "Maglev"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 3
+},
+{
+  "_id": {
+    "$oid": "667d4058073aba78b424f4f1"
+  },
+  "text": "Hur snabbt färdas man om man färdas tio knop?",
+  "correctAnswer": "18.52 km/h",
+  "incorrectAnswers": [
+    "5,39 km/h",
+    "9.26 km/h"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667d4295073aba78b424f4f9"
+  },
+  "text": "Vilken är världens mest sålda bil genom tiderna?",
+  "correctAnswer": "Toyota Corolla",
+  "incorrectAnswers": [
+    "Volkswagen Typ 1 (Bubblan)",
+    "Ford Model T (T-Ford)"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "667d4597073aba78b424f501"
+  },
+  "text": "'27 Club' är en populär benämning på en grupp kända människor som alla dött vid 27 års ålder. Vem av de här dog inte vid 27 års ålder?",
+  "correctAnswer": "James Dean",
+  "incorrectAnswers": [
+    "Jimi Hendrix",
+    "Janis Joplin"
+  ],
+  "tags": [
+    "Musik",
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667d46d4073aba78b424f509"
+  },
+  "text": "Låten 'Can You Feel the Love Tonight?' skrivs till filmen Lejonkungen 1994 och vann Oscar för bästa sång. Vem var det som skrev låten?",
+  "correctAnswer": "Elton John",
+  "incorrectAnswers": [
+    "Andrew Lloyd Webber",
+    "Phil Collins"
+  ],
+  "tags": [
+    "Musik",
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667e6484073aba78b424f50b"
+  },
+  "text": "Vad hette personen Adolf Hitler utsåg till sin efterträdare och som var Tysklands president när de kapitulerade? ",
+  "correctAnswer": "Karl Dönitz",
+  "incorrectAnswers": [
+    "Joseph Goebbels",
+    "Hermann Göring"
+  ],
+  "tags": [
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667e6ad1073aba78b424f50d"
+  },
+  "text": "Jane Eyre av Charlotte Brontë är en av den brittiska litteraturens stora klassiker, och Brontës prosa ansågs vara banbrytande. Som många andra kvinnliga författare under den här tidsperioden använde hon ett mansnamn som pseudonym. Vilket då? ",
+  "correctAnswer": "Currer Bell",
+  "incorrectAnswers": [
+    "Lewis Carroll",
+    "George Eliot"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667e6daa073aba78b424f50f"
+  },
+  "text": "Suffragetterna var en viktig politisk rörelse under slutet av 1800-talet och början av 1900-talet. Vad var det suffragetterna kämpade för?",
+  "correctAnswer": "Kvinnors rösträtt ",
+  "incorrectAnswers": [
+    "Att avskaffa statarsystemet",
+    "Att stoppa assimileringen av svenska samer och utrotningen av samisk kultur"
+  ],
+  "tags": [
+    "Politik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667e6fd1073aba78b424f511"
+  },
+  "text": "Julian Assange, grundaren av organisationen Wikileaks, blev 2010 anklagad för sexualbrott och levde sedan mellan 2012 och 2019 på en sydamerikansk ambassad för att undvika att bli utlämnad till USA. I vilket lands ambassad levde Assange under de åren?",
+  "correctAnswer": "Ecuador",
+  "incorrectAnswers": [
+    "Colombia",
+    "Venezuela"
+  ],
+  "tags": [
+    "Politik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667e72d6073aba78b424f513"
+  },
+  "text": "Blade Runner från 1982 är en av de mest uppskattade sci-fi-filmerna genom tiderna. Filmen är löst baserad på en av Philip K. Dicks romaner, vad heter den?",
+  "correctAnswer": "Do Androids Dream of Electric Sheep?",
+  "incorrectAnswers": [
+    "A Scanner Darkly",
+    "Neuromancer"
+  ],
+  "tags": [
+    "Litteratur",
+    "TV & Film"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "667e766a073aba78b424f515"
+  },
+  "text": "Defenestration är ett ord många känner till men aldrig kommer att använda. Vad betyder defenestration?",
+  "correctAnswer": "Att slänga ut någon eller något genom ett fönster",
+  "incorrectAnswers": [
+    "Den akademiska akt där en doktorand inför publik försvarar sin doktorsavhandling",
+    "Vetenskapen om att kontrollera skogens tillväxt, sammansättning samt kvalitet för att tillgodose värden och behov, i synnerhet virkesproduktion. "
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "correctAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "667e77e4073aba78b424f517"
+  },
+  "text": "Tryckfrihetsförordningen är en av Sveriges grundlagar och är en av världens första lagar för tryckfrihet för medier. Vilket år antogs den första tryckfrihetsförordningen?",
+  "correctAnswer": "1762",
+  "incorrectAnswers": [
+    "1867",
+    "1910"
+  ],
+  "tags": [
+    "Politik",
+    "Historia"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 2,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "667e7ad8073aba78b424f519"
+  },
+  "text": "Regeringens parlamentariska motståndare kallas på svenska oppositionen. I Storbritannien har de ett lite mer färgstarkt namn, vad då?",
+  "correctAnswer": "Shadow Cabinet",
+  "incorrectAnswers": [
+    "Protest Cabinet",
+    "Challenger Assembly"
+  ],
+  "tags": [
+    "Politik"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "6683db63c978e93b90c9a0dd"
+  },
+  "text": "Vad hette statsmannen som 1871 blev Tysklands första rikskansler och ofta associeras med det politiska synsättet 'realpolitik'?",
+  "correctAnswer": "Otto Von Bismarck",
+  "incorrectAnswers": [
+    "Friedrich Engels",
+    "Franz von Papen"
+  ],
+  "tags": [
+    "Historia",
+    "Politik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "6683dd78c978e93b90c9a0df"
+  },
+  "text": "I vilket land blev Bitcoin år 2021 den officiella valutan?",
+  "correctAnswer": "El Salvador",
+  "incorrectAnswers": [
+    "Ecuador",
+    "Liberia"
+  ],
+  "tags": [
+    "Ekonomi",
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "668a412c131f003d39cc99af"
+  },
+  "text": "Cricketmatcher kan pågå i flera dagar; 1939 spelades den längsta matchen genom tiderna och pågick i 9 dagar. Den matchen slutade oavgjort efter att den avbröts tidigt. Varför då?",
+  "correctAnswer": "För att det ena laget behövde hinna med båten hem.",
+  "incorrectAnswers": [
+    "Andra världskriget utlöstes och lagen var på olika sidor av kriget",
+    "Gräsplanen där matchen spelades var bokad för en musikfestival"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 3,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "668a45e0131f003d39cc99b1"
+  },
+  "text": "Live Aid var en välgörenhetskonsert som ägde rum 1985, och många av världens största artister uppträdde. Konserten samlade in 1,5 miljarder kronor, men till vilket ändamål?",
+  "correctAnswer": "Hungersnöden i Etiopien",
+  "incorrectAnswers": [
+    "Jordbävningen i Haiti",
+    "Offren i inbördeskriget i Sudan"
+  ],
+  "tags": [
+    "Musik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy",
+  "incorrectAnswerCount": 1
+},
+{
+  "_id": {
+    "$oid": "668a4843131f003d39cc99b3"
+  },
+  "text": "Världens största flygplanstillverkare av passagerarplan är en multieuropeisk koncern med huvudkontor i Frankrike. Vad heter den flygplanstillverkaren?",
+  "correctAnswer": "Airbus",
+  "incorrectAnswers": [
+    "Boeing",
+    "Northrop Grumman"
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium",
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 3
+},
+{
+  "_id": {
+    "$oid": "668a4b8d131f003d39cc99b5"
+  },
+  "text": "Vem var konseljpresident, vilket var positionen som hade makten i den franska regeringen, i Frankrike när andra världskriget utlöstes?",
+  "correctAnswer": "Édouard Daladier",
+  "incorrectAnswers": [
+    "Charles de Gaulle",
+    "Philippe Pétain"
+  ],
+  "tags": [
+    "Historia",
+    "Politik"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 6,
+  "correctAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "668a5e60131f003d39cc99b7"
+  },
+  "text": "Vad heter det allegoriska epos som Dante Alighieri skrev under 1300-talet som skildrar Dantes vandring genom helvetet?",
+  "correctAnswer": "Den gudomliga komedin",
+  "incorrectAnswers": [
+    "Regula Salvatoris",
+    "Summa Theologiae"
+  ],
+  "tags": [
+    "Litteratur"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "668a6511131f003d39cc99b9"
+  },
+  "text": "Vad betyder ordet 'anakronism'?",
+  "correctAnswer": "Att ett föremål eller händelse placeras i fel tidsepok i ett litterärt eller konstnärligt verk.",
+  "incorrectAnswers": [
+    "Användningen av nutida begrepp på historiska händelser",
+    "Tiden före den skrivna historien"
+  ],
+  "tags": [
+    "Språk"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 2,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "668a66d9131f003d39cc99bb"
+  },
+  "text": "1876 utsågs Sveriges första statsminister. Vad hette han?",
+  "correctAnswer": "Louis De Geer",
+  "incorrectAnswers": [
+    "Johan Gabriel Oxenstierna",
+    "Eric Trolle"
+  ],
+  "tags": [
+    "Historia",
+    "Politik"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 1,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "668a72d3131f003d39cc99bd"
+  },
+  "text": "Mercator-projektionen är kartprojektionen som har varit standard för sjökort och världskartor i många år. På senare år har användningen av Mercator-projektionen på världskartor fått mycket kritik. Vad är problemet med den?",
+  "correctAnswer": "Projektionen innebär att storleken på objekt vid ekvatorn förminskas och objekt nära polerna förstoras.",
+  "incorrectAnswers": [
+    "Projektionen förvränger den horizontella skalan för att få Europa mer i centrum av kartorna",
+    "Projektionen har egenskapen att halva jordytan är utsträckt horisontellt och den andra halvan är utsträckt vertikalt."
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "668a8283f2f61e3156cd33d0"
+  },
+  "text": "Ungerns inflation efter andra världskriget är den högsta som någonsin uppmätts. Hur lång tid tog det för priserna att fördubblas när inflationen var som högst i juli 1946?",
+  "correctAnswer": "15 timmar",
+  "incorrectAnswers": [
+    "3 dagar",
+    "1 vecka"
+  ],
+  "tags": [
+    "Ekonomi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "668a8990f2f61e3156cd33d2"
+  },
+  "text": "Det är under Ungerns hyperinflationsperiod som vi hittar den högsta valören på en sedel genom tiderna. Vilken valör hade den sedeln?",
+  "correctAnswer": "100 miljoner biljoner (10²⁰)",
+  "incorrectAnswers": [
+    "100 biljoner (10¹⁴)",
+    "1 biljon (10¹²)"
+  ],
+  "tags": [
+    "Ekonomi"
+  ],
+  "__v": 0,
+  "correctAnswerCount": 6,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 4,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "668a90c8f2f61e3156cd33d4"
+  },
+  "text": "'Dieselgate' var en skandal som involverade Volkswagen och kostade dom runt 30 miljader dollar i böter och skadestånd. Vad innebär 'Dieselgate'-skandalen?",
+  "correctAnswer": "Vissa Volkswagenmodeller släppte ut 40 gånger mer kväveoxid än vad tillverkaren uppgav, och Volkswagen använde mjukvara för att dölja det.",
+  "incorrectAnswers": [
+    "Volkswagen förfalskade uppgifter om bränsleekonomin för mer än 600.000 fordon från 2004 och framåt",
+    "Vissa Volkswagenmodeller hade problem med defekta tändningslås, vilket orsakade att bilen kunde slås av spontant och krockkuddarna inte utlöstes."
+  ],
+  "tags": [
+    "Fordon"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "incorrectAnswerCount": 3,
+  "correctAnswerCount": 1,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "668a920ef2f61e3156cd33d6"
+  },
+  "text": "Vilket är det högsta berget i solsystemet? ",
+  "correctAnswer": "Olympus Mons på Mars",
+  "incorrectAnswers": [
+    "Mount Everest på jorden",
+    "Boösaule Montes på Jupiters måne Io"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard",
+  "incorrectAnswerCount": 3
+},
+{
+  "_id": {
+    "$oid": "668a942ef2f61e3156cd33d8"
+  },
+  "text": "Många filmindustrier runt världen har fått smeknamn som följer Hollywoodmodellen, till exempel Bollywood i Bombay och Nollywood i Nigeria. Varifrån kommer filmindustrin Tollywood?",
+  "correctAnswer": "Indien",
+  "incorrectAnswers": [
+    "Sverige",
+    "Turkiet"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "668a9668f2f61e3156cd33da"
+  },
+  "text": "Vilket lands filmindustri producerar flest filmer varje år?",
+  "correctAnswer": "Indien",
+  "incorrectAnswers": [
+    "USA",
+    "Kina"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "668a9f56e7da78126d205d2e"
+  },
+  "text": "Vilken färg har ädelstenen smaragd vanligtvis? ",
+  "correctAnswer": "Grön",
+  "incorrectAnswers": [
+    "Blå",
+    "Lila"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 4,
+  "questionType": "oneOfThree",
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "668aa259e7da78126d205d30"
+  },
+  "text": "Vilken underhållningsbransch omsätter mest pengar varje år? ",
+  "correctAnswer": "Datorspelsindustrin",
+  "incorrectAnswers": [
+    "Filmindustrin",
+    "Musikindustrin"
+  ],
+  "tags": [
+    "Ekonomi"
+  ],
+  "__v": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "correctAnswerCount": 3,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "668aa6e4e7da78126d205d32"
+  },
+  "text": "Vad heter det västafrikanska landet som tidigare har hettat Övre Volta?",
+  "correctAnswer": "Burkina Faso",
+  "incorrectAnswers": [
+    "Guinea-Bissau",
+    "Ekvatorialguinea"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "66cc4db2453e5f7b964f7221"
+  },
+  "text": "Vem var vicepresident under president George W Bush ämbetsperiod?",
+  "correctAnswer": "Dick Cheney",
+  "incorrectAnswers": [
+    "Dan Quayle",
+    "Sarah Palin"
+  ],
+  "tags": [
+    "Politik"
+  ],
+  "correctAnswerCount": 3,
+  "incorrectAnswerCount": 1,
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "66cc4dfbfe8d7c6683664ab3"
+  },
+  "text": "Ungefär hur många blev dömda till döden för häxeri under andra millenniet? ",
+  "correctAnswer": "30000",
+  "incorrectAnswers": [
+    "300",
+    "3000"
+  ],
+  "tags": [
+    "Historia",
+    "Religion & Mytologi"
+  ],
+  "correctAnswerCount": 8,
+  "incorrectAnswerCount": 6,
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "66cd8b49cee6a00a75a87e66"
+  },
+  "text": "ECOWAS är en ekonomisk samarbetsorganisation mellan ett antal olika länder i vilken del av världen?",
+  "correctAnswer": "Västra Afrika",
+  "incorrectAnswers": [
+    "Centralamerika",
+    "Sydostasien"
+  ],
+  "tags": [
+    "Ekonomi"
+  ],
+  "correctAnswerCount": 3,
+  "incorrectAnswerCount": 1,
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "66cefff555ddeeec9052ddc9"
+  },
+  "text": "Till vilket lands kök tillhör maträtten kimchi?",
+  "correctAnswer": "Sydkorea",
+  "incorrectAnswers": [
+    "Japan",
+    "Kina"
+  ],
+  "tags": [
+    "Mat & Dryck"
+  ],
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 2,
+  "__v": 0,
+  "questionType": "oneOfThree",
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "66cf00279f50e33efe7a9f19"
+  },
+  "text": "Ben-Hur och Titanic är två av de tre filmen som har vunnit flest (11) Oscars genom historien. Vilken är den tredje med lika många vinster?",
+  "correctAnswer": "Sagan om konungens återkomst",
+  "incorrectAnswers": [
+    "Gudfadern",
+    "Nyckeln till frihet"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "correctAnswerCount": 1,
+  "incorrectAnswerCount": 0,
+  "questionType": "oneOfThree",
+  "__v": 0,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "66d569fd72a05e50ccfd7890"
+  },
+  "text": "För vilken film vann Emma Stone en Oscars 2024? ",
+  "correctAnswer": "Poor Things",
+  "incorrectAnswers": [
+    "The Favorite",
+    "La La Land"
+  ],
+  "tags": [
+    "TV & Film"
+  ],
+  "correctAnswerCount": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "__v": 0,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "66d56a0072a05e50ccfd7895"
+  },
+  "text": "Vad betyder förkortningen BSoD inom IT-världen?",
+  "correctAnswer": "Blue Screen of Death",
+  "incorrectAnswers": [
+    "Bright Screen of Data",
+    "Backup Strategy of Disaster"
+  ],
+  "tags": [
+    "Teknik"
+  ],
+  "correctAnswerCount": 4,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "__v": 0,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "66d56a0472a05e50ccfd789a"
+  },
+  "text": "Utanför vilken stad står kristusstatyn Cristo Redentor?",
+  "correctAnswer": "Rio de Janeiro",
+  "incorrectAnswers": [
+    "Brasilia",
+    "Buenos Aires"
+  ],
+  "tags": [
+    "Kultur"
+  ],
+  "correctAnswerCount": 6,
+  "incorrectAnswerCount": 7,
+  "questionType": "oneOfThree",
+  "__v": 0,
+  "difficulty": "Medium"
+},
+{
+  "_id": {
+    "$oid": "66d56a0672a05e50ccfd789f"
+  },
+  "text": "Vad är preskriptionstiden för mord i Sverige?",
+  "correctAnswer": "Det finns ingen",
+  "incorrectAnswers": [
+    "15 år",
+    "21 år "
+  ],
+  "tags": [
+    "Politik"
+  ],
+  "correctAnswerCount": 2,
+  "incorrectAnswerCount": 0,
+  "questionType": "oneOfThree",
+  "__v": 0,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "66d827e4096a7be7ba661197"
+  },
+  "text": "Hur många länder det finns i världen beror på vem man frågar, men hur många medlemsstater finns det i Förenta nationerna (2024)?",
+  "correctAnswer": "193",
+  "incorrectAnswers": [
+    "167",
+    "213"
+  ],
+  "tags": [
+    "Geografi"
+  ],
+  "correctAnswerCount": 0,
+  "incorrectAnswerCount": 1,
+  "questionType": "oneOfThree",
+  "__v": 0,
+  "difficulty": "Hard"
+},
+{
+  "_id": {
+    "$oid": "66d82807096a7be7ba66119e"
+  },
+  "text": "Vad heter det när man slår två slag under par i Golf?",
+  "correctAnswer": "Eagle",
+  "incorrectAnswers": [
+    "Birdie",
+    "Bogey"
+  ],
+  "tags": [
+    "Sport"
+  ],
+  "correctAnswerCount": 3,
+  "incorrectAnswerCount": 0,
+  "questionType": "oneOfThree",
+  "__v": 0,
+  "difficulty": "Easy"
+},
+{
+  "_id": {
+    "$oid": "66d82812096a7be7ba6611a3"
+  },
+  "text": "Vad är det vetenskapliga namnet på rödräven, som är den vanligaste räven i Sverige?",
+  "correctAnswer": "Vulpes vulpes",
+  "incorrectAnswers": [
+    "Canis lupus",
+    "Felis ruber"
+  ],
+  "tags": [
+    "Natur & Vetenskap"
+  ],
+  "correctAnswerCount": 0,
+  "incorrectAnswerCount": 2,
+  "questionType": "oneOfThree",
+  "__v": 0,
+  "difficulty": "Hard"
+}]
