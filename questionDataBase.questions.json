@@ -10,12 +10,7 @@
   ],
   "tags": [
     "Konst"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 17,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 11,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -29,12 +24,7 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -48,12 +38,7 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 11,
-  "correctAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -67,11 +52,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -85,12 +66,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -104,12 +80,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -123,12 +94,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -142,11 +108,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -160,12 +122,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -179,11 +136,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -197,12 +150,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 0,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -216,12 +164,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 0,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -237,12 +180,7 @@
     "Geografi",
     "Historia",
     "Politik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -256,12 +194,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Medium",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -275,12 +208,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -294,12 +222,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -313,12 +236,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -333,12 +251,7 @@
   "tags": [
     "Historia",
     "Geografi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -352,12 +265,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -371,12 +279,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -391,12 +294,7 @@
   "tags": [
     "Historia",
     "Politik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -412,12 +310,7 @@
     "Historia",
     "Geografi",
     "Politik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 6,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -431,10 +324,7 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -448,12 +338,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -468,12 +353,7 @@
   "tags": [
     "Geografi",
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 5,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -488,12 +368,7 @@
   "tags": [
     "Historia",
     "Politik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 4,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -507,11 +382,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -525,12 +396,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -544,12 +410,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -563,12 +424,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -582,12 +438,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -601,12 +452,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -620,12 +466,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -639,12 +480,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -658,12 +494,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -677,11 +508,7 @@
   ],
   "tags": [
     "Spel"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 5,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -695,12 +522,7 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -714,11 +536,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -733,11 +551,7 @@
   "tags": [
     "Historia",
     "Politik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -751,10 +565,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -768,12 +579,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "incorrectAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -787,12 +593,7 @@
   ],
   "tags": [
     "Konst"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 6,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -806,12 +607,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 5,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -825,11 +621,7 @@
   ],
   "tags": [
     "Politik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -843,12 +635,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "correctAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -862,11 +649,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -880,12 +663,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -900,12 +678,7 @@
   "tags": [
     "Geografi",
     "Politik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -919,12 +692,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -938,10 +706,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -955,12 +720,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -974,11 +734,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -992,12 +748,7 @@
   ],
   "tags": [
     "Kultur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 4,
-  "difficulty": "Medium",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -1011,12 +762,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 5,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1030,10 +776,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1047,12 +790,7 @@
   ],
   "tags": [
     "Spel"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 9,
-  "incorrectAnswerCount": 5,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1066,12 +804,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1085,12 +818,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 4,
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1104,11 +832,7 @@
   ],
   "tags": [
     "Kultur"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 7,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1122,12 +846,7 @@
   ],
   "tags": [
     "Kultur"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 5,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1141,12 +860,7 @@
   ],
   "tags": [
     "Kultur"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 8,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1160,12 +874,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Hard",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -1179,12 +888,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1198,12 +902,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "incorrectAnswerCount": 2,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1217,12 +916,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1236,12 +930,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1255,12 +944,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1274,11 +958,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1292,12 +972,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1311,12 +986,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1330,11 +1000,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1348,11 +1014,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1366,12 +1028,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "correctAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1385,12 +1042,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -1404,11 +1056,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1422,12 +1070,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1441,12 +1084,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -1460,12 +1098,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 5,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1479,11 +1112,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -1497,12 +1126,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1516,12 +1140,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1535,11 +1154,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1554,12 +1169,7 @@
   "tags": [
     "Mat & Dryck",
     "Musik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -1573,10 +1183,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1591,12 +1198,7 @@
   "tags": [
     "Sport",
     "Geografi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1612,12 +1214,7 @@
     "Geografi",
     "Natur & Vetenskap",
     "Historia"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 5,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1632,12 +1229,7 @@
   "tags": [
     "Natur & Vetenskap",
     "Historia"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1651,11 +1243,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1670,11 +1258,7 @@
   "tags": [
     "Natur & Vetenskap",
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1688,12 +1272,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1708,12 +1287,7 @@
   "tags": [
     "Politik",
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1727,11 +1301,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1745,12 +1315,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1764,12 +1329,7 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1783,12 +1343,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -1802,12 +1357,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 4,
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1821,12 +1371,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 3
+  ]
 },
 {
   "_id": {
@@ -1840,12 +1385,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "incorrectAnswerCount": 1,
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -1860,11 +1400,7 @@
   "tags": [
     "Politik",
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1878,11 +1414,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1896,11 +1428,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -1914,12 +1442,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1933,12 +1456,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -1952,11 +1470,7 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 7,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1970,11 +1484,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -1988,12 +1498,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2007,12 +1512,7 @@
   ],
   "tags": [
     "Konst"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 8,
-  "correctAnswerCount": 8,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2026,12 +1526,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2045,12 +1540,7 @@
   ],
   "tags": [
     "Spel"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 6,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2064,12 +1554,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "correctAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2084,12 +1569,7 @@
   "tags": [
     "Fordon",
     "Språk"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 6,
-  "incorrectAnswerCount": 3,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -2103,11 +1583,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2121,11 +1597,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "incorrectAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -2139,12 +1611,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 4,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2158,12 +1625,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2177,11 +1639,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2195,11 +1653,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2213,12 +1667,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2232,12 +1681,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2251,12 +1695,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2270,12 +1709,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2289,11 +1723,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -2308,12 +1738,7 @@
   "tags": [
     "Geografi",
     "TV & Film"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Easy",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2327,11 +1752,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -2345,12 +1766,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2364,11 +1780,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2382,12 +1794,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2401,12 +1808,7 @@
   ],
   "tags": [
     "Kultur"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -2420,11 +1822,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "incorrectAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -2438,10 +1836,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2455,12 +1850,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2474,12 +1864,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2493,12 +1878,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2513,12 +1893,7 @@
   "tags": [
     "Geografi",
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 6,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -2532,11 +1907,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2550,12 +1921,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2569,12 +1935,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2589,12 +1950,7 @@
   "tags": [
     "Litteratur",
     "Historia"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2609,11 +1965,7 @@
   "tags": [
     "Historia",
     "Geografi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2627,12 +1979,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2647,12 +1994,7 @@
   "tags": [
     "Litteratur",
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2666,12 +2008,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2685,11 +2022,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2703,12 +2036,7 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2722,11 +2050,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2741,12 +2065,7 @@
   "tags": [
     "Natur & Vetenskap",
     "Språk"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy",
-  "correctAnswerCount": 4
+  ]
 },
 {
   "_id": {
@@ -2760,12 +2079,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2779,12 +2093,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2798,12 +2107,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -2817,12 +2121,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2836,11 +2135,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -2854,12 +2149,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2873,12 +2163,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2893,12 +2178,7 @@
   "tags": [
     "Geografi",
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2912,11 +2192,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 4,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2932,12 +2208,7 @@
     "Geografi",
     "Historia",
     "Politik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -2951,12 +2222,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -2970,12 +2236,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 7,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -2989,11 +2250,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3008,11 +2265,7 @@
   "tags": [
     "Musik",
     "TV & Film"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3026,12 +2279,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "incorrectAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3046,12 +2294,7 @@
   "tags": [
     "Musik",
     "Teknik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "incorrectAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3065,12 +2308,7 @@
   ],
   "tags": [
     "Spel"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 5,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 12,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3084,12 +2322,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Medium",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -3104,12 +2337,7 @@
   "tags": [
     "Historia",
     "Språk"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 5,
-  "incorrectAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3123,11 +2351,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3141,12 +2365,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3160,12 +2379,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 7,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3179,12 +2393,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3198,11 +2407,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3216,12 +2421,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -3235,12 +2435,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Easy",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -3254,12 +2449,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3273,12 +2463,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3292,11 +2477,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 5,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3310,12 +2491,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3329,12 +2505,7 @@
   ],
   "tags": [
     "Konst"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 9,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3348,12 +2519,7 @@
   ],
   "tags": [
     "Konst"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "incorrectAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3367,10 +2533,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3384,11 +2547,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3402,12 +2561,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -3421,12 +2575,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -3440,11 +2589,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3459,12 +2604,7 @@
   "tags": [
     "Natur & Vetenskap",
     "TV & Film"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 3,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3478,12 +2618,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Medium",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -3497,11 +2632,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3515,10 +2646,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3533,12 +2661,7 @@
   "tags": [
     "Geografi",
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3553,12 +2676,7 @@
   "tags": [
     "Natur & Vetenskap",
     "Språk"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3572,12 +2690,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3591,12 +2704,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Easy",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -3610,12 +2718,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3629,12 +2732,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -3648,12 +2746,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Medium",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -3667,12 +2760,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 2
+  ]
 },
 {
   "_id": {
@@ -3686,12 +2774,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -3706,11 +2789,7 @@
   "tags": [
     "TV & Film",
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3724,11 +2803,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3742,11 +2817,7 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3760,12 +2831,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 5,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3779,12 +2845,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3798,12 +2859,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3817,12 +2873,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3836,12 +2887,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3855,12 +2901,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 3
+  ]
 },
 {
   "_id": {
@@ -3874,12 +2915,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3893,11 +2929,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -3912,12 +2944,7 @@
   "tags": [
     "Musik",
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3932,12 +2959,7 @@
   "tags": [
     "Musik",
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -3951,12 +2973,7 @@
   ],
   "tags": [
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -3970,11 +2987,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -3988,12 +3001,7 @@
   ],
   "tags": [
     "Politik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -4007,12 +3015,7 @@
   ],
   "tags": [
     "Politik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4027,12 +3030,7 @@
   "tags": [
     "Litteratur",
     "TV & Film"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -4046,12 +3044,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "correctAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -4066,12 +3059,7 @@
   "tags": [
     "Politik",
     "Historia"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 2,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4085,12 +3073,7 @@
   ],
   "tags": [
     "Politik"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -4105,12 +3088,7 @@
   "tags": [
     "Historia",
     "Politik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4125,12 +3103,7 @@
   "tags": [
     "Ekonomi",
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4144,11 +3117,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 3,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -4162,12 +3131,7 @@
   ],
   "tags": [
     "Musik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy",
-  "incorrectAnswerCount": 1
+  ]
 },
 {
   "_id": {
@@ -4181,12 +3145,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium",
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 3
+  ]
 },
 {
   "_id": {
@@ -4201,12 +3160,7 @@
   "tags": [
     "Historia",
     "Politik"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 6,
-  "correctAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4220,10 +3174,7 @@
   ],
   "tags": [
     "Litteratur"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4237,11 +3188,7 @@
   ],
   "tags": [
     "Språk"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 2,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -4256,12 +3203,7 @@
   "tags": [
     "Historia",
     "Politik"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 1,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4275,10 +3217,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4292,12 +3231,7 @@
   ],
   "tags": [
     "Ekonomi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4311,12 +3245,7 @@
   ],
   "tags": [
     "Ekonomi"
-  ],
-  "__v": 0,
-  "correctAnswerCount": 6,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 4,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4330,12 +3259,7 @@
   ],
   "tags": [
     "Fordon"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "incorrectAnswerCount": 3,
-  "correctAnswerCount": 1,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -4349,11 +3273,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard",
-  "incorrectAnswerCount": 3
+  ]
 },
 {
   "_id": {
@@ -4367,11 +3287,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -4385,11 +3301,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -4403,11 +3315,7 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 4,
-  "questionType": "oneOfThree",
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -4421,12 +3329,7 @@
   ],
   "tags": [
     "Ekonomi"
-  ],
-  "__v": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "correctAnswerCount": 3,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4440,10 +3343,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4457,12 +3357,7 @@
   ],
   "tags": [
     "Politik"
-  ],
-  "correctAnswerCount": 3,
-  "incorrectAnswerCount": 1,
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -4477,12 +3372,7 @@
   "tags": [
     "Historia",
     "Religion & Mytologi"
-  ],
-  "correctAnswerCount": 8,
-  "incorrectAnswerCount": 6,
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4496,12 +3386,7 @@
   ],
   "tags": [
     "Ekonomi"
-  ],
-  "correctAnswerCount": 3,
-  "incorrectAnswerCount": 1,
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -4515,12 +3400,7 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ],
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 2,
-  "__v": 0,
-  "questionType": "oneOfThree",
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4534,12 +3414,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "correctAnswerCount": 1,
-  "incorrectAnswerCount": 0,
-  "questionType": "oneOfThree",
-  "__v": 0,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -4553,12 +3428,7 @@
   ],
   "tags": [
     "TV & Film"
-  ],
-  "correctAnswerCount": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "__v": 0,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -4572,12 +3442,7 @@
   ],
   "tags": [
     "Teknik"
-  ],
-  "correctAnswerCount": 4,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "__v": 0,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -4591,12 +3456,7 @@
   ],
   "tags": [
     "Kultur"
-  ],
-  "correctAnswerCount": 6,
-  "incorrectAnswerCount": 7,
-  "questionType": "oneOfThree",
-  "__v": 0,
-  "difficulty": "Medium"
+  ]
 },
 {
   "_id": {
@@ -4610,12 +3470,7 @@
   ],
   "tags": [
     "Politik"
-  ],
-  "correctAnswerCount": 2,
-  "incorrectAnswerCount": 0,
-  "questionType": "oneOfThree",
-  "__v": 0,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -4629,12 +3484,7 @@
   ],
   "tags": [
     "Geografi"
-  ],
-  "correctAnswerCount": 0,
-  "incorrectAnswerCount": 1,
-  "questionType": "oneOfThree",
-  "__v": 0,
-  "difficulty": "Hard"
+  ]
 },
 {
   "_id": {
@@ -4648,12 +3498,7 @@
   ],
   "tags": [
     "Sport"
-  ],
-  "correctAnswerCount": 3,
-  "incorrectAnswerCount": 0,
-  "questionType": "oneOfThree",
-  "__v": 0,
-  "difficulty": "Easy"
+  ]
 },
 {
   "_id": {
@@ -4667,10 +3512,5 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ],
-  "correctAnswerCount": 0,
-  "incorrectAnswerCount": 2,
-  "questionType": "oneOfThree",
-  "__v": 0,
-  "difficulty": "Hard"
+  ]
 }]
