@@ -10,13 +10,14 @@
     text-align: center;
     gap: 1rem;
 }
-.question__text
-{
+
+.question__text {
     padding: 2rem;
     border: 1px solid black;
     background-color: azure;
 
 }
+
 .next-button {
     margin-top: 2rem;
     padding: 1rem;
@@ -28,6 +29,7 @@
     padding: 2rem;
     border-radius: 2rem;
 }
+
 .next-button:hover {
     margin-top: 2rem;
     padding: 1rem;
@@ -39,15 +41,19 @@
     padding: 2rem;
     border-radius: 2rem;
 }
-.question__option
-{
+
+.question__options-container {
+    display: contents;
+}
+
+.question__option {
     background-color: #e4e4e4;
     border: 1px solid black;
     padding: 2rem;
     border-radius: 2rem;
 
 }
-.question__option:hover
-{
+
+.question__option:hover {
     background-color: #d4d4d4;
 }
