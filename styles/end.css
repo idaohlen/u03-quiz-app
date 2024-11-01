@@ -1,4 +1,4 @@
-@import "base.css"
+@import "base.css";
 
 @import "base.css";
 
@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .result-header {
@@ -22,12 +22,10 @@
 
 .result-container {
     height: 20rem;
-    overflow: scroll; /* TODO */
+    overflow: scroll; 
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 2rem;
-    padding-top: 13rem;
 }
 
 .result-question {
