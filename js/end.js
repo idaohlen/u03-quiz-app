@@ -31,21 +31,24 @@ function displayEndPage () {
     const resultItem = ['Fråga 1', 'Fråga 2', 'Fråga 3', 'Fråga 4', 'Fråga 5', 'Fråga 6', 'Fråga 7', 'Fråga 8', 'Fråga 9', 'Fråga 10'];
     resultItem.forEach(itemText => {
         const item = document.createElement('li');
-        resultItem.textContent = itemText;
+        item.textContent = itemText;
+        item.className = 'result-item';
         resultList.appendChild(item)
     });
-
+    
     mainWrapper.appendChild(resultList); // Append UL list to main
 
     const newRoundDiv = document.createElement('div');
     newRoundDiv.className = 'new-round';
     mainWrapper.appendChild(newRoundDiv); // Append div to main
 
-    
+    const newRoundBtn = document.createElement('button');
+    newRoundBtn.textContent = 'Kör en ny omgång';
+    newRoundBtn.id = 'newRoundBtn';
+    newRoundBtn.classList = 'new-round-btn';
+    newRoundDiv.appendChild(newRoundBtn); // Append button to div
 
-
-
-
+    document.body.appendChild(mainWrapper)
 
 }
 displayEndPage()
