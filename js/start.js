@@ -58,4 +58,4 @@ function StartPage(){
 // Add the startPage div to body
     document.body.appendChild(startPage);
 }
-startPage()
+StartPage()
