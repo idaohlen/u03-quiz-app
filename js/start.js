@@ -1,40 +1,61 @@
 'use strict';
 
-const startpage = document.getElementById("startpage");
-
-function createStartPage(){
-
+function StartPage(){
     //Head container for the startpage
-    const startPage = document.createElement('startpage');
-    startPage.id = 'startpage';
+    const startPage = document.createElement('div');
+    startPage.id = 'startpage'; 
 
     //Container for the quiz-titel
-    const container=dokcument.createElement('container');
+    const container=document.createElement('container');
     container.id='container';
-    container.className ='container';
+    container.classList.add("container"); 
 
     const title=document.createElement('h1');
     title.textContent ='Quiz'; 
     container.appendChild(title);
 
-    function createButtonContainer() {
-        // Create button-container 
-        const buttonContainer = document.createElement('buttoncontainer');
-        buttonContainer.id = 'button-container';
-        buttonContainer.className = 'button-container';
+    const buttonContainer = document.createElement("div");
+    buttonContainer.id = "button-container";
     
-        // List with buttontext
-        const buttonTexts = ['Djur', 'Sport', 'Musik'];
+    const categories = ["Djur", "Sport", "Musik"];
+    categories.forEach(category => {
+        const categoryButton = document.createElement("button");
+        categoryButton.id = "button-container__button";
+        categoryButton.textContent = category;
+        buttonContainer.appendChild(categoryButton);
+    });
+
+    const startButtonContainer = document.createElement("div");
+    startButtonContainer.className = "button-container";
+    const startButton = document.createElement("button");
+    startButton.id = "button-container__start";
+    startButton.className = "button-container__start";
+    startButton.textContent = "Start";
+    startButtonContainer.appendChild(startButton);
+
+    // Highscore-sektionen
+    const highscoreSection = document.createElement("div");
+    highscoreSection.id = "highscore-section";
+    highscoreSection.className = "highscore-section";
+    const highscoreTitle = document.createElement("h2");
+    highscoreTitle.textContent = "Highscore";
+    highscoreSection.appendChild(highscoreTitle);
     
-        // Create buttons based on the list
-        buttonTexts.forEach(text => {
-            const button = document.createElement('button');
-            button.id = 'button-container__button';
-            button.className = 'button-container__button';
-            button.textContent = text; 
-            buttonContainer.appendChild(button); // Add the button to the button container
-        });
+    const highscoreTable = document.createElement("div");
+    highscoreTable.id = "highscore-table";
+    highscoreTable.className = "highscore-table";
     
-        document.body.appendChild(buttonContainer);
-    }
+    const table = document.createElement("table");
+    const highscoreData = [
+        { score: "10p", date: "10/4/2024" },
+        { score: "10p", date: "10/4/2024" }
+    ];
+
+    highscoreTable.appendChild(table);
+    highscoreSection.appendChild(highscoreTable);
+    startPage.appendChild(highscoreSection);
+
+// Add the startPage div to body
+    document.body.appendChild(startPage);
 }
+startPage()
