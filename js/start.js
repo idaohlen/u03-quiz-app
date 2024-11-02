@@ -6,7 +6,7 @@ function StartPage(){
     startPage.id = 'startpage'; 
 
     //Container for the quiz-titel
-    const container=document.createElement('container');
+    const container=document.createElement('div');
     container.id='container';
     container.classList.add("container"); 
 
@@ -55,7 +55,7 @@ function StartPage(){
     highscoreSection.appendChild(highscoreTable);
     startPage.appendChild(highscoreSection);
 
-// Add the startPage div to body
+    // Add the startPage div to body
     document.body.appendChild(startPage);
 }
 StartPage()
