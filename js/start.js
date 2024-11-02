@@ -24,6 +24,7 @@ function StartPage(){
         categoryButton.textContent = category;
         buttonContainer.appendChild(categoryButton);
     });
+    startPage.appendChild(buttonContainer);
 
     const startButtonContainer = document.createElement("div");
     startButtonContainer.className = "button-container";
