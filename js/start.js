@@ -13,6 +13,7 @@ function StartPage(){
     const title=document.createElement('h1');
     title.textContent ='Quiz'; 
     container.appendChild(title);
+    startPage.appendChild(container);
 
     const buttonContainer = document.createElement("div");
     buttonContainer.id = "button-container";
@@ -33,6 +34,8 @@ function StartPage(){
     startButton.className = "button-container__start";
     startButton.textContent = "Start";
     startButtonContainer.appendChild(startButton);
+    startPage.appendChild(startButtonContainer);
+
 
     // Highscore-sektionen
     const highscoreSection = document.createElement("div");
@@ -47,10 +50,23 @@ function StartPage(){
     highscoreTable.className = "highscore-table";
     
     const table = document.createElement("table");
+    highscoreTable.appendChild(table);
+
     const highscoreData = [
         { score: "10p", date: "10/4/2024" },
         { score: "10p", date: "10/4/2024" }
     ];
+
+    highscoreData.forEach(data => {
+        const row = document.createElement("tr");
+        const scoreCell = document.createElement("td");
+        scoreCell.textContent = data.score;
+        const dateCell = document.createElement("td");
+        dateCell.textContent = data.date;
+        row.appendChild(scoreCell);
+        row.appendChild(dateCell);
+        table.appendChild(row);
+    });
 
     highscoreTable.appendChild(table);
     highscoreSection.appendChild(highscoreTable);
