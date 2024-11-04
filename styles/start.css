@@ -24,7 +24,6 @@ h1{
 
 .button-container{
     margin: 20px;
-    background: yellow;
 }
 
 .button-container__button, .button-container__start {
@@ -58,7 +57,7 @@ h2{
 
 .highscore-table table {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .highscore-table td {
