@@ -114,8 +114,8 @@ function renderQuestionPage(question) {
     <input type="button" class="next-button" id="nextButton" value="Nästa fråga">`;
     
     quizApp.appendChild(questionWrapper);
-    
-    document.getElementById('nextButton').addEventListener('click', displayNextQuestion());
+
+    document.getElementById('nextButton').addEventListener('click', displayNextQuestion);
 
     // Add the question wrapper div to the quiz app main container
 }
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const startButton = document.querySelector(".button-container__start");
 
     startButton.addEventListener("click", () => { 
-        document.getElementById('startpage').innerHTML = '';
+        quizApp.removeChild(document.getElementById('startpage'));
         renderQuestionPage(newQuestion())
         
     })
@@ -223,7 +223,15 @@ function newQuestion () {
     return question;
 };
 
-function displayNextQuestion () {
-    document.getElementById('questionWrapper').innerHTML = '';
-        renderQuestionPage(newQuestion())
+function displayNextQuestion() {
+    const currentQuestion = document.getElementById('questionWrapper');
+    if (currentQuestion) {
+        quizApp.removeChild(currentQuestion);
+    }
+    const nextQuestion = newQuestion();
+    if (nextQuestion) {
+        renderQuestionPage(nextQuestion);
+    } else {
+        renderEndPage(); // No more questions, show the end page
+    }
 }
