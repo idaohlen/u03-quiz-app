@@ -1,7 +1,7 @@
 let questionsList;
 const quizApp = document.getElementById("app");
 
-function StartPage(){
+function renderStartPage(){
     //Head container for the startpage
     const startPage = document.createElement('div');
     startPage.id = 'startpage'; 
@@ -76,7 +76,7 @@ function StartPage(){
     // Add the startPage div to body
     quizApp.appendChild(startPage);
 }
-StartPage()
+renderStartPage()
 
 
 // QUESTIONS PAGE
@@ -115,7 +115,7 @@ function renderQuestionPage(question) {
     quizApp.appendChild(questionWrapper);
 }
 
-function displayEndPage () {
+function renderEndPage () {
     const mainWrapper = document.createElement('main');
     mainWrapper.className = 'result-main';
 
