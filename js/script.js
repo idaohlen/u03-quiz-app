@@ -1,4 +1,5 @@
-const quizApp = document.getElementById("quizApp");
+let questionsList;
+const quizApp = document.getElementById("app");
 
 function StartPage(){
     //Head container for the startpage
@@ -172,7 +173,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const questionsFile = "./questionDataBase.questions.json"
     const chosenCategory = "Historia";
     const questionAmount = 10;
-    let questionsList;
 
     parseQuestions(questionsFile).then(allQuestions => {
         questionsList = allQuestions;
