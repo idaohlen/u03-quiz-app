@@ -1,5 +1,7 @@
-let questionsList;
+
 const quizApp = document.getElementById("app");
+
+let selectedQuestions;
 
 function renderStartPage(){
     //Head container for the startpage
@@ -110,9 +112,12 @@ function renderQuestionPage(question) {
     <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
 
     <input type="button" class="next-button" id="nextButton" value="Nästa fråga">`;
+    
+    quizApp.appendChild(questionWrapper);
+    
+    document.getElementById('nextButton').addEventListener('click', displayNextQuestion());
 
     // Add the question wrapper div to the quiz app main container
-    quizApp.appendChild(questionWrapper);
 }
 
 function renderEndPage () {
@@ -173,18 +178,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const questionsFile = "./questionDataBase.questions.json"
     const chosenCategory = "Historia";
     const questionAmount = 10;
+    let questionsList;
 
     parseQuestions(questionsFile).then(allQuestions => {
         questionsList = allQuestions;
+        selectedQuestions = generateQuestions(chosenCategory, questionAmount, questionsList)
+        console.log(selectedQuestions)
     });
 
     /* Placeholder code snippet to trigger generation of questions */ 
     const startButton = document.querySelector(".button-container__start");
 
-    startButton.addEventListener("click", () => {
-        const questionList = generateQuestions(chosenCategory, questionAmount, questionsList)
-        console.log(questionList)
+    startButton.addEventListener("click", () => { 
+        document.getElementById('startpage').innerHTML = '';
+        renderQuestionPage(newQuestion())
+        
     })
+
 
 });
 
@@ -204,4 +214,16 @@ const generateQuestions = (category, amount, questionList) => {
             generatedQuestions.push(categoryQuestions.splice(Math.floor(Math.random() * categoryQuestions.length), 1)[0])
         }
     return generatedQuestions;
+}
+
+// DISPLAY QUESTION
+
+function newQuestion () {
+    const question = selectedQuestions.pop();
+    return question;
+};
+
+function displayNextQuestion () {
+    document.getElementById('questionWrapper').innerHTML = '';
+        renderQuestionPage(newQuestion())
 }
