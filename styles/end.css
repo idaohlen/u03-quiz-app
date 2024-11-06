@@ -1,35 +1,18 @@
 
-.result-main {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-}
-
-.result-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
 .result-list {
     height: 20rem;
-    overflow: scroll; 
+    overflow: scroll;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.result-item {
+.result-list__item {
     padding: 1rem 8rem;
     background-color: rgb(219, 216, 216);
 }
 
-.result-btn, .new-round-btn{
+.result-button,
+.restart-button {
     padding: 1rem 3rem;
 }
