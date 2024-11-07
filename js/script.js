@@ -14,11 +14,9 @@ const savedAnswers = [];
 function renderStartPage() {
   const categories = ["Blandat", "Sport", "Musik"];
 
-  const highscoreData = [
-    { score: "10p", date: "10/4/2024" },
-    { score: "10p", date: "10/4/2024" },
-  ];
+  const highscoreData = JSON.parse(localStorage.getItem("Highscore"));
 
+  console.log(highscoreData);
   // Create categories HTML
   let categoriesHTML = "";
   categories.forEach((category) => {
@@ -27,14 +25,16 @@ function renderStartPage() {
 
   // Create highscore HTML
   let highscoreHTML = "";
-  highscoreData.forEach((highscore) => {
-    highscoreHTML += `
+  if (highscoreData) {
+    highscoreData.forEach((highscore) => {
+      highscoreHTML += `
       <div class="highscore">
-        <div class="highscore__score">${highscore.score}</div>
-        <div class="highscore__date">${highscore.date}</div>
+        <div class="highscore__score">Highscore ${highscore.highscore}</div>
+        <div class="highscore__score">Highscore ${highscore.date}</div>
       </div>
     `;
-  });
+    });
+  }
 
   quizApp.innerHTML = `
     <h1>Quiz</h1>
@@ -103,19 +103,57 @@ function shuffleArray(array) {
 /* ------------------------------------------------ */
 
 function renderEndPage() {
+  let correctAnswersAmount = 0;
   let resultHTML = "";
-  console.log(questionsAnswers);
-  questionsAnswers.forEach((result) => {
-    resultHTML += `<div class="result-list__item">${result.text}</div>`;
+  let highScore = 0;
+
+  savedAnswers.forEach((result) => {
+    resultHTML += `<div class="result-list__item">${result.questionText}</div> 
+    <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
+    <div class="correct-answer">Korrekt svar: ${result.correctAnswer}</div>`;
+
+    if (result.selectedAnswer === result.correctAnswer) {
+      correctAnswersAmount++;
+      highScore += calculateScore(result.timeLeft);
+    }
   });
 
   quizApp.innerHTML = `
     <h1>Slutresultat</h1>
-    <p id="showScore" class="show-score">10 av 10 rätt!</p>
+    <p id="showScore" class="show-score">${correctAnswersAmount} av ${questionAmount} rätt</p>
+    <p class="high-score">Highscore ${highScore}🏆</p>
     <button id="resultButton" class="result-button">Visa resultat</button>
     <div id="resultContainer" class="result-list">${resultHTML}</div>
     <button id="restartButton" class="restart-button">Kör en ny omgång</button>
 `;
+  saveToLocalStorage(highScore);
+}
+
+function calculateScore(time) {
+  return Math.ceil(time) + 5;
+}
+
+function saveToLocalStorage(highscore) {
+  let currentHighscores = JSON.parse(localStorage.getItem("Highscore"));
+  console.log(new Date().toLocaleString());
+  const date = new Date().toLocaleString();
+
+  if (currentHighscores) {
+    const newEntry = {
+      highscore: highscore,
+      date: date,
+    };
+    currentHighscores.push(newEntry);
+    localStorage.setItem("Highscore", JSON.stringify(currentHighscores));
+  } else {
+    const newEntry = {
+      highscore: highscore,
+      date: date,
+    };
+    const newHighscores = [];
+    newHighscores.push(newEntry);
+    localStorage.setItem("Highscore", JSON.stringify(newHighscores));
+  }
 }
 
 /* ------------------------------------------------ */
