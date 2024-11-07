@@ -44,7 +44,6 @@ function renderStartPage() {
   `;
 }
 
-
 /* ------------------------------------------------ */
 // QUESTIONS PAGE
 /* ------------------------------------------------ */
@@ -57,14 +56,13 @@ function renderQuestionPage(question) {
 
   // Put correct answer + incorrect answers into an array
   const answers = [question.correctAnswer, ...question.incorrectAnswers];
-
-  // TODO: Randomize order of answers
+  shuffleArray(answers);
 
   let answersHTML = "";
 
   // Loop through the answers array and add an HTML element for each of them into the answersHTML variable
   for (let i = 0; i < answers.length; i++) {
-    answersHTML += `<input type="button" data-id="${question._id["$oid"]}" class="question__option" value="${answers[i]}">`;
+    answersHTML += `<input type="button" data-id="${question._id["$oid"]}" class="question__option"value="${answers[i]}">`;
   }
 
   // Add HTML content to the question wrapper
@@ -81,6 +79,12 @@ function renderQuestionPage(question) {
     .addEventListener("click", displayNextQuestion);
 }
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i >= 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 
 /* ------------------------------------------------ */
 // END PAGE
@@ -149,7 +153,6 @@ function generateQuestions (category, amount, questionList) {
   return generatedQuestions;
 };
 
-
 /* ------------------------------------------------ */
 // DISPLAY QUESTION
 /* ------------------------------------------------ */
@@ -174,6 +177,7 @@ function displayNextQuestion() {
 
 /* ------------------------------------------------ */
 // EVENT DELEGATOR
+
 /* ------------------------------------------------ */
 
 document.body.addEventListener('click', (e) => {
@@ -186,6 +190,8 @@ document.body.addEventListener('click', (e) => {
         allQuestions
       );
     renderQuestionPage(newQuestion());
+   } else if(e.target.id === "restartButton") {
+    renderStartPage();
    }
 });
 
