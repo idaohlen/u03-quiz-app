@@ -2,10 +2,11 @@ const quizApp = document.getElementById("app");
 
 let allQuestions;
 let selectedQuestions;
-let questionsAnswers=[];
+let questionsAnswers = [];
 const questionsFile = "./questionDataBase.questions.json";
 const chosenCategory = "";
 const questionAmount = 10;
+const savedAnswers = [];
 
 /* ------------------------------------------------ */
 // START PAGE
@@ -67,22 +68,35 @@ function renderQuestionPage(question) {
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
     <div id="questionText" class="question__text">${question.text}</div>
-    <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
-    <input type="button" class="next-button" id="nextButton" value="Nästa fråga">`;
+    <div id="optionsContainer" class="question__options-container">${answersHTML}</div>`;
 
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
-  document
-    .getElementById("nextButton")
-    .addEventListener("click", displayNextQuestion);
+  const questionOption = document.querySelectorAll(".question__option");
+  questionOption.forEach((option) =>
+    option.addEventListener("click", (e) => {
+      saveAnswer(question, e.target.value, 10);
+      displayNextQuestion();
+    })
+  );
+}
+
+function saveAnswer(question, answer, time) {
+  const answerEntry = {
+    questionText: question.text,
+    correctAnswer: question.correctAnswer,
+    selectedAnswer: answer,
+    timeLeft: time,
+  };
+  savedAnswers.push(answerEntry);
 }
 
 function shuffleArray(array) {
-    for (let i = array.length - 1; i >= 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
+  for (let i = array.length - 1; i >= 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
 
 /* ------------------------------------------------ */
@@ -105,7 +119,7 @@ function renderEndPage() {
 
   let resultHTML = "";
   console.log(questionsAnswers);
-    questionsAnswers.forEach((result) => {
+  questionsAnswers.forEach((result) => {
     resultHTML += `<div class="result-list__item">${result.text}</div>`;
   });
 
@@ -155,7 +169,7 @@ function generateQuestions(category, amount, questionList) {
     );
   }
   return generatedQuestions;
-};
+}
 
 /* ------------------------------------------------ */
 // DISPLAY QUESTION
@@ -193,12 +207,11 @@ document.body.addEventListener("click", (e) => {
       questionAmount,
       allQuestions
     );
-      questionsAnswers=[...selectedQuestions]
 
     renderQuestionPage(newQuestion());
-   } else if(e.target.id === "restartButton") {
+  } else if (e.target.id === "restartButton") {
     renderStartPage();
-   }
+  }
 });
 
 /* ------------------------------------------------ */
