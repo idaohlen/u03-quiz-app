@@ -6,106 +6,59 @@ const questionsFile = "./questionDataBase.questions.json";
 const chosenCategory = "Historia";
 const questionAmount = 10;
 
+
+/* ------------------------------------------------ */
+// START PAGE
+/* ------------------------------------------------ */
+
 function renderStartPage() {
-  //Head container for the startpage
-  const startPage = document.createElement("div");
-  startPage.id = "startpage";
-
-  //Container for the quiz-titel
-  const container = document.createElement("div");
-  container.id = "container";
-  container.classList.add("container");
-
-  const title = document.createElement("h1");
-  title.textContent = "Quiz";
-  container.appendChild(title);
-  startPage.appendChild(container);
-
-  const buttonContainer = document.createElement("div");
-  buttonContainer.id = "button-container";
-
   const categories = ["Djur", "Sport", "Musik"];
-  categories.forEach((category) => {
-    const categoryButton = document.createElement("button");
-    categoryButton.id = "button-container__button";
-    categoryButton.textContent = category;
-    buttonContainer.appendChild(categoryButton);
-  });
-  startPage.appendChild(buttonContainer);
-
-  const startButtonContainer = document.createElement("div");
-  startButtonContainer.className = "button-container";
-  const startButton = document.createElement("button");
-  startButton.id = "button-container__start";
-  startButton.className = "button-container__start";
-  startButton.textContent = "Start";
-
-  startButton.addEventListener("click", () => {
-    quizApp.removeChild(startPage);
-    selectedQuestions = generateQuestions(
-        chosenCategory,
-        questionAmount,
-        allQuestions
-      );
-    renderQuestionPage(newQuestion());
-
-      
-  });
-
-  startButtonContainer.appendChild(startButton);
-  startPage.appendChild(startButtonContainer);
-
-  // Highscore-sektionen
-  const highscoreSection = document.createElement("div");
-  highscoreSection.id = "highscore-section";
-  highscoreSection.className = "highscore-section";
-  const highscoreTitle = document.createElement("h2");
-  highscoreTitle.textContent = "Highscore";
-  highscoreSection.appendChild(highscoreTitle);
-
-  const highscoreTable = document.createElement("div");
-  highscoreTable.id = "highscore-table";
-  highscoreTable.className = "highscore-table";
-
-  const table = document.createElement("table");
-  highscoreTable.appendChild(table);
 
   const highscoreData = [
     { score: "10p", date: "10/4/2024" },
     { score: "10p", date: "10/4/2024" },
   ];
 
-  highscoreData.forEach((data) => {
-    const row = document.createElement("tr");
-    const scoreCell = document.createElement("td");
-    scoreCell.textContent = data.score;
-    const dateCell = document.createElement("td");
-    dateCell.textContent = data.date;
-    row.appendChild(scoreCell);
-    row.appendChild(dateCell);
-    table.appendChild(row);
+  // Create categories HTML
+  let categoriesHTML = "";
+  categories.forEach((category) => {
+    categoriesHTML += `<button class="category-button">${category}</button>`;
   });
 
-  highscoreTable.appendChild(table);
-  highscoreSection.appendChild(highscoreTable);
-  startPage.appendChild(highscoreSection);
+  // Create highscore HTML
+  let highscoreHTML = "";
+  highscoreData.forEach((highscore) => {
+    highscoreHTML += `
+      <div class="highscore">
+        <div class="highscore__score">${highscore.score}</div>
+        <div class="highscore__date">${highscore.date}</div>
+      </div>
+    `;
+  });
 
-  // Add the startPage div to body
-  quizApp.appendChild(startPage);
+  quizApp.innerHTML = `
+    <h1>Quiz</h1>
+    <div class="categories-container">${categoriesHTML}</div>
+    <div class="highscore-container">${highscoreHTML}</div>
+    <button class="start-button" id="startButton">Start Quiz</button>
+  `;
 }
-// QUESTIONS PAGE
 
-// Render the Question Page
+
+/* ------------------------------------------------ */
+// QUESTIONS PAGE
+/* ------------------------------------------------ */
+
 function renderQuestionPage(question) {
   // Create the question wrapper div
   const questionWrapper = document.createElement("div");
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
 
-  // TODO: Randomize order of answers
-
   // Put correct answer + incorrect answers into an array
   const answers = [question.correctAnswer, ...question.incorrectAnswers];
+
+  // TODO: Randomize order of answers
 
   let answersHTML = "";
 
@@ -114,55 +67,27 @@ function renderQuestionPage(question) {
     answersHTML += `<input type="button" data-id="${question._id["$oid"]}" class="question__option" value="${answers[i]}">`;
   }
 
-  // Add HTML content to the question wrapper:
-  //  - Question text
-  //  - Question options
-  //  - Next question button
+  // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
     <div id="questionText" class="question__text">${question.text}</div>
-
     <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
-
     <input type="button" class="next-button" id="nextButton" value="Nästa fråga">`;
 
+    // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
   document
     .getElementById("nextButton")
     .addEventListener("click", displayNextQuestion);
-
-  // Add the question wrapper div to the quiz app main container
 }
 
+
+/* ------------------------------------------------ */
+// END PAGE
+/* ------------------------------------------------ */
+
 function renderEndPage() {
-  const mainWrapper = document.createElement("main");
-  mainWrapper.className = "result-main";
-
-  const header = document.createElement("header");
-  header.className = "result-header";
-  mainWrapper.appendChild(header); // Append header to main
-
-  const h1Result = document.createElement("h1");
-  h1Result.textContent = "Slutresultat";
-  header.appendChild(h1Result); // Append h1 to header
-
-  const paragraph = document.createElement("p");
-  paragraph.textContent = "10 av 10 rätt!";
-  paragraph.id = "showScore";
-  paragraph.className = "show-score";
-  header.appendChild(paragraph); // Append p to header
-
-  const resultBtn = document.createElement("button");
-  resultBtn.textContent = "Visa resultat";
-  resultBtn.id = "resultBtn";
-  resultBtn.className = "result-btn";
-  header.appendChild(resultBtn); // Append result button to header
-
-  const resultList = document.createElement("ul");
-  resultList.className = "result-list";
-  resultList.id = "resultContainer";
-  // Create li element for each item
-  const resultItem = [
+  const results = [
     "Fråga 1",
     "Fråga 2",
     "Fråga 3",
@@ -174,29 +99,27 @@ function renderEndPage() {
     "Fråga 9",
     "Fråga 10",
   ];
-  resultItem.forEach((itemText) => {
-    const item = document.createElement("li");
-    item.textContent = itemText;
-    item.className = "result-item";
-    resultList.appendChild(item);
+
+  let resultHTML = "";
+  results.forEach((result) => {
+    resultHTML += `<div class="result-list__item">${result}</div>`;
   });
 
-  mainWrapper.appendChild(resultList); // Append UL list to main
-
-  const newRoundDiv = document.createElement("div");
-  newRoundDiv.className = "new-round";
-  mainWrapper.appendChild(newRoundDiv); // Append div to main
-
-  const newRoundBtn = document.createElement("button");
-  newRoundBtn.textContent = "Kör en ny omgång";
-  newRoundBtn.id = "newRoundBtn";
-  newRoundBtn.classList = "new-round-btn";
-  newRoundDiv.appendChild(newRoundBtn); // Append button to div
-
-  quizApp.appendChild(mainWrapper);
+  quizApp.innerHTML = `
+    <h1>Slutresultat</h1>
+    <p id="showScore" class="show-score">10 av 10 rätt!</p>
+    <button id="resultButton" class="result-button">Visa resultat</button>
+    <div id="resultContainer" class="result-list">${resultHTML}</div>
+    <button id="restartButton" class="restart-button">Kör en ny omgång</button>
+`;
 }
 
-const parseQuestions = async (fileName) => {
+
+/* ------------------------------------------------ */
+// PARSE QUESTIONS
+/* ------------------------------------------------ */
+
+async function parseQuestions(fileName) {
   try {
     const fileContent = await (await fetch(fileName)).json();
     return fileContent;
@@ -205,7 +128,7 @@ const parseQuestions = async (fileName) => {
   }
 };
 
-const generateQuestions = (category, amount, questionList) => {
+function generateQuestions (category, amount, questionList) {
   const categoryQuestions = questionList.filter((question) =>
     question.tags.includes(category)
   );
@@ -226,7 +149,10 @@ const generateQuestions = (category, amount, questionList) => {
   return generatedQuestions;
 };
 
+
+/* ------------------------------------------------ */
 // DISPLAY QUESTION
+/* ------------------------------------------------ */
 
 function newQuestion() {
   const question = selectedQuestions.pop();
@@ -245,6 +171,28 @@ function displayNextQuestion() {
     renderEndPage(); // No more questions, show the end page
   }
 }
+
+/* ------------------------------------------------ */
+// EVENT DELEGATOR
+/* ------------------------------------------------ */
+
+document.body.addEventListener('click', (e) => {
+  // Begin quiz when clicking the start button
+  if(e.target.id === "startButton") {
+    quizApp.innerHTML = "";
+    selectedQuestions = generateQuestions(
+        chosenCategory,
+        questionAmount,
+        allQuestions
+      );
+    renderQuestionPage(newQuestion());
+   }
+});
+
+
+/* ------------------------------------------------ */
+// RUN INITIAL CODE
+/* ------------------------------------------------ */
 
 renderStartPage();
 allQuestions = await parseQuestions(questionsFile);
