@@ -177,6 +177,7 @@ function displayNextQuestion() {
 
 /* ------------------------------------------------ */
 // EVENT DELEGATOR
+
 /* ------------------------------------------------ */
 
 document.body.addEventListener('click', (e) => {
@@ -189,6 +190,8 @@ document.body.addEventListener('click', (e) => {
         allQuestions
       );
     renderQuestionPage(newQuestion());
+   } else if(e.target.id === "restartButton") {
+    renderStartPage();
    }
 });
 
