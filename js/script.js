@@ -39,7 +39,6 @@ function renderStartPage() {
     <h1>Quiz</h1>
     <div class="categories-container">${categoriesHTML}</div>
     <div class="highscore-container">${highscoreHTML}</div>
-    <button class="start-button" id="startButton">Start Quiz</button>
   `;
 }
 
@@ -126,7 +125,7 @@ async function parseQuestions(fileName) {
 
 function generateQuestions(category, amount, questionList) {
   let categoryQuestions;
-  if (category !== "") {
+  if (category !== "Blandat") {
     categoryQuestions = questionList.filter((question) =>
       question.tags.includes(category)
     );
@@ -185,8 +184,8 @@ document.body.addEventListener("click", (e) => {
       questionAmount,
       allQuestions
     );
+    renderQuestionPage(newQuestion());
   }
-  renderQuestionPage(newQuestion());
 });
 
 /* ------------------------------------------------ */
