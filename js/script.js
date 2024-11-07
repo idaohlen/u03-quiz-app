@@ -3,16 +3,15 @@ const quizApp = document.getElementById("app");
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const chosenCategory = "Historia";
+const chosenCategory = "";
 const questionAmount = 10;
-
 
 /* ------------------------------------------------ */
 // START PAGE
 /* ------------------------------------------------ */
 
 function renderStartPage() {
-  const categories = ["Djur", "Sport", "Musik"];
+  const categories = ["Blandat", "Sport", "Musik"];
 
   const highscoreData = [
     { score: "10p", date: "10/4/2024" },
@@ -44,7 +43,6 @@ function renderStartPage() {
   `;
 }
 
-
 /* ------------------------------------------------ */
 // QUESTIONS PAGE
 /* ------------------------------------------------ */
@@ -73,14 +71,13 @@ function renderQuestionPage(question) {
     <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
     <input type="button" class="next-button" id="nextButton" value="Nästa fråga">`;
 
-    // Add the question wrapper div to the quiz app container
+  // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
   document
     .getElementById("nextButton")
     .addEventListener("click", displayNextQuestion);
 }
-
 
 /* ------------------------------------------------ */
 // END PAGE
@@ -114,7 +111,6 @@ function renderEndPage() {
 `;
 }
 
-
 /* ------------------------------------------------ */
 // PARSE QUESTIONS
 /* ------------------------------------------------ */
@@ -126,12 +122,17 @@ async function parseQuestions(fileName) {
   } catch (e) {
     throw new Error(`HTTP ERROR STATUS ${fileContent.status}`);
   }
-};
+}
 
-function generateQuestions (category, amount, questionList) {
-  const categoryQuestions = questionList.filter((question) =>
-    question.tags.includes(category)
-  );
+function generateQuestions(category, amount, questionList) {
+  let categoryQuestions;
+  if (category !== "") {
+    categoryQuestions = questionList.filter((question) =>
+      question.tags.includes(category)
+    );
+  } else {
+    categoryQuestions = questionList;
+  }
 
   if (categoryQuestions.length < amount)
     throw new Error(
@@ -147,8 +148,7 @@ function generateQuestions (category, amount, questionList) {
     );
   }
   return generatedQuestions;
-};
-
+}
 
 /* ------------------------------------------------ */
 // DISPLAY QUESTION
@@ -176,19 +176,18 @@ function displayNextQuestion() {
 // EVENT DELEGATOR
 /* ------------------------------------------------ */
 
-document.body.addEventListener('click', (e) => {
-  // Begin quiz when clicking the start button
-  if(e.target.id === "startButton") {
+document.body.addEventListener("click", (e) => {
+  // Begin quiz when clicking the category
+  if (e.target.className === "category-button") {
     quizApp.innerHTML = "";
     selectedQuestions = generateQuestions(
-        chosenCategory,
-        questionAmount,
-        allQuestions
-      );
-    renderQuestionPage(newQuestion());
-   }
+      e.target.innerHTML,
+      questionAmount,
+      allQuestions
+    );
+  }
+  renderQuestionPage(newQuestion());
 });
-
 
 /* ------------------------------------------------ */
 // RUN INITIAL CODE
