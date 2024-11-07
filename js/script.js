@@ -2,6 +2,7 @@ const quizApp = document.getElementById("app");
 
 let allQuestions;
 let selectedQuestions;
+let questionsAnswers=[];
 const questionsFile = "./questionDataBase.questions.json";
 const chosenCategory = "Historia";
 const questionAmount = 10;
@@ -105,8 +106,9 @@ function renderEndPage() {
   ];
 
   let resultHTML = "";
-  results.forEach((result) => {
-    resultHTML += `<div class="result-list__item">${result}</div>`;
+  console.log(questionsAnswers);
+    questionsAnswers.forEach((result) => {
+    resultHTML += `<div class="result-list__item">${result.text}</div>`;
   });
 
   quizApp.innerHTML = `
@@ -189,6 +191,8 @@ document.body.addEventListener('click', (e) => {
         questionAmount,
         allQuestions
       );
+      questionsAnswers=[...selectedQuestions]
+
     renderQuestionPage(newQuestion());
    } else if(e.target.id === "restartButton") {
     renderStartPage();
