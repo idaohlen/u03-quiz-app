@@ -2,7 +2,6 @@ const quizApp = document.getElementById("app");
 
 let allQuestions;
 let selectedQuestions;
-let questionsAnswers = [];
 const questionsFile = "./questionDataBase.questions.json";
 const chosenCategory = "";
 const questionAmount = 10;
@@ -104,19 +103,6 @@ function shuffleArray(array) {
 /* ------------------------------------------------ */
 
 function renderEndPage() {
-  const results = [
-    "Fråga 1",
-    "Fråga 2",
-    "Fråga 3",
-    "Fråga 4",
-    "Fråga 5",
-    "Fråga 6",
-    "Fråga 7",
-    "Fråga 8",
-    "Fråga 9",
-    "Fråga 10",
-  ];
-
   let resultHTML = "";
   console.log(questionsAnswers);
   questionsAnswers.forEach((result) => {
