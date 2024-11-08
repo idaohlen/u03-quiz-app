@@ -9,6 +9,7 @@ let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
 const questionAmount = 10;
 const savedAnswers = [];
+let timerInterval;
 
 /* ------------------------------------------------ */
 // START PAGE
@@ -77,10 +78,7 @@ function renderQuestionPage(question) {
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
 
-  const timer = 10000;
 
-  startTimer()
-  
 
 
   // Put correct answer + incorrect answers into an array
@@ -95,7 +93,9 @@ function renderQuestionPage(question) {
     if (i === 1) answerLetter = "B";
     else if (i === 2) answerLetter = "C";
 
-    answersHTML += `<div data-id="${question._id["$oid"]}" data-answer="${answers[i]}" class="question__option">
+    answersHTML += `
+    
+    <div data-id="${question._id["$oid"]}" data-answer="${answers[i]}" class="question__option">
       <div class="question__answer-letter">${answerLetter}</div>
       <div class="question__answer-text">${answers[i]}</div>
     </div>`;
@@ -103,6 +103,12 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
+
+    <div id="progressBar">
+    <div id="barStatus"></div>
+  </div>
+
+     <div id="timer" class="timer"> </div>
     <div id="questionText" class="question__text slideTextIn">${question.text}</div>
     <div id="optionsContainer" class="question__options-container">${answersHTML}</div>`;
 
@@ -119,6 +125,9 @@ function renderQuestionPage(question) {
     })
     addSlideIn(option, index)
 });
+
+startTimer()
+
 }
 
 function addSlideOut(questionOptions) {
@@ -136,13 +145,20 @@ function addSlideIn(option, index) {
 }
 function startTimer() {
   let timer = 10000;
-  //setInterval(progressTimer, 10);
+  const timerDiv = document.getElementById("timer")
+  const progressBar = document.getElementById("barStatus");
+
+  timerInterval = setInterval(progressTimer, 10);
   function progressTimer() {
-    console.log(timer)
-    if(timer > 0) {
+    if(timer >= 0) {
       timer -= 10;
+      timerDiv.innerHTML = Math.ceil(timer/1000);
+      progressBar.style.width = (timer/100) + '%'; 
     }
-    else console.log( "timer is done");
+    else {
+      
+      displayNextQuestion();
+    }
   }
 }
 
@@ -217,6 +233,7 @@ function newQuestion() {
 }
 
 function displayNextQuestion() {
+  clearInterval(timerInterval);
   const currentQuestion = document.getElementById("questionWrapper");
   if (currentQuestion) {
     quizApp.removeChild(currentQuestion);
