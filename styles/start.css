@@ -60,7 +60,7 @@ h2 {
     /* -webkit-text-fill-color: transparent; */
 }
 
-.categories-mixed-button {
+.categories-mixed-button, .highscore-button {
     width: fit-content;
     margin-inline: auto;
     margin-top: 1.5rem;

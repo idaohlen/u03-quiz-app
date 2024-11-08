@@ -28,3 +28,24 @@ body {
     align-items: center;
     text-align: center;
 }
+
+#dialog {
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+}
+
+#dialogContent {
+    padding: 3rem;
+}
+
+::backdrop {
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.3);
+} 
+
+#closeHighscoreButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
