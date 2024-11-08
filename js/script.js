@@ -1,6 +1,8 @@
 import { calculateScore, shuffleArray, saveToLocalStorage, saveAnswer, getHighscoreData } from "./utils.js";
 
 const quizApp = document.getElementById("app");
+const dialog = document.getElementById("dialog");
+const dialogContent = document.getElementById("dialogContent");
 
 let allQuestions;
 let selectedQuestions;
@@ -22,9 +24,6 @@ function renderStartPage() {
     {name: "Språk", icon: "icon-chat"},
   ];
 
-  const highscoreData = getHighscoreData();
-  console.log(highscoreData)
-
   // Create categories HTML
   let categoriesHTML = "";
   categories.forEach((category) => {
@@ -34,9 +33,21 @@ function renderStartPage() {
     </button>`;
   });
 
-  // Create highscore HTML
-  let highscoreHTML = "";
-  if (highscoreData) {
+  quizApp.innerHTML = `
+    <h1>Quiz</h1>
+    <div class="categories-container">
+    ${categoriesHTML}
+    <button class="categories-mixed-button" data-id="Blandat"><div class="categories-mixed-button__text">Blandade frågor</div> <i class="icon icon-shuffle"></i></button>
+    <button class="highscore-button" id="highscoreButton"><div class="highscore-button__text">Top 10 Highscores</div></button>
+    
+    </div>
+  `;
+}
+
+function displayHighscoreModal () {
+  const highscoreData = getHighscoreData();
+  let highscoreHTML = `<button id="closeHighscoreButton">X</button>`;
+  if (highscoreData) { 
     highscoreData.forEach((highscore) => {
       highscoreHTML += `
       <div class="highscore">
@@ -46,20 +57,15 @@ function renderStartPage() {
     `;
     });
   }
+  dialogContent.innerHTML = highscoreHTML;
+  dialog.showModal();
 
-  quizApp.innerHTML = `
-    <h1>Quiz</h1>
-    <div class="categories-container">
-    ${categoriesHTML}
-    <button class="categories-mixed-button" data-id="Blandat">
-    <div class="categories-mixed-button__text">Blandade frågor</div> 
-    <i class="icon icon-shuffle"></i>
-    </button>
-    </div>
-
-    <div class="highscore-container">${highscoreHTML}</div>
-  `;
 }
+
+function closeHighscoreModal () {
+  dialog.close();
+}
+
 
 /* ------------------------------------------------ */
 // QUESTIONS PAGE
@@ -91,22 +97,37 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-    <div id="questionText" class="question__text">${question.text}</div>
+    <div id="questionText" class="question__text slideTextIn">${question.text}</div>
     <div id="optionsContainer" class="question__options-container">${answersHTML}</div>`;
 
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
   const questionOption = document.querySelectorAll(".question__option");
-  questionOption.forEach((option) =>
+  questionOption.forEach((option, index) => {
     option.addEventListener("click", (e) => {
+      addSlideOut(questionOption)
       savedAnswers.push(saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), 10));
-      displayNextQuestion();
+      setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000)
+      setTimeout(displayNextQuestion, 2000);
     })
-  );
+    addSlideIn(option, index)
+});
 }
 
+function addSlideOut(questionOptions) {
+  const delay = 200;
+  questionOptions.forEach((option, index) => {
+    setTimeout(() => option.classList.add("slideOut"), delay * index);
+  });
+}
 
+function addSlideIn(option, index) {
+  const delay = 200;
+  setTimeout(() => {
+    option.classList.add("slideIn");
+  }, delay * index);
+}
 
 /* ------------------------------------------------ */
 // END PAGE
@@ -114,26 +135,13 @@ function renderQuestionPage(question) {
 
 function renderEndPage() {
   let correctAnswersAmount = 0;
-  let resultHTML = "";
   let highScore = 0;
-
-  savedAnswers.forEach((result) => {
-    resultHTML += `<div class="result-list__item">${result.questionText}</div> 
-    <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
-    <div class="correct-answer">Korrekt svar: ${result.correctAnswer}</div>`;
-
-    if (result.selectedAnswer === result.correctAnswer) {
-      correctAnswersAmount++;
-      highScore += calculateScore(result.timeLeft);
-    }
-  });
 
   quizApp.innerHTML = `
     <h1>Slutresultat</h1>
     <p id="showScore" class="show-score">${correctAnswersAmount} av ${questionAmount} rätt</p>
     <p class="high-score">Highscore ${highScore}🏆</p>
     <button id="resultButton" class="result-button">Visa resultat</button>
-    <div id="resultContainer" class="result-list">${resultHTML}</div>
     <button id="restartButton" class="restart-button">Kör en ny omgång</button>
 `;
   saveToLocalStorage(highScore);
@@ -204,6 +212,28 @@ function displayNextQuestion() {
 }
 
 /* ------------------------------------------------ */
+// RESULT FUNCTION
+/* ------------------------------------------------ */
+
+function showResult () {
+    let resultHTML = `<button id="closeHighscoreButton">X</button>`;
+    savedAnswers.forEach((result) => {
+        resultHTML += `<div class="result-list__item">${result.questionText}</div> 
+        <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
+        <div class="correct-answer">Korrekt svar: ${result.correctAnswer}</div>`;
+    
+        if (result.selectedAnswer === result.correctAnswer) {
+          correctAnswersAmount++;
+          highScore += calculateScore(result.timeLeft);
+        }
+      });
+    dialogContent.innerHTML = resultHTML;
+    dialog.showModal();
+
+
+}
+
+/* ------------------------------------------------ */
 // EVENT DELEGATOR
 
 /* ------------------------------------------------ */
@@ -223,7 +253,15 @@ document.body.addEventListener("click", (e) => {
   } else if (e.target.id === "restartButton") {
     renderStartPage();
     savedAnswers.splice(0)
-  } 
+  } else if (e.target.closest("#highscoreButton")) {
+    displayHighscoreModal();
+  } else if (e.target.closest("#closeHighscoreButton")) {
+    closeHighscoreModal();
+
+  } else if (e.target.id === "resultButton"){
+    showResult()
+
+    }
 });
 
 /* ------------------------------------------------ */

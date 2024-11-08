@@ -8,6 +8,7 @@
     width: 75%;
     text-align: center;
     gap: 1rem;
+
 }
 
 .question__text {
@@ -19,6 +20,7 @@
     text-shadow: 1px 1px 4px var(--body-text-shadow);
     background: var(--shadow);
     border-radius: 6px;
+    transition: transform 0.5s ease;
 }
 
 .question__options-container {
@@ -41,14 +43,15 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    transition: all .4s;
+    transform: translateX(-120%); 
+    transition: transform 0.5s ease; 
 
     &:hover {
-        cursor: pointer;
-        outline-color: var(--border);
-        transform: translateX(1.5rem);
-        box-shadow: -1.5rem 0 10px 5px var(--shadow);
-    }
+      cursor: pointer;
+      outline-color: var(--border);
+      transform: translateX(1.5rem);
+      box-shadow: -1.5rem 0 10px 5px var(--shadow);
+  }
 }
 
 .question__answer-letter {
@@ -63,14 +66,70 @@
     flex-shrink: 0;
 }
 
+.question__option:hover {
+    border-color: #D462C3;
+}
+
 .question__option:nth-child(2) {
-    --border: #2162ad;
-    --letter-bg: #3784dc;
-    --letter-text: white;
+  --border: #2162ad;
+  --letter-bg: #3784dc;
+  --letter-text: white;
 }
 
 .question__option:nth-child(3) {
-    --border: #06779d;
-    --letter-bg: #0BA1B8;
-    --letter-text: white;
+  --border: #06779d;
+  --letter-bg: #0BA1B8;
+  --letter-text: white;
+}
+
+.slideIn {
+  animation: slideFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideOut {
+  animation: slideToRight 1s ease-in-out forwards;
+}
+
+@keyframes slideToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.slideTextIn {
+  animation: slideToMid 1s ease-in-out forwards;
+}
+
+@keyframes slideToMid {
+  0% {
+    transform: translateY(-50vh);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.slideTextOut {
+  animation: slideToBottom 1s ease-in-out forwards;
+}
+
+@keyframes slideToBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
