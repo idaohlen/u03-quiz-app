@@ -68,6 +68,12 @@ function renderQuestionPage(question) {
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
 
+  const timer = 10000;
+
+  startTimer()
+  
+
+
   // Put correct answer + incorrect answers into an array
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
 
@@ -98,7 +104,7 @@ function renderQuestionPage(question) {
   questionOption.forEach((option, index) => {
     option.addEventListener("click", (e) => {
       addSlideOut(questionOption)
-      savedAnswers.push(saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), 10));
+      savedAnswers.push(saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer/1000)));
       setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000)
       setTimeout(displayNextQuestion, 2000);
     })
@@ -119,6 +125,18 @@ function addSlideIn(option, index) {
     option.classList.add("slideIn");
   }, delay * index);
 }
+function startTimer() {
+  let timer = 10000;
+  //setInterval(progressTimer, 10);
+  function progressTimer() {
+    console.log(timer)
+    if(timer > 0) {
+      timer -= 10;
+    }
+    else console.log( "timer is done");
+  }
+}
+
 
 /* ------------------------------------------------ */
 // END PAGE
