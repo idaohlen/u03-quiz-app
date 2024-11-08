@@ -7,7 +7,7 @@ const dialogContent = document.getElementById("dialogContent");
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 10;
+const questionAmount = 1;
 const savedAnswers = [];
 
 /* ------------------------------------------------ */
