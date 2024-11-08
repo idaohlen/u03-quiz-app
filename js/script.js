@@ -135,26 +135,13 @@ function addSlideIn(option, index) {
 
 function renderEndPage() {
   let correctAnswersAmount = 0;
-  let resultHTML = "";
   let highScore = 0;
-
-  savedAnswers.forEach((result) => {
-    resultHTML += `<div class="result-list__item">${result.questionText}</div> 
-    <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
-    <div class="correct-answer">Korrekt svar: ${result.correctAnswer}</div>`;
-
-    if (result.selectedAnswer === result.correctAnswer) {
-      correctAnswersAmount++;
-      highScore += calculateScore(result.timeLeft);
-    }
-  });
 
   quizApp.innerHTML = `
     <h1>Slutresultat</h1>
     <p id="showScore" class="show-score">${correctAnswersAmount} av ${questionAmount} rätt</p>
     <p class="high-score">Highscore ${highScore}🏆</p>
     <button id="resultButton" class="result-button">Visa resultat</button>
-    <div id="resultContainer" class="result-list">${resultHTML}</div>
     <button id="restartButton" class="restart-button">Kör en ny omgång</button>
 `;
   saveToLocalStorage(highScore);
@@ -225,6 +212,28 @@ function displayNextQuestion() {
 }
 
 /* ------------------------------------------------ */
+// RESULT FUNCTION
+/* ------------------------------------------------ */
+
+function showResult () {
+    let resultHTML = `<button id="closeHighscoreButton">X</button>`;
+    savedAnswers.forEach((result) => {
+        resultHTML += `<div class="result-list__item">${result.questionText}</div> 
+        <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
+        <div class="correct-answer">Korrekt svar: ${result.correctAnswer}</div>`;
+    
+        if (result.selectedAnswer === result.correctAnswer) {
+          correctAnswersAmount++;
+          highScore += calculateScore(result.timeLeft);
+        }
+      });
+    dialogContent.innerHTML = resultHTML;
+    dialog.showModal();
+
+
+}
+
+/* ------------------------------------------------ */
 // EVENT DELEGATOR
 
 /* ------------------------------------------------ */
@@ -248,7 +257,12 @@ document.body.addEventListener("click", (e) => {
     displayHighscoreModal();
   } else if (e.target.closest("#closeHighscoreButton")) {
     closeHighscoreModal();
-}});
+
+  } else if (e.target.id === "resultButton"){
+    showResult()
+
+    }
+});
 
 /* ------------------------------------------------ */
 // RUN INITIAL CODE
