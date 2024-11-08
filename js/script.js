@@ -1,9 +1,10 @@
+import { calculateScore, shuffleArray, saveToLocalStorage, saveAnswer } from "./utils.js";
+
 const quizApp = document.getElementById("app");
 
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const chosenCategory = "";
 const questionAmount = 10;
 const savedAnswers = [];
 
@@ -23,7 +24,6 @@ function renderStartPage() {
 
   const highscoreData = JSON.parse(localStorage.getItem("Highscore"));
 
-  console.log(highscoreData);
   // Create categories HTML
   let categoriesHTML = "";
   categories.forEach((category) => {
@@ -39,8 +39,8 @@ function renderStartPage() {
     highscoreData.forEach((highscore) => {
       highscoreHTML += `
       <div class="highscore">
-        <div class="highscore__score">Highscore ${highscore.highscore}</div>
-        <div class="highscore__score">Highscore ${highscore.date}</div>
+        <div class="highscore__score">Highscore: ${highscore.highscore}</div>
+        <div class="highscore__score">Date: ${highscore.date}</div>
       </div>
     `;
     });
@@ -68,8 +68,7 @@ function renderQuestionPage(question) {
   questionWrapper.classList.add("question");
 
   // Put correct answer + incorrect answers into an array
-  const answers = [question.correctAnswer, ...question.incorrectAnswers];
-  shuffleArray(answers);
+  const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
 
   let answersHTML = "";
 
@@ -80,7 +79,7 @@ function renderQuestionPage(question) {
     if (i === 1) answerLetter = "B";
     else if (i === 2) answerLetter = "C";
 
-    answersHTML += `<div data-id="${question._id["$oid"]}" class="question__option">
+    answersHTML += `<div data-id="${question._id["$oid"]}" data-answer="${answers[i]}" class="question__option">
       <div class="question__answer-letter">${answerLetter}</div>
       <div class="question__answer-text">${answers[i]}</div>
     </div>`;
@@ -97,28 +96,13 @@ function renderQuestionPage(question) {
   const questionOption = document.querySelectorAll(".question__option");
   questionOption.forEach((option) =>
     option.addEventListener("click", (e) => {
-      saveAnswer(question, e.target.value, 10);
+      savedAnswers.push(saveAnswer(question, e.target.getAttribute("data-answer"), 10));
       displayNextQuestion();
     })
   );
 }
 
-function saveAnswer(question, answer, time) {
-  const answerEntry = {
-    questionText: question.text,
-    correctAnswer: question.correctAnswer,
-    selectedAnswer: answer,
-    timeLeft: time,
-  };
-  savedAnswers.push(answerEntry);
-}
 
-function shuffleArray(array) {
-  for (let i = array.length - 1; i >= 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
 
 /* ------------------------------------------------ */
 // END PAGE
@@ -151,32 +135,8 @@ function renderEndPage() {
   saveToLocalStorage(highScore);
 }
 
-function calculateScore(time) {
-  return Math.ceil(time) + 5;
-}
 
-function saveToLocalStorage(highscore) {
-  let currentHighscores = JSON.parse(localStorage.getItem("Highscore"));
-  console.log(new Date().toLocaleString());
-  const date = new Date().toLocaleString();
 
-  if (currentHighscores) {
-    const newEntry = {
-      highscore: highscore,
-      date: date,
-    };
-    currentHighscores.push(newEntry);
-    localStorage.setItem("Highscore", JSON.stringify(currentHighscores));
-  } else {
-    const newEntry = {
-      highscore: highscore,
-      date: date,
-    };
-    const newHighscores = [];
-    newHighscores.push(newEntry);
-    localStorage.setItem("Highscore", JSON.stringify(newHighscores));
-  }
-}
 
 /* ------------------------------------------------ */
 // PARSE QUESTIONS
@@ -246,11 +206,11 @@ function displayNextQuestion() {
 
 document.body.addEventListener("click", (e) => {
   // Begin quiz when clicking the category
-  if (e.target.className === "category-button" ||
-    e.target.getAttribute("data-id") === "Blandat") {
+  if (e.target.closest(".category-button")  ||  e.target.closest(".categories-mixed-button")?.getAttribute("data-id") === "Blandat") {
     quizApp.innerHTML = "";
+    const chosenCategory = e.target.closest(".category-button")?.getAttribute("data-id") || "Blandat";
     selectedQuestions = generateQuestions(
-      e.target.getAttribute("data-id"),
+      chosenCategory,
       questionAmount,
       allQuestions
     );
