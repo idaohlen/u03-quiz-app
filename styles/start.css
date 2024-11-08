@@ -88,10 +88,11 @@ h2 {
     justify-content: center;
     gap: 1rem;
     transition: all .4s;
+    outline: 3px solid transparent;
 
     &:hover {
-        background: red;
-        transform: scale(1.1) translate(1rem, -1rem);
+        outline-color: var(--category-color-2);
+        transform: scale(1.1);
     }
 }
 
@@ -113,7 +114,27 @@ h2 {
     --category-color-2: #EC4DE0;
 }
 
+.category-movies {
+    --category-color-1: #6B79FF;
+    --category-color-2: #D61BFF;
+}
+
+.category-literature {
+    --category-color-1: #FFB832;
+    --category-color-2: #FF5E5D;
+}
+
+.category-geography {
+    --category-color-1: #05BCEF;
+    --category-color-2: #2EE657;
+}
+
 .category-history {
-    --category-color-1: #FE987E;
-    --category-color-2: #EC4DE0;
+    --category-color-1: #07C1DA;
+    --category-color-2: #295DED;
+}
+
+.category-languages {
+    --category-color-1: #48E6E4;
+    --category-color-2: #E74EEA;
 }

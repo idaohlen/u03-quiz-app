@@ -51,9 +51,12 @@ function renderStartPage() {
     <h1>Quiz</h1>
     <div class="categories-container">
     ${categoriesHTML}
-    <button class="categories-mixed-button" data-id="Blandat"><div class="categories-mixed-button__text">Blandade frågor</div> <i class="icon icon-shuffle"></i></button>
+    <button class="categories-mixed-button" data-id="Blandat">
+    <div class="categories-mixed-button__text">Blandade frågor</div> 
+    <i class="icon icon-shuffle"></i>
+    </button>
     </div>
-    
+
     <div class="highscore-container">${highscoreHTML}</div>
   `;
 }

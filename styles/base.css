@@ -1,8 +1,9 @@
 :root {
-    --body-bg-1: #3E8FF3;
-    --body-bg-2: #3EF1C1;
+    --body-bg-1: #45D0FF;
+    --body-bg-2: #FF67E3;
     --body-text: black;
     --body-text-shadow: rgba(0, 17, 116, 0.527);
+    --shadow: rgba(92, 87, 199, 0.5);
     --category-color-primary: #D462C3;
     --category-color-1: #FE987E;
     --category-color-2: #EC4DE0;
