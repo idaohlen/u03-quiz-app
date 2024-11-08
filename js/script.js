@@ -5,7 +5,7 @@ const quizApp = document.getElementById("app");
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 10;
+const questionAmount = 1;
 const savedAnswers = [];
 
 /* ------------------------------------------------ */
@@ -201,6 +201,16 @@ function displayNextQuestion() {
 }
 
 /* ------------------------------------------------ */
+// RESULT FUNCTION
+/* ------------------------------------------------ */
+
+function showResult () {
+    const resultList = document.getElementById("resultContainer");
+    resultList.classList.toggle("show-result")
+
+}
+
+/* ------------------------------------------------ */
 // EVENT DELEGATOR
 
 /* ------------------------------------------------ */
@@ -221,6 +231,9 @@ document.body.addEventListener("click", (e) => {
     renderStartPage();
     savedAnswers.splice(0)
   } 
+  else if (e.target.id === "resultButton") {
+    showResult();
+  }
 });
 
 /* ------------------------------------------------ */
