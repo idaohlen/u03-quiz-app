@@ -88,22 +88,37 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-    <div id="questionText" class="question__text">${question.text}</div>
+    <div id="questionText" class="question__text slideTextIn">${question.text}</div>
     <div id="optionsContainer" class="question__options-container">${answersHTML}</div>`;
 
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
   const questionOption = document.querySelectorAll(".question__option");
-  questionOption.forEach((option) =>
+  questionOption.forEach((option, index) => {
     option.addEventListener("click", (e) => {
+      addSlideOut(questionOption)
       savedAnswers.push(saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), 10));
-      displayNextQuestion();
+      setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000)
+      setTimeout(displayNextQuestion, 2000);
     })
-  );
+    addSlideIn(option, index)
+});
 }
 
+function addSlideOut(questionOptions) {
+  const delay = 200;
+  questionOptions.forEach((option, index) => {
+    setTimeout(() => option.classList.add("slideOut"), delay * index);
+  });
+}
 
+function addSlideIn(option, index) {
+  const delay = 200;
+  setTimeout(() => {
+    option.classList.add("slideIn");
+  }, delay * index);
+}
 
 /* ------------------------------------------------ */
 // END PAGE

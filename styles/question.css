@@ -8,6 +8,7 @@
     width: 75%;
     text-align: center;
     gap: 1rem;
+
 }
 
 .question__text {
@@ -16,7 +17,8 @@
     padding: 2rem;
     color: white;
     text-shadow: 1px 1px 4px rgb(0, 17, 116);
-    
+    transition: transform 0.5s ease; 
+     
 }
 
 .next-button {
@@ -61,6 +63,9 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    transform: translateX(-120%); 
+    transition: transform 0.5s ease; 
+    
 }
 
 .question__answer-letter {
@@ -74,7 +79,54 @@
     justify-content: center;
     flex-shrink: 0;
 }
+.slideIn {
+    animation: slideFromLeft 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .slideOut {
+    animation: slideToRight 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideToRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
 
-.question__option:hover {
-    border-color: #D462C3;
-}
+  .slideTextIn {
+    animation: slideToMid 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideToMid {
+    0% {
+      transform: translateY(-50vh);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  .slideTextOut {
+    animation: slideToBottom 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideToBottom {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
