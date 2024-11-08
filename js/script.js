@@ -12,7 +12,14 @@ const savedAnswers = [];
 /* ------------------------------------------------ */
 
 function renderStartPage() {
-  const categories = ["Blandat", "Sport", "Musik"];
+  const categories = [
+    {name: "Musik", icon: "icon-music"},
+    {name: "TV & Film", icon: "icon-movies"},
+    {name: "Litteratur", icon: "icon-literature"},
+    {name: "Geografi", icon: "icon-world"},
+    {name: "Historia", icon: "icon-hourglass"},
+    {name: "Språk", icon: "icon-chat"},
+  ];
 
   const highscoreData = JSON.parse(localStorage.getItem("Highscore"));
 
@@ -20,7 +27,10 @@ function renderStartPage() {
   // Create categories HTML
   let categoriesHTML = "";
   categories.forEach((category) => {
-    categoriesHTML += `<button class="category-button">${category}</button>`;
+    categoriesHTML += `<button class="category-button" data-id="${category.name}">
+    <i class="category-icon ${category.icon}"></i>
+    ${category.name}
+    </button>`;
   });
 
   // Create highscore HTML
@@ -38,7 +48,11 @@ function renderStartPage() {
 
   quizApp.innerHTML = `
     <h1>Quiz</h1>
-    <div class="categories-container">${categoriesHTML}</div>
+    <div class="categories-container">
+    ${categoriesHTML}
+    <button class="categories-mixed-button" data-id="Blandat"><div class="categories-mixed-button__text">Blandade frågor</div> <i class="icon icon-shuffle"></i></button>
+    </div>
+    
     <div class="highscore-container">${highscoreHTML}</div>
   `;
 }
@@ -59,9 +73,17 @@ function renderQuestionPage(question) {
 
   let answersHTML = "";
 
+
   // Loop through the answers array and add an HTML element for each of them into the answersHTML variable
   for (let i = 0; i < answers.length; i++) {
-    answersHTML += `<input type="button" data-id="${question._id["$oid"]}" class="question__option"value="${answers[i]}">`;
+    let answerLetter = "A";
+    if (i === 1) answerLetter = "B";
+    else if (i === 2) answerLetter = "C";
+
+    answersHTML += `<div data-id="${question._id["$oid"]}" class="question__option">
+      <div class="question__answer-letter">${answerLetter}</div>
+      <div class="question__answer-text">${answers[i]}</div>
+    </div>`;
   }
 
   // Add HTML content to the question wrapper
@@ -224,10 +246,11 @@ function displayNextQuestion() {
 
 document.body.addEventListener("click", (e) => {
   // Begin quiz when clicking the category
-  if (e.target.className === "category-button") {
+  if (e.target.className === "category-button" ||
+    e.target.getAttribute("data-id") === "Blandat") {
     quizApp.innerHTML = "";
     selectedQuestions = generateQuestions(
-      e.target.innerHTML,
+      e.target.getAttribute("data-id"),
       questionAmount,
       allQuestions
     );
