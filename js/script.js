@@ -1,4 +1,4 @@
-import { calculateScore, shuffleArray, saveToLocalStorage, saveAnswer } from "./utils.js";
+import { calculateScore, shuffleArray, saveToLocalStorage, saveAnswer, getHighscoreData } from "./utils.js";
 
 const quizApp = document.getElementById("app");
 
@@ -22,7 +22,8 @@ function renderStartPage() {
     {name: "Språk", icon: "icon-chat"},
   ];
 
-  const highscoreData = JSON.parse(localStorage.getItem("Highscore"));
+  const highscoreData = getHighscoreData();
+  console.log(highscoreData)
 
   // Create categories HTML
   let categoriesHTML = "";
@@ -96,7 +97,7 @@ function renderQuestionPage(question) {
   const questionOption = document.querySelectorAll(".question__option");
   questionOption.forEach((option) =>
     option.addEventListener("click", (e) => {
-      savedAnswers.push(saveAnswer(question, e.target.getAttribute("data-answer"), 10));
+      savedAnswers.push(saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), 10));
       displayNextQuestion();
     })
   );
@@ -218,7 +219,8 @@ document.body.addEventListener("click", (e) => {
     renderQuestionPage(newQuestion());
   } else if (e.target.id === "restartButton") {
     renderStartPage();
-  }
+    savedAnswers.splice(0)
+  } 
 });
 
 /* ------------------------------------------------ */

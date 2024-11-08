@@ -3,7 +3,7 @@ export function calculateScore(time) {
 }
 
 export function shuffleArray(array) {
-    let shuffledArray = [...array]
+  let shuffledArray = [...array];
   for (let i = shuffledArray.length - 1; i >= 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
@@ -35,12 +35,19 @@ export function saveToLocalStorage(highscore) {
 }
 
 export function saveAnswer(question, answer, time) {
-    const answerEntry = {
-      questionText: question.text,
-      correctAnswer: question.correctAnswer,
-      selectedAnswer: answer,
-      timeLeft: time,
-    };
-    return answerEntry
-  }
+  const answerEntry = {
+    questionText: question.text,
+    correctAnswer: question.correctAnswer,
+    selectedAnswer: answer,
+    timeLeft: time,
+  };
+  return answerEntry;
+}
+
+export function getHighscoreData() {
+  const savedHsData = JSON.parse(localStorage.getItem("Highscore")) || [];
   
+  const sortedData = savedHsData.sort((a, b) => b.highscore - a.highscore);
+
+  return sortedData.slice(0, 5);
+}
