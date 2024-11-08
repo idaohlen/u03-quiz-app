@@ -1,7 +1,7 @@
 h1 {
     font-size: 7rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 17, 116, 0.527);
+    text-shadow: 2px 2px 4px var(--body-text-shadow);
 }
 
 h2 {
@@ -42,7 +42,7 @@ h2 {
     font-family: inherit;
     font-size: 1.3rem;
     font-weight: 650;
-    color: #234280;
+    color: var(--category-icon-text);
     border: none;
     border-radius: 5px;
     background-color: white;
@@ -51,10 +51,21 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    outline: 3px solid transparent;
+    transition: all .3s;
+
+    &:hover {
+        transform: scale(1.1);
+        outline-color: var(--category-color-2);
+        box-shadow: 0 10px 20px 3px rgba(28, 10, 101, 0.308);
+    }
 }
 
 .category-icon {
-    background: linear-gradient(#FE987E, #EC4DE0);
+    background: linear-gradient(
+        var(--category-color-1),
+        var(--category-color-2)
+    );
     font-size: 4rem;
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
@@ -76,6 +87,12 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    transition: all .4s;
+
+    &:hover {
+        background: red;
+        transform: scale(1.1) translate(1rem, -1rem);
+    }
 }
 
 .categories-mixed-button__text {
@@ -84,6 +101,19 @@ h2 {
 
 .categories-mixed-button .icon {
     /* margin-left: auto; */
-    background: linear-gradient(#FE987E, #EC4DE0);
+    background: linear-gradient(
+        var(--category-color-1),
+        var(--category-color-2)
+        );
     font-size: 3rem;
+}
+
+.category-music {
+    --category-color-1: #FE987E;
+    --category-color-2: #EC4DE0;
+}
+
+.category-history {
+    --category-color-1: #FE987E;
+    --category-color-2: #EC4DE0;
 }

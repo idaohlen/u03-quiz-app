@@ -1,3 +1,13 @@
+:root {
+    --body-bg-1: #3E8FF3;
+    --body-bg-2: #3EF1C1;
+    --body-text: black;
+    --body-text-shadow: rgba(0, 17, 116, 0.527);
+    --category-color-1: #FE987E;
+    --category-color-2: #EC4DE0;
+    --category-icon-text: #234280;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -15,7 +25,12 @@ html {
 
 body {
     font-size: 1.6rem;
-    background: linear-gradient(135deg, #3E8FF3, #3EF1C1);
+    color: var(--body-text);
+    background: linear-gradient(
+        135deg,
+        var(--body-bg-1),
+        var(--body-bg-2)
+    );
     background-attachment: fixed;
 }
 
