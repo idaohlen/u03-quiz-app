@@ -51,11 +51,21 @@ function renderStartPage() {
     <div class="categories-container">
     ${categoriesHTML}
     <button class="categories-mixed-button" data-id="Blandat"><div class="categories-mixed-button__text">Blandade frågor</div> <i class="icon icon-shuffle"></i></button>
+    <button class="highscore-button" id="highscoreButton"><div class="highscore-button__text">Top 10 Highscores</div></button>
+    
     </div>
     
     <div class="highscore-container">${highscoreHTML}</div>
   `;
 }
+
+function displayHighscoreModal () {
+  const dialog = document.createElement("dialog");
+  document.body.append(dialog);
+  dialog.showModal();
+
+}
+displayHighscoreModal () 
 
 /* ------------------------------------------------ */
 // QUESTIONS PAGE
@@ -218,8 +228,9 @@ document.body.addEventListener("click", (e) => {
     renderQuestionPage(newQuestion());
   } else if (e.target.id === "restartButton") {
     renderStartPage();
-  }
-});
+  } else if (e.target.id === "highscoreButton") {
+    displayHighscoreModal();
+}});
 
 /* ------------------------------------------------ */
 // RUN INITIAL CODE
