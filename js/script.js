@@ -1,6 +1,8 @@
 import { calculateScore, shuffleArray, saveToLocalStorage, saveAnswer, getHighscoreData } from "./utils.js";
 
 const quizApp = document.getElementById("app");
+const dialog = document.getElementById("dialog");
+const dialogContent = document.getElementById("dialogContent");
 
 let allQuestions;
 let selectedQuestions;
@@ -22,9 +24,6 @@ function renderStartPage() {
     {name: "Språk", icon: "icon-chat"},
   ];
 
-  const highscoreData = getHighscoreData();
-  console.log(highscoreData)
-
   // Create categories HTML
   let categoriesHTML = "";
   categories.forEach((category) => {
@@ -34,9 +33,21 @@ function renderStartPage() {
     </button>`;
   });
 
-  // Create highscore HTML
-  let highscoreHTML = "";
-  if (highscoreData) {
+  quizApp.innerHTML = `
+    <h1>Quiz</h1>
+    <div class="categories-container">
+    ${categoriesHTML}
+    <button class="categories-mixed-button" data-id="Blandat"><div class="categories-mixed-button__text">Blandade frågor</div> <i class="icon icon-shuffle"></i></button>
+    <button class="highscore-button" id="highscoreButton"><div class="highscore-button__text">Top 10 Highscores</div></button>
+    
+    </div>
+  `;
+}
+
+function displayHighscoreModal () {
+  const highscoreData = getHighscoreData();
+  let highscoreHTML = `<button id="closeHighscoreButton">X</button>`;
+  if (highscoreData) { 
     highscoreData.forEach((highscore) => {
       highscoreHTML += `
       <div class="highscore">
@@ -46,17 +57,15 @@ function renderStartPage() {
     `;
     });
   }
+  dialogContent.innerHTML = highscoreHTML;
+  dialog.showModal();
 
-  quizApp.innerHTML = `
-    <h1>Quiz</h1>
-    <div class="categories-container">
-    ${categoriesHTML}
-    <button class="categories-mixed-button" data-id="Blandat"><div class="categories-mixed-button__text">Blandade frågor</div> <i class="icon icon-shuffle"></i></button>
-    </div>
-    
-    <div class="highscore-container">${highscoreHTML}</div>
-  `;
 }
+
+function closeHighscoreModal () {
+  dialog.close();
+}
+
 
 /* ------------------------------------------------ */
 // QUESTIONS PAGE
@@ -235,8 +244,11 @@ document.body.addEventListener("click", (e) => {
   } else if (e.target.id === "restartButton") {
     renderStartPage();
     savedAnswers.splice(0)
-  } 
-});
+  } else if (e.target.closest("#highscoreButton")) {
+    displayHighscoreModal();
+  } else if (e.target.closest("#closeHighscoreButton")) {
+    closeHighscoreModal();
+}});
 
 /* ------------------------------------------------ */
 // RUN INITIAL CODE
