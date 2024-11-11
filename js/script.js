@@ -10,6 +10,8 @@ const questionsFile = "./questionDataBase.questions.json";
 const questionAmount = 10;
 const savedAnswers = [];
 let timerInterval;
+let timer = 10000;
+
 
 let correctAnswersAmount = 0;
 let highScore = 0;
@@ -85,9 +87,6 @@ function renderQuestionPage(question) {
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
 
-
-
-
   // Put correct answer + incorrect answers into an array
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
 
@@ -124,14 +123,20 @@ function renderQuestionPage(question) {
 
   const questionOption = document.querySelectorAll(".question__option");
   questionOption.forEach((option, index) => {
-    option.addEventListener("click", (e) => {
-      addSlideOut(questionOption)
-      savedAnswers.push(saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer/1000)));
-      setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000)
+    const handleClick = (e) => {
+      addSlideOut(questionOption);
+      savedAnswers.push(
+        saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer / 1000))
+      );
+  
+      option.removeEventListener("click", handleClick);
+  
+      setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
       setTimeout(displayNextQuestion, 2000);
-    })
-    addSlideIn(option, index)
-});
+    };
+    option.addEventListener("click", handleClick);
+    addSlideIn(option, index);
+  });
 
 startTimer()
 
@@ -151,7 +156,7 @@ function addSlideIn(option, index) {
   }, delay * index);
 }
 function startTimer() {
-  let timer = 10000;
+  timer = 10000;
   const timerDiv = document.getElementById("timer")
   const progressBar = document.getElementById("barStatus");
 
