@@ -120,7 +120,6 @@ function renderQuestionPage(question) {
   const questionOption = document.querySelectorAll(".question__option");
   questionOption.forEach((option, index) => {
     const handleClick = (e) => {
-      console.log(timer);
       addSlideOut(questionOption);
       savedAnswers.push(
         saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer / 1000))
@@ -131,11 +130,7 @@ function renderQuestionPage(question) {
       setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
       setTimeout(displayNextQuestion, 2000);
     };
-  
-    // Add the event listener to each option
     option.addEventListener("click", handleClick);
-  
-    // Add slide-in effect
     addSlideIn(option, index);
   });
 
