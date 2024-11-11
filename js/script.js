@@ -26,18 +26,18 @@ function renderStartPage() {
   highScore = 0;
 
   const categories = [
-    {name: "Musik", icon: "icon-music"},
-    {name: "TV & Film", icon: "icon-movies"},
-    {name: "Litteratur", icon: "icon-literature"},
-    {name: "Geografi", icon: "icon-world"},
-    {name: "Historia", icon: "icon-hourglass"},
-    {name: "Språk", icon: "icon-chat"},
+    {name: "Musik", icon: "icon-music", class: "category-music"},
+    {name: "TV & Film", icon: "icon-movies", class: "category-movies"},
+    {name: "Litteratur", icon: "icon-literature", class: "category-literature"},
+    {name: "Geografi", icon: "icon-world", class: "category-geography"},
+    {name: "Historia", icon: "icon-hourglass", class: "category-history"},
+    {name: "Språk", icon: "icon-chat", class: "category-languages"},
   ];
 
   // Create categories HTML
   let categoriesHTML = "";
   categories.forEach((category) => {
-    categoriesHTML += `<button class="category-button" data-id="${category.name}">
+    categoriesHTML += `<button class="category-button ${category.class}" data-id="${category.name}">
     <i class="category-icon ${category.icon}"></i>
     ${category.name}
     </button>`;
