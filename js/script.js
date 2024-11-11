@@ -9,12 +9,20 @@ let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
 const questionAmount = 10;
 const savedAnswers = [];
+let timerInterval;
+
+let correctAnswersAmount = 0;
+let highScore = 0;
 
 /* ------------------------------------------------ */
 // START PAGE
 /* ------------------------------------------------ */
 
 function renderStartPage() {
+  savedAnswers.splice(0);
+  correctAnswersAmount = 0;
+  highScore = 0;
+
   const categories = [
     {name: "Musik", icon: "icon-music"},
     {name: "TV & Film", icon: "icon-movies"},
@@ -44,7 +52,7 @@ function renderStartPage() {
   `;
 }
 
-function displayHighscoreModal () {
+function displayHighscoreModal() {
   const highscoreData = getHighscoreData();
   let highscoreHTML = `<button id="closeHighscoreButton">X</button>`;
   if (highscoreData) { 
@@ -62,7 +70,7 @@ function displayHighscoreModal () {
 
 }
 
-function closeHighscoreModal () {
+function closeHighscoreModal() {
   dialog.close();
 }
 
@@ -77,6 +85,9 @@ function renderQuestionPage(question) {
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
 
+
+
+
   // Put correct answer + incorrect answers into an array
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
 
@@ -89,7 +100,9 @@ function renderQuestionPage(question) {
     if (i === 1) answerLetter = "B";
     else if (i === 2) answerLetter = "C";
 
-    answersHTML += `<div data-id="${question._id["$oid"]}" data-answer="${answers[i]}" class="question__option">
+    answersHTML += `
+    
+    <div data-id="${question._id["$oid"]}" data-answer="${answers[i]}" class="question__option">
       <div class="question__answer-letter">${answerLetter}</div>
       <div class="question__answer-text">${answers[i]}</div>
     </div>`;
@@ -97,6 +110,12 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
+
+    <div id="progressBar">
+    <div id="barStatus"></div>
+  </div>
+
+     <div id="timer" class="timer"> </div>
     <div id="questionText" class="question__text slideTextIn">${question.text}</div>
     <div id="optionsContainer" class="question__options-container">${answersHTML}</div>`;
 
@@ -107,12 +126,15 @@ function renderQuestionPage(question) {
   questionOption.forEach((option, index) => {
     option.addEventListener("click", (e) => {
       addSlideOut(questionOption)
-      savedAnswers.push(saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), 10));
+      savedAnswers.push(saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer/1000)));
       setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000)
       setTimeout(displayNextQuestion, 2000);
     })
     addSlideIn(option, index)
 });
+
+startTimer()
+
 }
 
 function addSlideOut(questionOptions) {
@@ -128,14 +150,37 @@ function addSlideIn(option, index) {
     option.classList.add("slideIn");
   }, delay * index);
 }
+function startTimer() {
+  let timer = 10000;
+  const timerDiv = document.getElementById("timer")
+  const progressBar = document.getElementById("barStatus");
+
+  timerInterval = setInterval(progressTimer, 10);
+  function progressTimer() {
+    if(timer >= 0) {
+      timer -= 10;
+      timerDiv.innerHTML = Math.ceil(timer/1000);
+      progressBar.style.width = (timer/100) + '%'; 
+    }
+    else {
+      
+      displayNextQuestion();
+    }
+  }
+}
+
 
 /* ------------------------------------------------ */
 // END PAGE
 /* ------------------------------------------------ */
 
 function renderEndPage() {
-  let correctAnswersAmount = 0;
-  let highScore = 0;
+  savedAnswers.forEach((result) => {
+    if (result.selectedAnswer === result.correctAnswer) {
+      correctAnswersAmount++;
+      highScore += calculateScore(result.timeLeft);
+    }
+  });
 
   quizApp.innerHTML = `
     <h1>Slutresultat</h1>
@@ -146,8 +191,6 @@ function renderEndPage() {
 `;
   saveToLocalStorage(highScore);
 }
-
-
 
 
 /* ------------------------------------------------ */
@@ -199,6 +242,7 @@ function newQuestion() {
 }
 
 function displayNextQuestion() {
+  clearInterval(timerInterval);
   const currentQuestion = document.getElementById("questionWrapper");
   if (currentQuestion) {
     quizApp.removeChild(currentQuestion);
@@ -212,30 +256,24 @@ function displayNextQuestion() {
 }
 
 /* ------------------------------------------------ */
-// RESULT FUNCTION
+// RESULTS
 /* ------------------------------------------------ */
 
-function showResult () {
+function showResult() {
     let resultHTML = `<button id="closeHighscoreButton">X</button>`;
     savedAnswers.forEach((result) => {
-        resultHTML += `<div class="result-list__item">${result.questionText}</div> 
+        resultHTML += `<div class="result-list__item">${result.questionText}</div>
         <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
         <div class="correct-answer">Korrekt svar: ${result.correctAnswer}</div>`;
-    
-        if (result.selectedAnswer === result.correctAnswer) {
-          correctAnswersAmount++;
-          highScore += calculateScore(result.timeLeft);
-        }
       });
+
     dialogContent.innerHTML = resultHTML;
     dialog.showModal();
-
-
 }
+
 
 /* ------------------------------------------------ */
 // EVENT DELEGATOR
-
 /* ------------------------------------------------ */
 
 document.body.addEventListener("click", (e) => {
@@ -252,7 +290,6 @@ document.body.addEventListener("click", (e) => {
     renderQuestionPage(newQuestion());
   } else if (e.target.id === "restartButton") {
     renderStartPage();
-    savedAnswers.splice(0)
   } else if (e.target.closest("#highscoreButton")) {
     displayHighscoreModal();
   } else if (e.target.closest("#closeHighscoreButton")) {
