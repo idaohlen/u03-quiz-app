@@ -61,7 +61,7 @@ function renderStartPage() {
 
 function displayHighscore() {
   const highscoreData = getHighscoreData();
-  let highscoreHTML = `<button id="closeModalButton">X</button>`;
+  let highscoreHTML = `<button id="closeModalButton"><i class="icon-close"></i></button>`;
   if (highscoreData) { 
     highscoreData.forEach((highscore) => {
       highscoreHTML += `
@@ -277,7 +277,7 @@ function displayNextQuestion() {
 /* ------------------------------------------------ */
 
 function showResult() {
-    let resultHTML = `<button id="closeModalButton">X</button>`;
+    let resultHTML = `<button id="closeModalButton"><i class="icon-close"></i></button>`;
     savedAnswers.forEach((result) => {
         resultHTML += `<div class="result-list__item">${result.questionText}</div>
         <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
