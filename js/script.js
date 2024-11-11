@@ -4,6 +4,15 @@ const quizApp = document.getElementById("app");
 const dialog = document.getElementById("dialog");
 const dialogContent = document.getElementById("dialogContent");
 
+const categories = [
+  {name: "Musik", icon: "icon-music", class: "category-music"},
+  {name: "TV & Film", icon: "icon-movies", class: "category-movies"},
+  {name: "Litteratur", icon: "icon-literature", class: "category-literature"},
+  {name: "Geografi", icon: "icon-world", class: "category-geography"},
+  {name: "Historia", icon: "icon-hourglass", class: "category-history"},
+  {name: "Språk", icon: "icon-chat", class: "category-languages"},
+];
+
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
@@ -11,7 +20,7 @@ const questionAmount = 10;
 const savedAnswers = [];
 let timerInterval;
 let timer = 10000;
-
+let currentCategory;
 
 let correctAnswersAmount = 0;
 let highScore = 0;
@@ -24,15 +33,6 @@ function renderStartPage() {
   savedAnswers.splice(0);
   correctAnswersAmount = 0;
   highScore = 0;
-
-  const categories = [
-    {name: "Musik", icon: "icon-music", class: "category-music"},
-    {name: "TV & Film", icon: "icon-movies", class: "category-movies"},
-    {name: "Litteratur", icon: "icon-literature", class: "category-literature"},
-    {name: "Geografi", icon: "icon-world", class: "category-geography"},
-    {name: "Historia", icon: "icon-hourglass", class: "category-history"},
-    {name: "Språk", icon: "icon-chat", class: "category-languages"},
-  ];
 
   // Create categories HTML
   let categoriesHTML = "";
@@ -115,11 +115,14 @@ function renderQuestionPage(question) {
   questionWrapper.innerHTML = `
 
     <div id="progressBar">
-    <div id="barStatus"></div>
-  </div>
+      <div id="barStatus"></div>
+    </div>
+    <div id="timer" class="timer"></div>
 
-     <div id="timer" class="timer"> </div>
-    <div id="questionText" class="question__text slideTextIn">${question.text}</div>
+    <div id="questionText" class="question__text slideTextIn">
+      ${question.text}
+    <i class="question__bg-icon ${findCategoryByName(currentCategory)?.icon}"></i>
+    </div>
     <div id="optionsContainer" class="question__options-container">${answersHTML}</div>`;
 
   // Add the question wrapper div to the quiz app container
@@ -142,8 +145,7 @@ function renderQuestionPage(question) {
     addSlideIn(option, index);
   });
 
-startTimer()
-
+  startTimer();
 }
 
 function addSlideOut(questionOptions) {
@@ -159,6 +161,7 @@ function addSlideIn(option, index) {
     option.classList.add("slideIn");
   }, delay * index);
 }
+
 function startTimer() {
   timer = 10000;
   const timerDiv = document.getElementById("timer")
@@ -172,12 +175,14 @@ function startTimer() {
       progressBar.style.width = (timer/100) + '%'; 
     }
     else {
-      
       displayNextQuestion();
     }
   }
 }
 
+function findCategoryByName(name) {
+  return categories.find(category => category.name === name);
+}
 
 /* ------------------------------------------------ */
 // END PAGE
@@ -295,6 +300,8 @@ document.body.addEventListener("click", (e) => {
       questionAmount,
       allQuestions
     );
+
+    currentCategory = chosenCategory;
 
     renderQuestionPage(newQuestion());
   } else if (e.target.id === "restartButton") {

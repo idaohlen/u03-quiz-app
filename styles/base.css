@@ -9,6 +9,7 @@
     --category-color-2: #EC4DE0;
     --category-icon-text: white;
     --category-icon-text-hover: #234280;
+    --question-bg-icon: rgba(0, 17, 116, 0.256);
 }
 
 *, *::before, *::after {
