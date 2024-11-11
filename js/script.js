@@ -13,11 +13,18 @@ let timerInterval;
 let timer = 10000;
 
 
+let correctAnswersAmount = 0;
+let highScore = 0;
+
 /* ------------------------------------------------ */
 // START PAGE
 /* ------------------------------------------------ */
 
 function renderStartPage() {
+  savedAnswers.splice(0);
+  correctAnswersAmount = 0;
+  highScore = 0;
+
   const categories = [
     {name: "Musik", icon: "icon-music"},
     {name: "TV & Film", icon: "icon-movies"},
@@ -47,7 +54,7 @@ function renderStartPage() {
   `;
 }
 
-function displayHighscoreModal () {
+function displayHighscoreModal() {
   const highscoreData = getHighscoreData();
   let highscoreHTML = `<button id="closeHighscoreButton">X</button>`;
   if (highscoreData) { 
@@ -65,7 +72,7 @@ function displayHighscoreModal () {
 
 }
 
-function closeHighscoreModal () {
+function closeHighscoreModal() {
   dialog.close();
 }
 
@@ -173,8 +180,12 @@ function startTimer() {
 /* ------------------------------------------------ */
 
 function renderEndPage() {
-  let correctAnswersAmount = 0;
-  let highScore = 0;
+  savedAnswers.forEach((result) => {
+    if (result.selectedAnswer === result.correctAnswer) {
+      correctAnswersAmount++;
+      highScore += calculateScore(result.timeLeft);
+    }
+  });
 
   quizApp.innerHTML = `
     <h1>Slutresultat</h1>
@@ -185,8 +196,6 @@ function renderEndPage() {
 `;
   saveToLocalStorage(highScore);
 }
-
-
 
 
 /* ------------------------------------------------ */
@@ -252,30 +261,24 @@ function displayNextQuestion() {
 }
 
 /* ------------------------------------------------ */
-// RESULT FUNCTION
+// RESULTS
 /* ------------------------------------------------ */
 
-function showResult () {
+function showResult() {
     let resultHTML = `<button id="closeHighscoreButton">X</button>`;
     savedAnswers.forEach((result) => {
-        resultHTML += `<div class="result-list__item">${result.questionText}</div> 
+        resultHTML += `<div class="result-list__item">${result.questionText}</div>
         <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
         <div class="correct-answer">Korrekt svar: ${result.correctAnswer}</div>`;
-    
-        if (result.selectedAnswer === result.correctAnswer) {
-          correctAnswersAmount++;
-          highScore += calculateScore(result.timeLeft);
-        }
       });
+
     dialogContent.innerHTML = resultHTML;
     dialog.showModal();
-
-
 }
+
 
 /* ------------------------------------------------ */
 // EVENT DELEGATOR
-
 /* ------------------------------------------------ */
 
 document.body.addEventListener("click", (e) => {
@@ -292,7 +295,6 @@ document.body.addEventListener("click", (e) => {
     renderQuestionPage(newQuestion());
   } else if (e.target.id === "restartButton") {
     renderStartPage();
-    savedAnswers.splice(0)
   } else if (e.target.closest("#highscoreButton")) {
     displayHighscoreModal();
   } else if (e.target.closest("#closeHighscoreButton")) {
