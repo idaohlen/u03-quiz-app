@@ -7,7 +7,8 @@
     --category-color-primary: #D462C3;
     --category-color-1: #FE987E;
     --category-color-2: #EC4DE0;
-    --category-icon-text: #234280;
+    --category-icon-text: white;
+    --category-icon-text-hover: #234280;
 }
 
 *, *::before, *::after {
@@ -49,24 +50,6 @@ body {
     overflow: hidden;
 }
 
-.waves {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: 
-  url("../img/wave-pink.svg"),
-  url("../img/wave-pink.svg"),
-  url("../img/wave-pink.svg");
-  background-repeat: repeat-x;
-  background-size: 1600px 50%;
-  background-position: 0 130%, -50px 130%, 500px 130%;
-  animation: 20s waves linear infinite forwards;
-  opacity: .5;
-}
-
 #dialog {
     margin: auto;
     border: none;
@@ -86,6 +69,54 @@ body {
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+
+.category-music {
+  --category-color-1: #FE987E;
+  --category-color-2: #EC4DE0;
+}
+
+.category-movies {
+  --category-color-1: #6B79FF;
+  --category-color-2: #D61BFF;
+}
+
+.category-literature {
+  --category-color-1: #FFB832;
+  --category-color-2: #FF5E5D;
+}
+
+.category-geography {
+  --category-color-1: #05BCEF;
+  --category-color-2: #2EE657;
+}
+
+.category-history {
+  --category-color-1: #07C1DA;
+  --category-color-2: #295DED;
+}
+
+.category-languages {
+  --category-color-1: #48E6E4;
+  --category-color-2: #E74EEA;
+}
+
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: 
+  url("../img/wave-pink.svg"),
+  url("../img/wave-pink.svg"),
+  url("../img/wave-pink.svg");
+  background-repeat: repeat-x;
+  background-size: 1600px 50%;
+  background-position: 0 130%, -50px 130%, 500px 130%;
+  animation: 20s waves linear infinite forwards;
+  opacity: .5;
 }
 
 @keyframes waves {

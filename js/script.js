@@ -47,9 +47,14 @@ function renderStartPage() {
     <h1>Quiz</h1>
     <div class="categories-container">
     ${categoriesHTML}
-    <button class="categories-mixed-button" data-id="Blandat"><div class="categories-mixed-button__text">Blandade frågor</div> <i class="icon icon-shuffle"></i></button>
-    <button class="highscore-button" id="highscoreButton"><div class="highscore-button__text">Top 10 Highscores</div></button>
-    
+    <button class="categories-mixed-button" data-id="Blandat">
+      <div class="categories-mixed-button__text">Blandade frågor</div> 
+      <i class="icon icon-shuffle"></i>
+    </button>
+    <button class="highscore-button" id="highscoreButton">
+      <div class="highscore-button__text">Top 10 Highscores</div>
+      <i class="icon icon-trophy"></i>
+    </button>
     </div>
   `;
 }
@@ -69,7 +74,6 @@ function displayHighscoreModal() {
   }
   dialogContent.innerHTML = highscoreHTML;
   dialog.showModal();
-
 }
 
 function closeHighscoreModal() {
