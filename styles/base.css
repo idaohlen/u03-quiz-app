@@ -26,6 +26,8 @@ html {
 }
 
 body {
+  position: relative;
+
     font-size: 1.6rem;
     color: var(--body-text);
     background: linear-gradient(
@@ -47,6 +49,24 @@ body {
     overflow: hidden;
 }
 
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: 
+  url("../img/wave-pink.svg"),
+  url("../img/wave-pink.svg"),
+  url("../img/wave-pink.svg");
+  background-repeat: repeat-x;
+  background-size: 1600px 50%;
+  background-position: 0 130%, -50px 130%, 500px 130%;
+  animation: 20s waves linear infinite forwards;
+  opacity: .5;
+}
+
 #dialog {
     margin: auto;
     border: none;
@@ -66,4 +86,10 @@ body {
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+
+@keyframes waves {
+  to {
+    background-position: 1600px 130%, 3150px 130%, 5300px 130%;
+  }
 }
