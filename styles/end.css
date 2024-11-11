@@ -12,14 +12,11 @@
     background-color: rgb(219, 216, 216);
 }
 
-.result-button,
-.restart-button {
-    padding: 1rem 3rem;
-    border-radius: 20px;
-    margin-top: 1rem;
-    border-color: #3E8FF3;
-}
-
-.show-result{
-    visibility: visible;
+.button-container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 20rem;
 }

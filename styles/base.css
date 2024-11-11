@@ -7,7 +7,11 @@
     --category-color-primary: #D462C3;
     --category-color-1: #FE987E;
     --category-color-2: #EC4DE0;
-    --category-icon-text: #234280;
+    --category-icon-text: white;
+    --category-icon-text-hover: #234280;
+    --question-bg-icon: rgba(0, 17, 116, 0.114);
+    --close-modal-text: rgb(133, 140, 165);
+    --close-modal-text-hover: rgb(58, 63, 79);
 }
 
 *, *::before, *::after {
@@ -26,6 +30,8 @@ html {
 }
 
 body {
+  position: relative;
+
     font-size: 1.6rem;
     color: var(--body-text);
     background: linear-gradient(
@@ -47,6 +53,8 @@ body {
     overflow: hidden;
 }
 
+/* Dialog modal */
+
 #dialog {
     margin: auto;
     border: none;
@@ -62,8 +70,120 @@ body {
     background-color: rgb(0, 0, 0, 0.3);
 } 
 
-#closeHighscoreButton {
+#closeModalButton {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    color: var(--close-modal-text);
+    transition: all .4s;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--close-modal-text-hover);
+    }
+}
+
+/* Buttons */
+
+.button {
+  width: 100%;
+  margin-inline: auto;
+  padding: 1rem;
+  padding-left: 1.4rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  grid-column: 1 / -1;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all .4s;
+  outline: 3px solid transparent;
+  
+  .icon {
+    font-size: 3rem;
+  }
+
+  &:hover {
+      cursor: pointer;
+      outline-color: var(--category-color-2);
+      transform: scale(1.1);
+  }
+}
+
+.button:has(.icon) {
+  justify-content: space-between;
+}
+
+.button.button--dark {
+  color: white;
+  background: rgba(107, 49, 135, 0.605);
+
+  &:hover {
+    outline-color: white;
+  }
+}
+
+/* Category colors */
+
+.category-music {
+  --category-color-1: #FE987E;
+  --category-color-2: #EC4DE0;
+}
+
+.category-movies {
+  --category-color-1: #6B79FF;
+  --category-color-2: #D61BFF;
+}
+
+.category-literature {
+  --category-color-1: #FFB832;
+  --category-color-2: #FF5E5D;
+}
+
+.category-geography {
+  --category-color-1: #05BCEF;
+  --category-color-2: #2EE657;
+}
+
+.category-history {
+  --category-color-1: #07C1DA;
+  --category-color-2: #295DED;
+}
+
+.category-languages {
+  --category-color-1: #48E6E4;
+  --category-color-2: #E74EEA;
+}
+
+/* Waves */
+
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: 
+  url("../img/wave-pink.svg"),
+  url("../img/wave-pink.svg"),
+  url("../img/wave-pink.svg");
+  background-repeat: repeat-x;
+  background-size: 1600px 50%;
+  background-position: 0 130%, -50px 130%, 500px 130%;
+  animation: 20s waves linear infinite forwards;
+  opacity: .5;
+}
+
+@keyframes waves {
+  to {
+    background-position: 1600px 130%, 3150px 130%, 5300px 130%;
+  }
 }
