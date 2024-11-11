@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 10;
+const questionAmount = 1;
 const savedAnswers = [];
 let timerInterval;
 let timer = 10000;
@@ -47,21 +47,21 @@ function renderStartPage() {
     <h1>Quiz</h1>
     <div class="categories-container">
     ${categoriesHTML}
-    <button class="categories-mixed-button" data-id="Blandat">
-      <div class="categories-mixed-button__text">Blandade frågor</div> 
+    <button class="button categories-mixed-button" data-id="Blandat">
+      <div class="button__text">Blandade frågor</div> 
       <i class="icon icon-shuffle"></i>
     </button>
-    <button class="highscore-button" id="highscoreButton">
-      <div class="highscore-button__text">Top 10 Highscores</div>
+    <button class="button button--dark highscore-button" id="highscoreButton">
+      <div class="button__text">Top 10 Highscores</div>
       <i class="icon icon-trophy"></i>
     </button>
     </div>
   `;
 }
 
-function displayHighscoreModal() {
+function displayHighscore() {
   const highscoreData = getHighscoreData();
-  let highscoreHTML = `<button id="closeHighscoreButton">X</button>`;
+  let highscoreHTML = `<button id="closeModalButton">X</button>`;
   if (highscoreData) { 
     highscoreData.forEach((highscore) => {
       highscoreHTML += `
@@ -76,7 +76,7 @@ function displayHighscoreModal() {
   dialog.showModal();
 }
 
-function closeHighscoreModal() {
+function closeModal() {
   dialog.close();
 }
 
@@ -113,11 +113,12 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-
-    <div id="progressBar">
-      <div id="barStatus"></div>
+    <div class="timer-container">
+      <div id="progressBar">
+        <div id="barStatus"></div>
+      </div>
+      <div id="timer" class="timer"></div>
     </div>
-    <div id="timer" class="timer"></div>
 
     <div id="questionText" class="question__text slideTextIn">
       ${question.text}
@@ -200,8 +201,10 @@ function renderEndPage() {
     <h1>Slutresultat</h1>
     <p id="showScore" class="show-score">${correctAnswersAmount} av ${questionAmount} rätt</p>
     <p class="high-score">Highscore ${highScore}🏆</p>
-    <button id="resultButton" class="result-button">Visa resultat</button>
-    <button id="restartButton" class="restart-button">Kör en ny omgång</button>
+    <div class="button-container">
+      <button id="resultButton" class="button result-button">Visa resultat</button>
+      <button id="restartButton" class="button button--dark restart-button">Kör en ny omgång</button>
+    </div>
 `;
   saveToLocalStorage(highScore);
 }
@@ -274,7 +277,7 @@ function displayNextQuestion() {
 /* ------------------------------------------------ */
 
 function showResult() {
-    let resultHTML = `<button id="closeHighscoreButton">X</button>`;
+    let resultHTML = `<button id="closeModalButton">X</button>`;
     savedAnswers.forEach((result) => {
         resultHTML += `<div class="result-list__item">${result.questionText}</div>
         <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
@@ -307,13 +310,12 @@ document.body.addEventListener("click", (e) => {
   } else if (e.target.id === "restartButton") {
     renderStartPage();
   } else if (e.target.closest("#highscoreButton")) {
-    displayHighscoreModal();
-  } else if (e.target.closest("#closeHighscoreButton")) {
-    closeHighscoreModal();
+    displayHighscore();
+  } else if (e.target.closest("#closeModalButton")) {
+    closeModal();
 
   } else if (e.target.id === "resultButton"){
-    showResult()
-
+    showResult();
     }
 });
 

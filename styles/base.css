@@ -9,7 +9,7 @@
     --category-color-2: #EC4DE0;
     --category-icon-text: white;
     --category-icon-text-hover: #234280;
-    --question-bg-icon: rgba(0, 17, 116, 0.256);
+    --question-bg-icon: rgba(0, 17, 116, 0.114);
 }
 
 *, *::before, *::after {
@@ -51,6 +51,8 @@ body {
     overflow: hidden;
 }
 
+/* Dialog modal */
+
 #dialog {
     margin: auto;
     border: none;
@@ -66,11 +68,57 @@ body {
     background-color: rgb(0, 0, 0, 0.3);
 } 
 
-#closeHighscoreButton {
+#closeModalButton {
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
+
+/* Buttons */
+
+.button {
+  width: 100%;
+  margin-inline: auto;
+  padding: 1rem;
+  padding-left: 1.4rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  grid-column: 1 / -1;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all .4s;
+  outline: 3px solid transparent;
+  
+  .icon {
+    font-size: 3rem;
+  }
+
+  &:hover {
+      cursor: pointer;
+      outline-color: var(--category-color-2);
+      transform: scale(1.1);
+  }
+}
+
+.button:has(.icon) {
+  justify-content: space-between;
+}
+
+.button.button--dark {
+  color: white;
+  background: rgba(107, 49, 135, 0.605);
+
+  &:hover {
+    outline-color: white;
+  }
+}
+
+/* Category colors */
 
 .category-music {
   --category-color-1: #FE987E;
@@ -101,6 +149,8 @@ body {
   --category-color-1: #48E6E4;
   --category-color-2: #E74EEA;
 }
+
+/* Waves */
 
 .waves {
   position: absolute;

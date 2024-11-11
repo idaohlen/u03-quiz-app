@@ -82,37 +82,8 @@ h2 {
     font-size: 4rem;
 }
 
-.categories-mixed-button, .highscore-button {
-    width: 100%;
-    margin-inline: auto;
-    padding: 1rem;
-    padding-left: 1.4rem;
-    font-family: inherit;
-    font-size: 1.6rem;
-    font-weight: 700;
-    grid-column: 1 / -1;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    transition: all .4s;
-    outline: 3px solid transparent;
-
-    &:hover {
-        cursor: pointer;
-        outline-color: var(--category-color-2);
-        transform: scale(1.1);
-    }
-}
-
-
 .categories-mixed-button {
     margin-top: 1.5rem;
-  }
-
-.categories-mixed-button__text {
 }
 
 .categories-mixed-button .icon {
@@ -120,25 +91,16 @@ h2 {
         var(--category-color-1),
         var(--category-color-2)
         );
-    font-size: 3rem;
 }
-
 
 .highscore-button {
     --category-color-1: rgb(255, 215, 104);
     --category-color-2: rgb(255, 138, 43);
-    /* outline-color: white; */
-    color: white;
 
-    background: rgba(107, 49, 135, 0.605);
     .icon {
         background: linear-gradient(
             var(--category-color-1),
             var(--category-color-2)
             );
-        font-size: 3rem;
-    }
-    &:hover {
-        outline-color: white;
     }
 }
