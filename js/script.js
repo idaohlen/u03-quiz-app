@@ -80,9 +80,6 @@ function renderQuestionPage(question) {
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
 
-
-
-
   // Put correct answer + incorrect answers into an array
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
 

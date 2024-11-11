@@ -10,7 +10,8 @@
   ],
   "tags": [
     "Konst"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -24,7 +25,8 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -38,7 +40,8 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -52,7 +55,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -66,7 +70,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -80,7 +85,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -94,7 +100,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -108,7 +115,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -122,7 +130,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -136,7 +145,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -150,7 +160,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -164,7 +175,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -180,7 +192,8 @@
     "Geografi",
     "Historia",
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -194,7 +207,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -208,7 +222,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -222,7 +237,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -236,7 +252,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -251,7 +268,8 @@
   "tags": [
     "Historia",
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -265,7 +283,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -279,7 +298,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -294,7 +314,8 @@
   "tags": [
     "Historia",
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -310,7 +331,8 @@
     "Historia",
     "Geografi",
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -324,7 +346,8 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -338,7 +361,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -353,7 +377,8 @@
   "tags": [
     "Geografi",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -368,7 +393,8 @@
   "tags": [
     "Historia",
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -382,7 +408,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -396,7 +423,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -410,7 +438,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -424,7 +453,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -438,7 +468,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -452,7 +483,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -466,7 +498,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -480,7 +513,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -494,7 +528,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -508,7 +543,8 @@
   ],
   "tags": [
     "Spel"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -522,7 +558,8 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -536,7 +573,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -551,7 +589,8 @@
   "tags": [
     "Historia",
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -565,7 +604,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -579,7 +619,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -593,7 +634,8 @@
   ],
   "tags": [
     "Konst"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -607,7 +649,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -621,7 +664,8 @@
   ],
   "tags": [
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -635,7 +679,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -649,7 +694,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -663,7 +709,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -678,7 +725,8 @@
   "tags": [
     "Geografi",
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -692,7 +740,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -706,7 +755,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -720,7 +770,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -734,7 +785,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -748,7 +800,8 @@
   ],
   "tags": [
     "Kultur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -762,7 +815,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -776,7 +830,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -790,7 +845,8 @@
   ],
   "tags": [
     "Spel"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -804,7 +860,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -818,7 +875,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -832,7 +890,8 @@
   ],
   "tags": [
     "Kultur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -846,7 +905,8 @@
   ],
   "tags": [
     "Kultur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -860,7 +920,8 @@
   ],
   "tags": [
     "Kultur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -874,7 +935,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -888,7 +950,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -902,7 +965,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -916,7 +980,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -930,7 +995,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -944,7 +1010,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -958,7 +1025,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -972,7 +1040,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -986,7 +1055,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1000,7 +1070,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1014,7 +1085,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1028,7 +1100,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1042,7 +1115,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1056,7 +1130,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1070,7 +1145,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1084,7 +1160,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1098,7 +1175,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1112,7 +1190,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1126,7 +1205,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1140,7 +1220,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1154,7 +1235,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1169,21 +1251,8 @@
   "tags": [
     "Mat & Dryck",
     "Musik"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b89f5f9455043509cd"
-  },
-  "text": "Zlatan Ibrahimović är född och uppvuxen i Malmö och spelade där under hela sin Sverigekarriär, men blev 2019 delägare i ett Stockholmslag, vilket skapade en del kontrovers. Vilket Stockholmslag blev Zlatan delägare av?",
-  "correctAnswer": "Hammarby IF",
-  "incorrectAnswers": [
-    "AIK",
-    "Djurgårdens IF"
   ],
-  "tags": [
-    "Sport"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1198,7 +1267,8 @@
   "tags": [
     "Sport",
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1214,7 +1284,8 @@
     "Geografi",
     "Natur & Vetenskap",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1229,7 +1300,8 @@
   "tags": [
     "Natur & Vetenskap",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1243,7 +1315,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1258,7 +1331,8 @@
   "tags": [
     "Natur & Vetenskap",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1272,7 +1346,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1287,7 +1362,8 @@
   "tags": [
     "Politik",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1301,7 +1377,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1315,7 +1392,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1329,7 +1407,8 @@
   ],
   "tags": [
     "Religion & Mytologi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1343,7 +1422,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1357,7 +1437,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1371,7 +1452,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1385,7 +1467,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1400,7 +1483,8 @@
   "tags": [
     "Politik",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1414,7 +1498,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1428,7 +1513,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1442,35 +1528,8 @@
   ],
   "tags": [
     "Språk"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b89f5f9455043509f3"
-  },
-  "text": "Vad är en sufflör?",
-  "correctAnswer": "En person som hjälper skådespelare/sångare med texthjälp under föreställningar, om dessa glömmer bort sina repliker/sångtexter",
-  "incorrectAnswers": [
-    "En person som yrkesmässigt tillverkar finare bakverk, exempelvis bakelser, tårtor, konfektyr, praliner och kakor",
-    "En person som är anställd av ett kasino för att leda och övervaka spelet vid exempelvis bordsspel som Black Jack, poker eller roulette."
   ],
-  "tags": [
-    "Språk"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b89f5f9455043509f5"
-  },
-  "text": "Siddhartha Gautama var en man som dog runt år 540 f.Kr. Han är kanske mer känd under ett annat namn och var en viktig person för en viss religion. Vilket är Gautamas mer kända namn?",
-  "correctAnswer": "Buddha",
-  "incorrectAnswers": [
-    "Tutankhamun",
-    "Baháʼu'lláh"
-  ],
-  "tags": [
-    "Religion & Mytologi"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1484,7 +1543,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1498,7 +1558,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1512,7 +1573,8 @@
   ],
   "tags": [
     "Konst"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1526,21 +1588,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b89f5f9455043509ff"
-  },
-  "text": "Vad innebär begreppet remi när man spelar schack?",
-  "correctAnswer": "Att partiet slutar oavgjort",
-  "incorrectAnswers": [
-    "Ett specialdrag i schack där man i ett drag flyttar kungen och ett av tornen.",
-    "Det är ett specialdrag där motståndarens bonde under vissa omständigheter kan tas, som endast kan utföras direkt efter att motståndaren flyttat två steg med bonden från dess startposition"
   ],
-  "tags": [
-    "Spel"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1554,7 +1603,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1569,7 +1619,8 @@
   "tags": [
     "Fordon",
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1583,7 +1634,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1597,7 +1649,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1611,7 +1664,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1625,7 +1679,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1639,7 +1694,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1653,7 +1709,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1667,7 +1724,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1681,7 +1739,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1695,7 +1754,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1709,7 +1769,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1723,7 +1784,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1738,7 +1800,8 @@
   "tags": [
     "Geografi",
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1752,7 +1815,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1766,7 +1830,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1780,7 +1845,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1794,7 +1860,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1808,7 +1875,8 @@
   ],
   "tags": [
     "Kultur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1822,7 +1890,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1836,7 +1905,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1850,7 +1920,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1864,7 +1935,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1878,7 +1950,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1893,7 +1966,8 @@
   "tags": [
     "Geografi",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1907,7 +1981,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1921,7 +1996,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1935,22 +2011,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a3d"
-  },
-  "text": "Vlad III Dracula, även känd som Vlad Pålspetsaren, är personen som Bram Stoker baserade vampyren Greve Dracula på i hans roman från 1897. Från vilket nutida land kom Vlad III Dracula?",
-  "correctAnswer": "Rumänien",
-  "incorrectAnswers": [
-    "Bulgarien",
-    "Polen"
   ],
-  "tags": [
-    "Litteratur",
-    "Historia"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1965,7 +2027,8 @@
   "tags": [
     "Historia",
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -1979,36 +2042,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a43"
-  },
-  "text": "Romanen 'Femtio nyanser av honom' toppade bästsäljarlistor över hela världen när den släpptes 2011 och filmatiseringen av romnanen blev en publiksuccé 2015. Femtio nyanser började som en fanfiktion av en populär bokserie, vilken då?",
-  "correctAnswer": "Twilight",
-  "incorrectAnswers": [
-    "The Hunger Games",
-    "Divergent"
   ],
-  "tags": [
-    "Litteratur",
-    "TV & Film"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a45"
-  },
-  "text": "TV-serien Chernobyl från 2019 som skildrar kärnkraftsolyckan i Tjernobyl blev både en kritiker- och publiksuccé över hela världen. Vem är svensken som har regisserat miniserien?",
-  "correctAnswer": "Johan Renck",
-  "incorrectAnswers": [
-    "Ruben Östlund",
-    "Ludwig Göransson"
-  ],
-  "tags": [
-    "TV & Film"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2022,21 +2057,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a49"
-  },
-  "text": "Enligt grekiskt mytologi var Sisyfos en kung som blev bestraffad av gudarna för sitt svekfulla och högfärdiga beteende. Vad var det för straff Sisyfos fick?",
-  "correctAnswer": "Att för evigt rulla ett stort stenblock uppför en kulle, bara för att se det störta ner varje gång han var nära toppen",
-  "incorrectAnswers": [
-    "Att för evigt vandra i den stekheta öknen med en oas vid horisonten som aldrig närmar sig",
-    "Att för evigt drunkna i floden Styx utan att kunna nå vattenytan"
   ],
-  "tags": [
-    "Religion & Mytologi"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2050,50 +2072,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a4d"
-  },
-  "text": "\"Octopus\" och \"squid\" är två djur som vanligtvis båda översätts till \"bläckfisk\", men vad är skillnaden mellan \"octopus\" och \"squid\"?",
-  "correctAnswer": "\"Octopuses\" är en ordning i klassen bläckfiskar som har 8 armar. \"Squid\" är en ordning i klassen bläckfiskar som har 10 armar.",
-  "incorrectAnswers": [
-    "\"Octopuses\" är de bläckfiskarter som främst lever i Atlanten och dess angränsande hav, medan \"squid\" är de bläckfiskarter som främst lever i Stilla havet?",
-    "De är olika ord för samma djur. \"Octopus\" kommer från grekiskans \"okto\" vilket betyder åtta, och pous, vilket betyder fot. \"Squid\" kom in i engelskan via upptäcktsresande till Västindien."
   ],
-  "tags": [
-    "Natur & Vetenskap",
-    "Språk"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a4f"
-  },
-  "text": "Tom Hanks har vunnit ett stort antal priser för sin medverkan i olika filmer, bland dessa priser finns två Academy Awards, även kallade Oscars, för bästa skådespelare. För vilken av dessa filmer vann han inte en Oscar?",
-  "correctAnswer": "Saving Private Ryan",
-  "incorrectAnswers": [
-    "Forrest Gump",
-    "Philadelphia"
-  ],
-  "tags": [
-    "TV & Film"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a51"
-  },
-  "text": "Academy Awards, Tony Awards, Golden Globe Awards och Guldbaggen är bara några få av de olika filmpriser som existerar idag. Ett annat filmpris heter Golden Raspberry Awards, vad är det så är ovanligt med Golden Raspberry Awards?",
-  "correctAnswer": "Golden Raspberry Awards delar ut priser till årets sämsta insatser inom filmvärlden.",
-  "incorrectAnswers": [
-    "Nomineringarna till de olika filmpriserna i Golden Raspberry Awards utses endast av barn under tolv år.",
-    "Endast filmer som inte har vunnit något annat filmpris i någon av de andra stora amerikanska filmpriserna är giltiga för att vinna en Golden Raspberry Award."
-  ],
-  "tags": [
-    "TV & Film"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2107,7 +2087,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2121,7 +2102,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2135,7 +2117,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2149,7 +2132,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2163,7 +2147,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2178,7 +2163,8 @@
   "tags": [
     "Geografi",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2192,23 +2178,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a63"
-  },
-  "text": "Iran-Contras-affären var en politisk skandal under Ronald Reagans presidentskap som kretsade kring att USA sålde vapen till Iran, som var under ett vapenembargo. Det gjordes för att finansiera antikommunistiska gerillarörelser i vilket centralamerikanskt land?",
-  "correctAnswer": "Nicaragua",
-  "incorrectAnswers": [
-    "El Salvador",
-    "Kuba"
   ],
-  "tags": [
-    "Geografi",
-    "Historia",
-    "Politik"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2222,7 +2193,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2236,7 +2208,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2250,7 +2223,8 @@
   ],
   "tags": [
     "Musik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2265,7 +2239,8 @@
   "tags": [
     "Musik",
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2279,22 +2254,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a80b99f5f945504350a6f"
-  },
-  "text": "1987 släpptes låten 'Never Gonna Give You Up' och toppade listor runt om i världen. Under 2000-talet blev låten en del av ett internetfenomen. Vem är sångaren?",
-  "correctAnswer": "Rick Astley",
-  "incorrectAnswers": [
-    "Boy George",
-    "George Michael"
   ],
-  "tags": [
-    "Musik",
-    "Teknik"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2308,7 +2269,8 @@
   ],
   "tags": [
     "Spel"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2322,22 +2284,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a8b3a2f877f3bc93019df"
-  },
-  "text": "Vad heter den flod som Caesar år 49 f.Kr korsade vilket ledde till ett inbördeskrig? Floden har också gett namn till ett utryck om att man har nått en punkt där det inte finns någon återvändo.",
-  "correctAnswer": "Rubicon",
-  "incorrectAnswers": [
-    "Po",
-    "Rhone"
   ],
-  "tags": [
-    "Historia",
-    "Språk"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2351,7 +2299,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2365,7 +2314,8 @@
   ],
   "tags": [
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2379,7 +2329,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2393,7 +2344,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2407,7 +2359,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2421,7 +2374,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2435,21 +2389,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667a9a0e64c0233dea243532"
-  },
-  "text": "Olof Palme var väldigt kritisk mot USA:s agerande i ett visst krig i sitt jultal 1972, vilket ledde till frysning av de diplomatiska relationerna mellan Sverige och USA. Vilket krig var det?",
-  "correctAnswer": "Vietnamkriget",
-  "incorrectAnswers": [
-    "Koreakriget",
-    "Kuwaitkriget"
   ],
-  "tags": [
-    "Historia"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2463,7 +2404,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2477,7 +2419,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2491,7 +2434,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2505,7 +2449,8 @@
   ],
   "tags": [
     "Konst"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2519,7 +2464,8 @@
   ],
   "tags": [
     "Konst"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2533,7 +2479,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2547,7 +2494,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2561,7 +2509,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2575,7 +2524,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2589,7 +2539,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2604,7 +2555,8 @@
   "tags": [
     "Natur & Vetenskap",
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2618,7 +2570,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2632,7 +2585,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2646,7 +2600,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2661,7 +2616,8 @@
   "tags": [
     "Geografi",
     "Historia"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2676,49 +2632,8 @@
   "tags": [
     "Natur & Vetenskap",
     "Språk"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667bf10f9376584f4ac23894"
-  },
-  "text": "Wagyu är ett samlingsnamn för ett antal raser av nötkreatur vars kött är känt världen över för dess kvalitet och högt pris. Ett exempel på detta är Kobebiff, men vilka av de här kommer också från Wagyu nötkreatur?",
-  "correctAnswer": "Matsusaka",
-  "incorrectAnswers": [
-    "Saganaki",
-    "Maguro"
   ],
-  "tags": [
-    "Mat & Dryck"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667d1a29073aba78b424f49e"
-  },
-  "text": "Nya Zeelands landslag 'All Blacks' har vunnit flera världsmästerskap i sin sport och är även kända för sin 'haka', en maorisk krigsdans laget brukar utföra innan matcher. Vilken sport spelar 'All Blacks'? ",
-  "correctAnswer": "Rugby",
-  "incorrectAnswers": [
-    "Cricket",
-    "Gaelisk fotboll"
-  ],
-  "tags": [
-    "Sport"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667d1e27073aba78b424f4a0"
-  },
-  "text": "CD (Compact Disc)-skiva, PIN (Personal Identification Number)-nummer, Saharaöknen och Mississippifloden är några exempel på ord där beståndsdelarna har samma eller liknande betydelse. Vad kallas denna typ av upprepning? ",
-  "correctAnswer": "Tautologi",
-  "incorrectAnswers": [
-    "Allitteration",
-    "Rekursion"
-  ],
-  "tags": [
-    "Språk"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2732,7 +2647,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2746,7 +2662,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2760,36 +2677,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667d2736073aba78b424f4ae"
-  },
-  "text": "I Pixars film Coco från 2017 hamnar pojken Miguel i trubbel när han blir intresserad av en aktivitet som hans familj har förbjudit i flera generationer. Vad är det för aktivitet Miguel börjar med?",
-  "correctAnswer": "Musik",
-  "incorrectAnswers": [
-    "Dans",
-    "Måla"
   ],
-  "tags": [
-    "TV & Film"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667d2ad3073aba78b424f4b5"
-  },
-  "text": "Att Han Solo flög \"Kessel Run på mindre än 12 parsek\" är en välkänd filmtabbe från den första Star Wars-filmen. Varför anses den repliken innehålla ett misstag?",
-  "correctAnswer": "Parsek är ett distansmått",
-  "incorrectAnswers": [
-    "Parsek är en hastighet",
-    "Parsek är en vektor"
-  ],
-  "tags": [
-    "TV & Film",
-    "Natur & Vetenskap"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2803,21 +2692,8 @@
   ],
   "tags": [
     "Historia"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667d301a073aba78b424f4be"
-  },
-  "text": "Andra Moseboken är en av de böcker Gamla Testamentet består av och handlar om israeliternas uttåg ur Egypten. Vad är det alternativa namnet för Andra Moseboken?",
-  "correctAnswer": "Exodus",
-  "incorrectAnswers": [
-    "Leviticus",
-    "Hebreerbrevet"
   ],
-  "tags": [
-    "Religion & Mytologi"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2831,7 +2707,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2845,7 +2722,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2859,7 +2737,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2873,7 +2752,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2887,7 +2767,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2901,7 +2782,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2915,7 +2797,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2929,7 +2812,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2944,7 +2828,8 @@
   "tags": [
     "Musik",
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2959,7 +2844,8 @@
   "tags": [
     "Musik",
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -2973,21 +2859,8 @@
   ],
   "tags": [
     "Historia"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667e6ad1073aba78b424f50d"
-  },
-  "text": "Jane Eyre av Charlotte Brontë är en av den brittiska litteraturens stora klassiker, och Brontës prosa ansågs vara banbrytande. Som många andra kvinnliga författare under den här tidsperioden använde hon ett mansnamn som pseudonym. Vilket då? ",
-  "correctAnswer": "Currer Bell",
-  "incorrectAnswers": [
-    "Lewis Carroll",
-    "George Eliot"
   ],
-  "tags": [
-    "Litteratur"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3001,65 +2874,8 @@
   ],
   "tags": [
     "Politik"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667e6fd1073aba78b424f511"
-  },
-  "text": "Julian Assange, grundaren av organisationen Wikileaks, blev 2010 anklagad för sexualbrott och levde sedan mellan 2012 och 2019 på en sydamerikansk ambassad för att undvika att bli utlämnad till USA. I vilket lands ambassad levde Assange under de åren?",
-  "correctAnswer": "Ecuador",
-  "incorrectAnswers": [
-    "Colombia",
-    "Venezuela"
   ],
-  "tags": [
-    "Politik"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667e72d6073aba78b424f513"
-  },
-  "text": "Blade Runner från 1982 är en av de mest uppskattade sci-fi-filmerna genom tiderna. Filmen är löst baserad på en av Philip K. Dicks romaner, vad heter den?",
-  "correctAnswer": "Do Androids Dream of Electric Sheep?",
-  "incorrectAnswers": [
-    "A Scanner Darkly",
-    "Neuromancer"
-  ],
-  "tags": [
-    "Litteratur",
-    "TV & Film"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667e766a073aba78b424f515"
-  },
-  "text": "Defenestration är ett ord många känner till men aldrig kommer att använda. Vad betyder defenestration?",
-  "correctAnswer": "Att slänga ut någon eller något genom ett fönster",
-  "incorrectAnswers": [
-    "Den akademiska akt där en doktorand inför publik försvarar sin doktorsavhandling",
-    "Vetenskapen om att kontrollera skogens tillväxt, sammansättning samt kvalitet för att tillgodose värden och behov, i synnerhet virkesproduktion. "
-  ],
-  "tags": [
-    "Språk"
-  ]
-},
-{
-  "_id": {
-    "$oid": "667e77e4073aba78b424f517"
-  },
-  "text": "Tryckfrihetsförordningen är en av Sveriges grundlagar och är en av världens första lagar för tryckfrihet för medier. Vilket år antogs den första tryckfrihetsförordningen?",
-  "correctAnswer": "1762",
-  "incorrectAnswers": [
-    "1867",
-    "1910"
-  ],
-  "tags": [
-    "Politik",
-    "Historia"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3073,7 +2889,8 @@
   ],
   "tags": [
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3088,7 +2905,8 @@
   "tags": [
     "Historia",
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3103,35 +2921,8 @@
   "tags": [
     "Ekonomi",
     "Geografi"
-  ]
-},
-{
-  "_id": {
-    "$oid": "668a412c131f003d39cc99af"
-  },
-  "text": "Cricketmatcher kan pågå i flera dagar; 1939 spelades den längsta matchen genom tiderna och pågick i 9 dagar. Den matchen slutade oavgjort efter att den avbröts tidigt. Varför då?",
-  "correctAnswer": "För att det ena laget behövde hinna med båten hem.",
-  "incorrectAnswers": [
-    "Andra världskriget utlöstes och lagen var på olika sidor av kriget",
-    "Gräsplanen där matchen spelades var bokad för en musikfestival"
   ],
-  "tags": [
-    "Sport"
-  ]
-},
-{
-  "_id": {
-    "$oid": "668a45e0131f003d39cc99b1"
-  },
-  "text": "Live Aid var en välgörenhetskonsert som ägde rum 1985, och många av världens största artister uppträdde. Konserten samlade in 1,5 miljarder kronor, men till vilket ändamål?",
-  "correctAnswer": "Hungersnöden i Etiopien",
-  "incorrectAnswers": [
-    "Jordbävningen i Haiti",
-    "Offren i inbördeskriget i Sudan"
-  ],
-  "tags": [
-    "Musik"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3145,7 +2936,8 @@
   ],
   "tags": [
     "Fordon"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3160,7 +2952,8 @@
   "tags": [
     "Historia",
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3174,7 +2967,8 @@
   ],
   "tags": [
     "Litteratur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3188,7 +2982,8 @@
   ],
   "tags": [
     "Språk"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3203,35 +2998,8 @@
   "tags": [
     "Historia",
     "Politik"
-  ]
-},
-{
-  "_id": {
-    "$oid": "668a72d3131f003d39cc99bd"
-  },
-  "text": "Mercator-projektionen är kartprojektionen som har varit standard för sjökort och världskartor i många år. På senare år har användningen av Mercator-projektionen på världskartor fått mycket kritik. Vad är problemet med den?",
-  "correctAnswer": "Projektionen innebär att storleken på objekt vid ekvatorn förminskas och objekt nära polerna förstoras.",
-  "incorrectAnswers": [
-    "Projektionen förvränger den horizontella skalan för att få Europa mer i centrum av kartorna",
-    "Projektionen har egenskapen att halva jordytan är utsträckt horisontellt och den andra halvan är utsträckt vertikalt."
   ],
-  "tags": [
-    "Geografi"
-  ]
-},
-{
-  "_id": {
-    "$oid": "668a8283f2f61e3156cd33d0"
-  },
-  "text": "Ungerns inflation efter andra världskriget är den högsta som någonsin uppmätts. Hur lång tid tog det för priserna att fördubblas när inflationen var som högst i juli 1946?",
-  "correctAnswer": "15 timmar",
-  "incorrectAnswers": [
-    "3 dagar",
-    "1 vecka"
-  ],
-  "tags": [
-    "Ekonomi"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3245,21 +3013,8 @@
   ],
   "tags": [
     "Ekonomi"
-  ]
-},
-{
-  "_id": {
-    "$oid": "668a90c8f2f61e3156cd33d4"
-  },
-  "text": "'Dieselgate' var en skandal som involverade Volkswagen och kostade dom runt 30 miljader dollar i böter och skadestånd. Vad innebär 'Dieselgate'-skandalen?",
-  "correctAnswer": "Vissa Volkswagenmodeller släppte ut 40 gånger mer kväveoxid än vad tillverkaren uppgav, och Volkswagen använde mjukvara för att dölja det.",
-  "incorrectAnswers": [
-    "Volkswagen förfalskade uppgifter om bränsleekonomin för mer än 600.000 fordon från 2004 och framåt",
-    "Vissa Volkswagenmodeller hade problem med defekta tändningslås, vilket orsakade att bilen kunde slås av spontant och krockkuddarna inte utlöstes."
   ],
-  "tags": [
-    "Fordon"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3273,21 +3028,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
-},
-{
-  "_id": {
-    "$oid": "668a942ef2f61e3156cd33d8"
-  },
-  "text": "Många filmindustrier runt världen har fått smeknamn som följer Hollywoodmodellen, till exempel Bollywood i Bombay och Nollywood i Nigeria. Varifrån kommer filmindustrin Tollywood?",
-  "correctAnswer": "Indien",
-  "incorrectAnswers": [
-    "Sverige",
-    "Turkiet"
   ],
-  "tags": [
-    "TV & Film"
-  ]
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3301,7 +3043,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3315,7 +3058,8 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3329,7 +3073,8 @@
   ],
   "tags": [
     "Ekonomi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3343,7 +3088,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3357,7 +3103,8 @@
   ],
   "tags": [
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3372,7 +3119,8 @@
   "tags": [
     "Historia",
     "Religion & Mytologi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3386,7 +3134,8 @@
   ],
   "tags": [
     "Ekonomi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3400,7 +3149,8 @@
   ],
   "tags": [
     "Mat & Dryck"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3414,7 +3164,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3428,7 +3179,8 @@
   ],
   "tags": [
     "TV & Film"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3442,7 +3194,8 @@
   ],
   "tags": [
     "Teknik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3456,7 +3209,8 @@
   ],
   "tags": [
     "Kultur"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3470,7 +3224,8 @@
   ],
   "tags": [
     "Politik"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3484,7 +3239,8 @@
   ],
   "tags": [
     "Geografi"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3498,7 +3254,8 @@
   ],
   "tags": [
     "Sport"
-  ]
+  ],
+  "questionType": "oneOfThree"
 },
 {
   "_id": {
@@ -3512,5 +3269,6 @@
   ],
   "tags": [
     "Natur & Vetenskap"
-  ]
+  ],
+  "questionType": "oneOfThree"
 }]
