@@ -16,14 +16,15 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 1;
+const questionAmount = 10;
 const savedAnswers = [];
 let timerInterval;
 let timer = 10000;
-let currentCategory;
 
 let correctAnswersAmount = 0;
 let highScore = 0;
+
+let currentCategory;
 
 /* ------------------------------------------------ */
 // START PAGE
@@ -167,18 +168,21 @@ function startTimer() {
   timer = 10000;
   const timerDiv = document.getElementById("timer")
   const progressBar = document.getElementById("barStatus");
+  progressBar.style.width = "100%";
 
-  timerInterval = setInterval(progressTimer, 10);
-  function progressTimer() {
-    if(timer >= 0) {
-      timer -= 10;
-      timerDiv.innerHTML = Math.ceil(timer/1000);
-      progressBar.style.width = (timer/100) + '%'; 
+  setTimeout(() => {
+    timerInterval = setInterval(progressTimer, 10);
+    function progressTimer() {
+      if(timer >= 0) {
+        timer -= 10;
+        timerDiv.innerHTML = Math.ceil(timer/1000);
+        progressBar.style.width = (timer/100) + "%"; 
+      }
+      else {
+        displayNextQuestion();
+      }
     }
-    else {
-      displayNextQuestion();
-    }
-  }
+  }, 1500)
 }
 
 function findCategoryByName(name) {
