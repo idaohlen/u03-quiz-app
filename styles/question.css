@@ -129,9 +129,13 @@
 }
 
 .timer {
-    color: white;
+    color: rgb(245, 30, 30);
     font-weight: 800;
     width: 2rem;
+    position: absolute;
+    z-index: 1;
+    margin-left: 50%;
+    margin-right: 50%;
 }
 
 /* Animations */

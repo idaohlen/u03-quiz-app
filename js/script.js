@@ -16,14 +16,16 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 1;
+const questionAmount = 5;
 const savedAnswers = [];
 let timerInterval;
-let timer = 10000;
-let currentCategory;
+let timer;
+let baseTimer = 10000;
 
 let correctAnswersAmount = 0;
 let highScore = 0;
+
+let currentCategory;
 
 /* ------------------------------------------------ */
 // START PAGE
@@ -114,10 +116,12 @@ function renderQuestionPage(question) {
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
     <div class="timer-container">
+
       <div id="progressBar">
+                  <div id="timer" class="timer"></div>
+
         <div id="barStatus"></div>
       </div>
-      <div id="timer" class="timer"></div>
     </div>
 
     <div id="questionText" class="question__text slideTextIn">
@@ -129,24 +133,29 @@ function renderQuestionPage(question) {
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
-  const questionOption = document.querySelectorAll(".question__option");
-  questionOption.forEach((option, index) => {
-    const handleClick = (e) => {
-      addSlideOut(questionOption);
-      savedAnswers.push(
-        saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer / 1000))
-      );
-  
-      option.removeEventListener("click", handleClick);
-  
-      setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
-      setTimeout(displayNextQuestion, 2000);
-    };
+  const questionOptions = document.querySelectorAll(".question__option");
+
+  const handleClick = (e) => {
+    clearInterval(timerInterval);
+    addSlideOut(questionOptions);
+    savedAnswers.push(
+      saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer / 1000))
+    );
+    questionOptions.forEach(o => {
+      o.removeEventListener("click", handleClick)
+  });
+    setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
+    setTimeout(displayNextQuestion, 1500);
+  };
+
+  questionOptions.forEach((option, index) => {
     option.addEventListener("click", handleClick);
     addSlideIn(option, index);
   });
 
-  startTimer();
+
+
+  startTimer(question, questionOptions);
 }
 
 function addSlideOut(questionOptions) {
@@ -163,22 +172,29 @@ function addSlideIn(option, index) {
   }, delay * index);
 }
 
-function startTimer() {
-  timer = 10000;
+function startTimer(question, questionOptions) {
+  timer = baseTimer;
   const timerDiv = document.getElementById("timer")
   const progressBar = document.getElementById("barStatus");
+  progressBar.style.width = "100%";
 
-  timerInterval = setInterval(progressTimer, 10);
-  function progressTimer() {
-    if(timer >= 0) {
-      timer -= 10;
-      timerDiv.innerHTML = Math.ceil(timer/1000);
-      progressBar.style.width = (timer/100) + '%'; 
+  setTimeout(() => {
+    timerInterval = setInterval(progressTimer, 10);
+    function progressTimer() {
+      if(timer >= 0) {
+        timer -= 10;
+        timerDiv.innerHTML = Math.ceil(timer/1000);
+        progressBar.style.width = (timer/100) + "%"; 
+      }
+      else {
+        clearInterval(timerInterval);
+        savedAnswers.push(saveAnswer(question, "Svarade inte", 0));
+        addSlideOut(questionOptions);
+        setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
+        setTimeout(displayNextQuestion, 2000);
+      }
     }
-    else {
-      displayNextQuestion();
-    }
-  }
+  }, 1500)
 }
 
 function findCategoryByName(name) {
@@ -259,7 +275,6 @@ function newQuestion() {
 }
 
 function displayNextQuestion() {
-  clearInterval(timerInterval);
   const currentQuestion = document.getElementById("questionWrapper");
   if (currentQuestion) {
     quizApp.removeChild(currentQuestion);
