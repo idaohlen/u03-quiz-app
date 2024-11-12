@@ -1,26 +1,37 @@
 
 .question {
+    width: 75%;
+    margin-inline: auto;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    text-align: center;
     gap: 1rem;
-
+    text-align: center;
 }
 
 .question__text {
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 2rem;
+    position: relative;
     margin-bottom: 2rem;
-    color: white;
-    text-shadow: 1px 1px 4px var(--body-text-shadow);
+    padding: 2rem;
+    padding-right: 8rem;
     background: var(--shadow);
     border-radius: 6px;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 4px var(--body-text-shadow);
     transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.question__bg-icon {
+    background: var(--question-bg-icon);
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    font-size: 5rem;
+    transform: translateY(-50%);
 }
 
 .question__options-container {
@@ -83,69 +94,72 @@
 }
 
 
+/* Progress bar / Timer */
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+}
+
 #progressBar {
     position: relative;
     width: 100%;
     height: 30px;
-    background-color: #ddd;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    overflow: hidden;
   }
   
-  #barStatus {
+#barStatus {
     position: absolute;
     width: 0%;
     height: 100%;
-    background-color: #25F;
-  }
-
-
-.slideIn {
-  animation: slideFromLeft 1s ease-in-out forwards;
+    background: linear-gradient(
+      135deg,
+      #42B0FF,
+      var(--body-bg-2)
+      );
 }
+
+.timer {
+    color: white;
+    font-weight: 800;
+    width: 2rem;
+}
+
+/* Animations */
+
+.slideIn { animation: slideFromLeft 1s ease-in-out forwards; }
 
 @keyframes slideFromLeft {
-  0% {
-    transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  0% { transform: translateX(-100vw); }
+  100% { transform: translateX(0); }
 }
 
-.slideOut {
-  animation: slideToRight 1s ease-in-out forwards;
-}
+.slideOut { animation: slideToRight 1s ease-in-out forwards; }
 
 @keyframes slideToRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100vw);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100vw); }
 }
 
-.slideTextIn {
-  animation: slideToMid 1s ease-in-out forwards;
-}
+.slideTextIn { animation: slideToMid 1s ease-in-out forwards; }
 
 @keyframes slideToMid {
-  0% {
-    transform: translateY(-50vh);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+  0% { transform: translateY(-50vh); }
+  100% { transform: translateY(0%); }
 }
 
-.slideTextOut {
-  animation: slideToBottom 1s ease-in-out forwards;
-}
+.slideTextOut { animation: slideToBottom 1s ease-in-out forwards; }
 
 @keyframes slideToBottom {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100vh);
-  }
+    0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
 }
