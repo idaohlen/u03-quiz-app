@@ -55,12 +55,13 @@
     align-items: center;
     gap: 1rem;
     transform: translateX(-120%);
+    left: 0;
     transition: all .4s, transform 0.5s ease;
 
     &:hover {
       cursor: pointer;
+      left: -2rem;
       outline-color: var(--border);
-      /* transform: translateX(1.5rem); */
       box-shadow: -1.5rem 0 10px 5px var(--shadow);
   }
 }
