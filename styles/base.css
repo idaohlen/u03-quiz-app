@@ -12,6 +12,8 @@
     --question-bg-icon: rgba(0, 17, 116, 0.114);
     --close-modal-text: rgb(133, 140, 165);
     --close-modal-text-hover: rgb(58, 63, 79);
+    --timer-text: rgb(255, 255, 255);
+    --timer-shadow: rgba(0, 17, 116, 0.219);
 }
 
 *, *::before, *::after {
