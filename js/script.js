@@ -18,6 +18,7 @@ let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
 const questionAmount = 3;
 const savedAnswers = [];
+
 let timerInterval;
 let timer;
 let baseTimer = 10000;
@@ -63,32 +64,6 @@ function renderStartPage() {
   `;
 }
 
-function displayHighscore() {
-  dialogContent.innerHTML="";
-  const highscoreData = getHighscoreData();
-  const highscoreContainer=document.createElement("div")
-  highscoreContainer.classList.add("highscore-container")
-  let highscoreHTML = "<h2>Highscore </h2>";
-  if (highscoreData) { 
-    for(let i=0;i<highscoreData.length;i++){
-      const highscore=highscoreData[i]
-      highscoreHTML += `
-      <div class="highscore">
-        <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
-        <div class="highscore__date">${highscore.date}</div>
-      </div>
-    `;
-    };
-  }
-  highscoreContainer.innerHTML = highscoreHTML;
-  dialogContent.appendChild(highscoreContainer);
-  dialog.showModal();
-}
-
-function closeModal() {
-  dialog.close();
-}
-
 
 /* ------------------------------------------------ */
 // QUESTIONS PAGE
@@ -104,7 +79,6 @@ function renderQuestionPage(question) {
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
 
   let answersHTML = "";
-
 
   // Loop through the answers array and add an HTML element for each of them into the answersHTML variable
   for (let i = 0; i < answers.length; i++) {
@@ -167,6 +141,35 @@ function renderQuestionPage(question) {
   startTimer(question, questionOptions);
 }
 
+
+/* ------------------------------------------------ */
+// DISPLAY QUESTION
+/* ------------------------------------------------ */
+
+function newQuestion() {
+  const question = selectedQuestions.pop();
+  return question;
+}
+
+function displayNextQuestion() {
+  const currentQuestion = document.getElementById("questionWrapper");
+  questionRunning = true;
+  if (currentQuestion) {
+    quizApp.removeChild(currentQuestion);
+  }
+  const nextQuestion = newQuestion();
+  if (nextQuestion) {
+    renderQuestionPage(nextQuestion);
+  } else {
+    renderEndPage(); // No more questions, show the end page
+  }
+}
+
+
+/* ------------------------------------------------ */
+// TIMER
+/* ------------------------------------------------ */
+
 function startTimer(question, questionOptions) {
   timer = baseTimer;
   const timerDiv = document.getElementById("timer")
@@ -196,7 +199,6 @@ function startTimer(question, questionOptions) {
   }, 1500)
 }
 
-
 function addSlideOut(questionOptions) {
   const delay = 200;
   questionOptions.forEach((option, index) => {
@@ -211,9 +213,6 @@ function addSlideIn(option, index) {
   }, delay * index);
 }
 
-function findCategoryByName(name) {
-  return categories.find(category => category.name === name);
-}
 
 /* ------------------------------------------------ */
 // END PAGE
@@ -228,7 +227,7 @@ function renderEndPage() {
   });
 
   quizApp.innerHTML = `
-    <h1>Slutresultat</h1>
+    <h2>Slutresultat</h2>
     <p id="showScore" class="show-score">${correctAnswersAmount} av ${questionAmount} rätt</p>
     <p class="high-score">Highscore ${highScore}🏆</p>
     <div class="button-container">
@@ -237,6 +236,83 @@ function renderEndPage() {
     </div>
 `;
   saveToLocalStorage(highScore);
+}
+
+
+/* ------------------------------------------------ */
+// RESULTS & HIGHSCORE
+/* ------------------------------------------------ */
+
+function showResult() {
+  const resultsContainer = document.createElement("div")
+  resultsContainer.classList.add("result-list")
+  
+  let resultHTML = "";
+    for(let i = 0; i < savedAnswers.length; i++){
+      const result = savedAnswers[i];
+      const isCorrect =result.selectedAnswer === result.correctAnswer;
+
+        resultHTML += `
+        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+          <div class="result-item__question-number">${i + 1}</div>
+          <div class="result-item__question-text">${result.questionText}</div>
+          <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
+          <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
+          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+        </div>
+        `;
+      };
+
+    resultsContainer.innerHTML = resultHTML;
+
+    // Show in modal on mobile:
+    openModal();
+    dialogContent.appendChild(resultsContainer);
+    // TODO: On desktop, show on page
+}
+
+function showHighscore() {
+  const highscoreData = getHighscoreData();
+
+  const highscoreContainer = document.createElement("div");
+  highscoreContainer.classList.add("highscore-container");
+
+  let highscoreHTML = "<h2>Highscore</h2>";
+
+  if (highscoreData) { 
+    for(let i=0;i<highscoreData.length;i++){
+      const highscore=highscoreData[i]
+      highscoreHTML += `
+      <div class="highscore">
+        <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
+        <div class="highscore__date">${highscore.date}</div>
+      </div>
+    `;
+    };
+  }
+  highscoreContainer.innerHTML = highscoreHTML;
+
+  // Show in modal on mobile:
+  openModal();
+  dialogContent.appendChild(highscoreContainer);
+    // TODO: On desktop, show on page
+}
+
+function openModal() {
+  dialogContent.innerHTML = "";
+  dialog.showModal();
+}
+
+function closeModal() {
+  dialog.close();
+}
+
+/* ------------------------------------------------ */
+// HELPER FUNCTIONS
+/* ------------------------------------------------ */
+
+function findCategoryByName(name) {
+  return categories.find(category => category.name === name);
 }
 
 
@@ -279,61 +355,6 @@ function generateQuestions(category, amount, questionList) {
   return generatedQuestions;
 }
 
-/* ------------------------------------------------ */
-// DISPLAY QUESTION
-/* ------------------------------------------------ */
-
-function newQuestion() {
-  const question = selectedQuestions.pop();
-  return question;
-}
-
-function displayNextQuestion() {
-  const currentQuestion = document.getElementById("questionWrapper");
-  questionRunning = true;
-  if (currentQuestion) {
-    quizApp.removeChild(currentQuestion);
-  }
-  const nextQuestion = newQuestion();
-  if (nextQuestion) {
-    renderQuestionPage(nextQuestion);
-  } else {
-    renderEndPage(); // No more questions, show the end page
-  }
-}
-
-/* ------------------------------------------------ */
-// RESULTS
-/* ------------------------------------------------ */
-
-function showResult() {
-  dialogContent.innerHTML ="";
-  const resultsContainer = document.createElement("div")
-  resultsContainer.classList.add("result-list")
-  
-  let resultHTML ="";
-    for(let i = 0; i<savedAnswers.length; i++){
-      const result = savedAnswers[i];
-      const isCorrect =result.selectedAnswer === result.correctAnswer;
-
-
-        resultHTML += `
-        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
-        <div class="result-item__question-number">${i + 1}</div>
-        <div class="result-item__question-text">${result.questionText}</div>
-        <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
-        <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
-        <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
-
-        </div>
-        `;
-      };
-
-    resultsContainer.innerHTML = resultHTML;
-    dialogContent.appendChild(resultsContainer);
-    dialog.showModal();
-}
-
 
 /* ------------------------------------------------ */
 // EVENT DELEGATOR
@@ -356,13 +377,12 @@ document.body.addEventListener("click", (e) => {
   } else if (e.target.id === "restartButton") {
     renderStartPage();
   } else if (e.target.closest("#highscoreButton")) {
-    displayHighscore();
+    showHighscore();
   } else if (e.target.closest("#closeModalButton")) {
     closeModal();
-
   } else if (e.target.id === "resultButton"){
     showResult();
-    }
+  }
 });
 
 /* ------------------------------------------------ */
