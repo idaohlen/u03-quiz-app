@@ -1,12 +1,11 @@
 .result-list {
-    height: 20rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .result-item {
-    padding: 1.3rem;
+    padding: 1rem;
     background: linear-gradient(to right,#2E84EE, #05BCEF);
     color: white;
     border-radius: 13px;
@@ -16,52 +15,64 @@
     gap: 0 1.2rem;
     align-items: center;
 }
-.result-item--wrong{
-  background: linear-gradient(to right,#ED5276, #FF82C1);
+
+.result-item--wrong {
+    background: linear-gradient(to right,#ED5276, #FF82C1);
 }
 
 .result-item--wrong .result-item__question-number {
-  color: #f34b72;
-  background-color: rgb(246, 208, 216);
+    color: #f34b72;
+    background-color: #f6d0d8;
 }
 
 .result-item--wrong .underline {
-  text-decoration-color: #e696a8;
+    text-decoration-color: #e696a8;
 }
 
 .result-item__question-number {
-  grid-row: span 2;
-  background-color:#D4EBFF;
-  color: #4659B6;
-  border-radius: 50%;
-  width: 5rem;
-  aspect-ratio: 1/1;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+    grid-row: span 2;
+    background-color:#D4EBFF;
+    color: #4659B6;
+    border-radius: 50%;
+    width: 3rem;
+    aspect-ratio: 1/1;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.result-item__question-number,.result-item__icon, .result-item__selected-answer {
-align-items: center;
-display: flex;
+.result-item__question-text {
+    display: none;
 }
 
-
-.result-item__question-text{
-  display: none;
-}
-.result-item__question-number,.result-item__selected-answer {
-  font-size: 3rem;
-  font-weight: 600;
+.result-item__selected-answer {
+    font-weight: 600;
 }
 
-.result-item__icon{
-  grid-column:3;
+.result-item__correct-answer {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.result-item__question-number,
+.result-item__selected-answer {
+  font-size: 1.6rem;
+}
+
+.result-item__question-number,
+.result-item__selected-answer, 
+.result-item__icon {
+    align-items: center;
+    display: flex;
+}
+
+.result-item__icon {
+  grid-column: 3;
   grid-row: 1 / 3;
-  font-size: 4rem;
-
+  margin-right: .5rem;
+  font-size: 2rem;
 }
 
 .button-container {

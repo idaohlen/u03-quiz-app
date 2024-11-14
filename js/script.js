@@ -244,13 +244,14 @@ function renderEndPage() {
 /* ------------------------------------------------ */
 
 function showResult() {
-  const resultsContainer = document.createElement("div")
-  resultsContainer.classList.add("result-list")
+  const resultsContainer = document.createElement("div");
+  resultsContainer.classList.add("result-list");
   
-  let resultHTML = "";
+  let resultHTML = "<h2>Resultat</h2>";
+
     for(let i = 0; i < savedAnswers.length; i++){
       const result = savedAnswers[i];
-      const isCorrect =result.selectedAnswer === result.correctAnswer;
+      const isCorrect = result.selectedAnswer === result.correctAnswer;
 
         resultHTML += `
         <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">

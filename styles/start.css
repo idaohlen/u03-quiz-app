@@ -1,15 +1,3 @@
-h1 {
-    font-size: 7rem;
-    color: white;
-    text-shadow: 2px 2px 4px var(--body-text-shadow);
-}
-
-h2 {
-    font-size: 1.8em;
-    color: #834E85;
-    text-align: center;
-}
-
 /* Highscore */
 .highscore-container {
     display: flex;
@@ -28,9 +16,11 @@ h2 {
     font-weight: 700;
 }
 
-.highscore__date{
+.highscore__date {
     color: #A374C6;
 }
+
+/* Categories */
 
 .categories-container {
     display: grid;
@@ -85,6 +75,9 @@ h2 {
     background: white;
     font-size: 4rem;
 }
+
+
+/* Buttons */
 
 .categories-mixed-button {
     margin-top: 1.5rem;
