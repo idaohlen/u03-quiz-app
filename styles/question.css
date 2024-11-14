@@ -10,6 +10,8 @@
 }
 
 .question__text {
+    user-select: none;
+
     position: relative;
     margin-bottom: 2rem;
     padding: 2rem;
@@ -39,6 +41,7 @@
 }
 
 .question__option {
+    user-select: none;
     --border: #b847a5;
     --letter-bg: #D462C3;
     --letter-text: white;
@@ -138,6 +141,8 @@
 }
 
 .timer__time {
+    user-select: none;
+
     color: var(--timer-text);
     font-size: var(--time-font-size);
     font-weight: 800;
