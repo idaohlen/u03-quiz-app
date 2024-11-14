@@ -33,6 +33,7 @@ let currentCategory;
 
 function renderStartPage() {
   savedAnswers.splice(0);
+  console.log(savedAnswers)
   correctAnswersAmount = 0;
   highScore = 0;
 
@@ -63,7 +64,7 @@ function renderStartPage() {
 
 function displayHighscore() {
   const highscoreData = getHighscoreData();
-  let highscoreHTML = `<button id="closeModalButton"><i class="icon-close"></i></button>`;
+  let highscoreHTML = "";
   if (highscoreData) { 
     highscoreData.forEach((highscore) => {
       highscoreHTML += `
@@ -292,14 +293,37 @@ function displayNextQuestion() {
 /* ------------------------------------------------ */
 
 function showResult() {
-    let resultHTML = `<button id="closeModalButton"><i class="icon-close"></i></button>`;
-    savedAnswers.forEach((result) => {
-        resultHTML += `<div class="result-list__item">${result.questionText}</div>
-        <div class="selected-answer">Ditt svar: ${result.selectedAnswer}</div>
-        <div class="correct-answer">Korrekt svar: ${result.correctAnswer}</div>`;
-      });
+  dialogContent.innerHTML ="";
+  const resultsContainer = document.createElement("div")
+  resultsContainer.classList.add("result-list")
+  
+  let resultHTML ="";
+  // savedAnswers.forEach((result) => {
+    const array = [
+      {
+        questionText:"Vad heter Australiens huvudstad?", selectedAnswer:" Canberra", correctAnswer:"Sydney"
+      }
+      
+    ];
+    for(let i = 0; i<savedAnswers.length; i++){
+      const result = savedAnswers[i];
+      const isCorrect =result.selectedAnswer === result.correctAnswer;
 
-    dialogContent.innerHTML = resultHTML;
+
+        resultHTML += `
+        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+        <div class="result-item__question-number">${i + 1}.</div>
+        <div class="result-item__question-text">${result.questionText}</div>
+        <div class="result-item__selected-answer">${result.selectedAnswer}</div>
+        <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
+        <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+
+        </div>
+        `;
+      };
+
+    resultsContainer.innerHTML = resultHTML;
+    dialogContent.appendChild(resultsContainer);
     dialog.showModal();
 }
 
