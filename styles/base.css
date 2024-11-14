@@ -55,12 +55,26 @@ body {
     overflow: hidden;
 }
 
+.underline{
+  text-decoration:underline;
+  text-underline-offset:3px;
+  text-decoration-thickness:1px;
+  text-decoration-color: #07C1DA;
+}
+
+.hidden{
+  display: none;
+}
+
 /* Dialog modal */
 
 #dialog {
     margin: auto;
     border: none;
     border-radius: 5px;
+    height: 60vh;
+    width: 100%;
+    max-width: 60vw;
 }
 
 #dialogContent {
