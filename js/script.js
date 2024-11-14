@@ -64,19 +64,24 @@ function renderStartPage() {
 }
 
 function displayHighscore() {
+  dialogContent.innerHTML="";
   const highscoreData = getHighscoreData();
-  let highscoreHTML = "";
+  const highscoreContainer=document.createElement("div")
+  highscoreContainer.classList.add("highscore-container")
+  let highscoreHTML = "<h2>Highscore </h2>";
   if (highscoreData) { 
-    highscoreData.forEach((highscore) => {
+    for(let i=0;i<highscoreData.length;i++){
+      const highscore=highscoreData[i]
       highscoreHTML += `
       <div class="highscore">
-        <div class="highscore__score">Highscore: ${highscore.highscore}</div>
-        <div class="highscore__score">Date: ${highscore.date}</div>
+        <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
+        <div class="highscore__date">${highscore.date}</div>
       </div>
     `;
-    });
+    };
   }
-  dialogContent.innerHTML = highscoreHTML;
+  highscoreContainer.innerHTML = highscoreHTML;
+  dialogContent.appendChild(highscoreContainer);
   dialog.showModal();
 }
 
