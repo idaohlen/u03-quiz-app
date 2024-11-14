@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 3;
+const questionAmount = 5;
 const savedAnswers = [];
 
 let timerInterval;
@@ -29,13 +29,13 @@ let highScore = 0;
 
 let currentCategory;
 
+
 /* ------------------------------------------------ */
 // START PAGE
 /* ------------------------------------------------ */
 
 function renderStartPage() {
   savedAnswers.splice(0);
-  console.log(savedAnswers)
   correctAnswersAmount = 0;
   highScore = 0;
 
@@ -182,7 +182,7 @@ function startTimer(question, questionOptions) {
 
   setTimeout(() => {
     timerInterval = setInterval(progressTimer, 10);
-    if(!questionRunning) clearInterval(timerInterval)
+    if(!questionRunning) clearInterval(timerInterval);
 
     function progressTimer() {
       if(timer >= 0) {
@@ -231,12 +231,27 @@ function renderEndPage() {
   });
 
   quizApp.innerHTML = `
-    <h2>Slutresultat</h2>
-    <p id="showScore" class="show-score">${correctAnswersAmount} av ${questionAmount} rätt</p>
-    <p class="high-score">Highscore ${highScore}🏆</p>
+    <h2 class="points">
+      <div class="points__amount">${highScore}</div>
+      <div class="points__unit">poäng</div>
+    </h2>
+    <div class="score">${correctAnswersAmount}/${questionAmount} rätt</div>
+
     <div class="button-container">
-      <button id="resultButton" class="button result-button">Visa resultat</button>
-      <button id="restartButton" class="button button--dark restart-button">Kör en ny omgång</button>
+      <button id="resultButton" class="button result-button">
+        <div class="button__text">Visa resultat</div>
+        <i class="icon icon-check"></i>
+      </button>
+
+      <button class="button button--dark highscore-button" id="highscoreButton">
+        <div class="button__text">Top 10 Highscores</div>
+        <i class="icon icon-trophy"></i>
+      </button>
+
+      <button id="restartButton" class="button button restart-button">
+        <div class="button__text">Kör en ny omgång</div>
+        <i class="icon icon-restart"></i>
+      </button>
     </div>
 `;
   saveToLocalStorage(highScore);
@@ -300,7 +315,7 @@ function showHighscore() {
   // Show in modal on mobile:
   openModal();
   dialogContent.appendChild(highscoreContainer);
-    // TODO: On desktop, show on page
+  // TODO: On desktop, show on page
 }
 
 function openModal() {
@@ -367,7 +382,7 @@ function generateQuestions(category, amount, questionList) {
 
 document.body.addEventListener("click", (e) => {
   // Begin quiz when clicking the category
-  if (e.target.closest(".category-button")  ||  e.target.closest(".categories-mixed-button")?.getAttribute("data-id") === "Blandat") {
+  if (e.target.closest(".category-button") || e.target.closest(".categories-mixed-button")?.getAttribute("data-id") === "Blandat") {
     quizApp.innerHTML = "";
     const chosenCategory = e.target.closest(".category-button")?.getAttribute("data-id") || "Blandat";
     selectedQuestions = generateQuestions(
@@ -379,13 +394,14 @@ document.body.addEventListener("click", (e) => {
     currentCategory = chosenCategory;
     questionRunning = true;
     renderQuestionPage(newQuestion());
-  } else if (e.target.id === "restartButton") {
+
+  } else if (e.target.closest("#restartButton")) {
     renderStartPage();
   } else if (e.target.closest("#highscoreButton")) {
     showHighscore();
   } else if (e.target.closest("#closeModalButton")) {
     closeModal();
-  } else if (e.target.id === "resultButton"){
+  } else if (e.target.closest("resultButton")) {
     showResult();
   }
 });
