@@ -401,7 +401,7 @@ document.body.addEventListener("click", (e) => {
     showHighscore();
   } else if (e.target.closest("#closeModalButton")) {
     closeModal();
-  } else if (e.target.closest("resultButton")) {
+  } else if (e.target.closest("#resultButton")) {
     showResult();
   }
 });
