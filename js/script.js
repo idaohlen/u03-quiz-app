@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 5;
+const questionAmount = 3;
 const savedAnswers = [];
 let timerInterval;
 let timer;
@@ -298,13 +298,6 @@ function showResult() {
   resultsContainer.classList.add("result-list")
   
   let resultHTML ="";
-  // savedAnswers.forEach((result) => {
-    const array = [
-      {
-        questionText:"Vad heter Australiens huvudstad?", selectedAnswer:" Canberra", correctAnswer:"Sydney"
-      }
-      
-    ];
     for(let i = 0; i<savedAnswers.length; i++){
       const result = savedAnswers[i];
       const isCorrect =result.selectedAnswer === result.correctAnswer;
@@ -312,9 +305,9 @@ function showResult() {
 
         resultHTML += `
         <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
-        <div class="result-item__question-number">${i + 1}.</div>
+        <div class="result-item__question-number">${i + 1}</div>
         <div class="result-item__question-text">${result.questionText}</div>
-        <div class="result-item__selected-answer">${result.selectedAnswer}</div>
+        <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
         <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
         <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
 

@@ -14,9 +14,15 @@
     grid-template-columns: auto 1fr auto;
     grid-template-rows:auto auto;
     gap: 0 1.2rem;
+    align-items: center;
 }
 .result-item--wrong{
   background: linear-gradient(to right,#ED5276, #FF82C1);
+}
+
+.result-item--wrong .result-item__question-number {
+  color: #f34b72;
+  background-color: rgb(246, 208, 216);
 }
 
 .result-item--wrong .underline {
@@ -25,6 +31,16 @@
 
 .result-item__question-number {
   grid-row: span 2;
+  background-color:#D4EBFF;
+  color: #4659B6;
+  border-radius: 50%;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .result-item__question-number,.result-item__icon, .result-item__selected-answer {
