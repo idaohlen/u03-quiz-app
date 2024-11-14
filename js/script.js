@@ -49,7 +49,11 @@ function renderStartPage() {
   });
 
   quizApp.innerHTML = `
-    <h1>Quiz</h1>
+    <hgroup class="title">
+      <h1 class="title__heading">QuizApp</h1>
+      <p class="title__subtitle">By Tech Titans</p>
+      <div class="title__icon"><i class="icon icon-chat_bubbles"></i></div>
+    </hgroup>
     <div class="categories-container">
     ${categoriesHTML}
     <button class="button categories-mixed-button" data-id="Blandat">
