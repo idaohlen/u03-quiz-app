@@ -115,13 +115,15 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-    <div class="timer-container">
-
-      <div id="progressBar">
-                  <div id="timer" class="timer"></div>
-
-        <div id="barStatus"></div>
+    <div class="timer-progress">
+      <div class="timer-progress__bar" id="progressBar">
+        <div class="timer-progress__status" id="barStatus"></div>
       </div>
+    </div>
+    
+    <div class="timer grow">
+      <div class="timer__time" id="timer">10.0</div>
+      <div class="timer__unit">sek kvar</div>
     </div>
 
     <div id="questionText" class="question__text slideTextIn">
@@ -153,23 +155,7 @@ function renderQuestionPage(question) {
     addSlideIn(option, index);
   });
 
-
-
   startTimer(question, questionOptions);
-}
-
-function addSlideOut(questionOptions) {
-  const delay = 200;
-  questionOptions.forEach((option, index) => {
-    setTimeout(() => option.classList.add("slideOut"), delay * index);
-  });
-}
-
-function addSlideIn(option, index) {
-  const delay = 200;
-  setTimeout(() => {
-    option.classList.add("slideIn");
-  }, delay * index);
 }
 
 function startTimer(question, questionOptions) {
@@ -183,7 +169,8 @@ function startTimer(question, questionOptions) {
     function progressTimer() {
       if(timer >= 0) {
         timer -= 10;
-        timerDiv.innerHTML = Math.ceil(timer/1000);
+        // timerDiv.innerHTML = Math.ceil(timer/1000);
+        timerDiv.innerHTML = Math.abs(timer/1000).toFixed(1);
         progressBar.style.width = (timer/100) + "%"; 
       }
       else {
@@ -195,6 +182,21 @@ function startTimer(question, questionOptions) {
       }
     }
   }, 1500)
+}
+
+
+function addSlideOut(questionOptions) {
+  const delay = 200;
+  questionOptions.forEach((option, index) => {
+    setTimeout(() => option.classList.add("slideOut"), delay * index);
+  });
+}
+
+function addSlideIn(option, index) {
+  const delay = 200;
+  setTimeout(() => {
+    option.classList.add("slideIn");
+  }, delay * index);
 }
 
 function findCategoryByName(name) {
