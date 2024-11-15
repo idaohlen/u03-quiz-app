@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 5;
+const questionAmount = 1;
 const savedAnswers = [];
 
 let timerInterval;
@@ -254,7 +254,7 @@ function renderEndPage() {
       </button>
     </div>
 `;
-  saveToLocalStorage(highScore);
+  saveToLocalStorage(highScore, currentCategory);
 }
 
 
@@ -301,11 +301,12 @@ function showHighscore() {
 
   if (highscoreData) { 
     for(let i=0;i<highscoreData.length;i++){
-      const highscore=highscoreData[i]
+      const highscore=highscoreData[i] 
       highscoreHTML += `
       <div class="highscore">
         <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
         <div class="highscore__date">${highscore.date}</div>
+        <i class=" ${findCategoryByName(currentCategory)?.icon}"></i>
       </div>
     `;
     };

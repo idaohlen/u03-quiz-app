@@ -12,14 +12,16 @@ export function shuffleArray(array) {
 }
 
 //TODO: MAKE PURE?
-export function saveToLocalStorage(highscore) {
+export function saveToLocalStorage(highscore, currentCategory) {
   let currentHighscores = JSON.parse(localStorage.getItem("Highscore"));
   const date = new Date().toLocaleString();
+  console.log(currentCategory);
 
   if (currentHighscores) {
     const newEntry = {
       highscore: highscore,
       date: date,
+      category: currentCategory,
     };
     currentHighscores.push(newEntry);
     localStorage.setItem("Highscore", JSON.stringify(currentHighscores));
@@ -27,6 +29,7 @@ export function saveToLocalStorage(highscore) {
     const newEntry = {
       highscore: highscore,
       date: date,
+      category: currentCategory,
     };
     const newHighscores = [];
     newHighscores.push(newEntry);
