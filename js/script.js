@@ -54,7 +54,7 @@ function renderStartPage() {
     <div class="categories-container">
       ${categoriesHTML}
       <button class="button categories-mixed-button" data-id="Blandat">
-        <div class="button__text">Blandade frågor</div> 
+        <div class="button__text">Blandade frågor</div>
         <i class="icon icon-shuffle"></i>
       </button>
       <button class="button button--dark highscore-button" id="highscoreButton">
@@ -65,7 +65,6 @@ function renderStartPage() {
   `;
 }
 
-
 function createTitle(forQuestionPage = false) {
   return `
       <hgroup class="title ${forQuestionPage ? "title-question-page" : ""}">
@@ -75,6 +74,7 @@ function createTitle(forQuestionPage = false) {
       </hgroup>
   `;
 }
+
 
 /* ------------------------------------------------ */
 // QUESTIONS PAGE
@@ -200,10 +200,9 @@ function startTimer(question, questionOptions) {
     function progressTimer() {
       if(timer >= 0) {
         timer -= 10;
-        // timerDiv.innerHTML = Math.ceil(timer/1000);
-        console.log(Math.abs(timer/1000).toFixed(1))
+        // console.log(Math.abs(timer/1000).toFixed(1));
         timerDiv.innerHTML = Math.abs(timer/1000).toFixed(1);
-        progressBar.style.width = (timer/100) + "%"; 
+        progressBar.style.width = (timer/100) + "%";
       }
       else {
         clearInterval(timerInterval);
@@ -278,7 +277,7 @@ function renderEndPage() {
 function showResult() {
   const resultsContainer = document.createElement("div");
   resultsContainer.classList.add("result-list");
-  
+
   let resultHTML = "<h2>Resultat</h2>";
 
     for(let i = 0; i < savedAnswers.length; i++){
@@ -312,16 +311,16 @@ function showHighscore() {
 
   let highscoreHTML = "<h2>Highscore</h2>";
 
-  if (highscoreData) { 
-    for(let i=0;i<highscoreData.length;i++){
-      const highscore=highscoreData[i] 
+  if (highscoreData) {
+    for (let i = 0; i < highscoreData.length; i++) {
+      const highscore= highscoreData[i];
       highscoreHTML += `
-      <div class="highscore">
-        <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
-        <div class="highscore__date">${highscore.date}</div>
-        <i class="${findCategoryByName(highscore.category)?.icon}"></i>
-      </div>
-    `;
+        <div class="highscore">
+          <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
+          <div class="highscore__date">${highscore.date}</div>
+          <i class="${findCategoryByName(highscore.category)?.icon}"></i>
+        </div>
+      `;
     };
   }
   highscoreContainer.innerHTML = highscoreHTML;
@@ -334,11 +333,17 @@ function showHighscore() {
 
 function openModal() {
   dialogContent.innerHTML = "";
+  dialog.classList.add("grow");
+  setTimeout(() => dialog.classList.remove("grow"), 500);
   dialog.showModal();
 }
 
 function closeModal() {
-  dialog.close();
+  dialog.classList.add("shrink");
+  setTimeout(() => {
+    dialog.close();
+    dialog.classList.remove("shrink");
+  }, 500);
 }
 
 /* ------------------------------------------------ */

@@ -198,8 +198,8 @@
     100% { transform: translateY(100vh) }
 }
 
-.grow { animation: growShrink .5s ease-in-out forwards }
-.shrink { animation: growShrink .5s ease-in-out backwards }
+.grow { animation: growShrink .4s forwards }
+.shrink { animation: growShrink .3s reverse forwards }
 
 @keyframes growShrink {
     0% { transform: scale(0) }
