@@ -4,8 +4,7 @@
     margin-inline: auto;
     padding: 2rem;
     padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 1rem;
     text-align: center;
 }
@@ -61,7 +60,6 @@
     gap: 1rem;
     transform: translateX(-100vw);
     left: 0;
-
     transition: all .4s, transform 0.5s ease;
 
     &:hover {
@@ -119,7 +117,7 @@
 .timer-progress__bar {
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 3rem;
     background-color: white;
     border-radius: 5px;
     border: 2px solid white;
@@ -138,8 +136,10 @@
 }
 
 .timer {
-    --time-font-size: clamp(3rem, 10vmin + 1rem, 10rem);
-    height: calc(var(--time-font-size) + 4rem);
+    --max-size: 10rem;
+    --time-font-size: clamp(3rem, 10vmin + 1rem, var(--max-size));
+    --space: 4rem;
+    height: calc(var(--time-font-size) + var(--space));
     display: flex;
     flex-direction: column;
 }

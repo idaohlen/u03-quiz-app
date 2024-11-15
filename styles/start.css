@@ -5,6 +5,10 @@
     grid-template-rows: auto auto;
 }
 
+.title-question-page {
+    display: none;
+}
+
 .title__heading {
     grid-column: 2;
     font-size: 4em;

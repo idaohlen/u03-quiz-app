@@ -49,25 +49,32 @@ function renderStartPage() {
   });
 
   quizApp.innerHTML = `
-    <hgroup class="title">
-      <h1 class="title__heading">QuizApp</h1>
-      <p class="title__subtitle">By Tech Titans</p>
-      <div class="title__icon"><i class="icon icon-chat_bubbles"></i></div>
-    </hgroup>
+    ${createTitle()}
+
     <div class="categories-container">
-    ${categoriesHTML}
-    <button class="button categories-mixed-button" data-id="Blandat">
-      <div class="button__text">Blandade frågor</div> 
-      <i class="icon icon-shuffle"></i>
-    </button>
-    <button class="button button--dark highscore-button" id="highscoreButton">
-      <div class="button__text">Top 10 Highscores</div>
-      <i class="icon icon-trophy"></i>
-    </button>
+      ${categoriesHTML}
+      <button class="button categories-mixed-button" data-id="Blandat">
+        <div class="button__text">Blandade frågor</div> 
+        <i class="icon icon-shuffle"></i>
+      </button>
+      <button class="button button--dark highscore-button" id="highscoreButton">
+        <div class="button__text">Top 10 Highscores</div>
+        <i class="icon icon-trophy"></i>
+      </button>
     </div>
   `;
 }
 
+
+function createTitle(forQuestionPage = false) {
+  return `
+      <hgroup class="title ${forQuestionPage ? "title-question-page" : ""}">
+        <h1 class="title__heading">QuizApp</h1>
+        <p class="title__subtitle">By Tech Titans</p>
+        <div class="title__icon"><i class="icon icon-chat_bubbles"></i></div>
+      </hgroup>
+  `;
+}
 
 /* ------------------------------------------------ */
 // QUESTIONS PAGE
@@ -100,22 +107,27 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-    <div class="timer grow">
-      <div class="timer__time" id="timer">10.0</div>
-      <div class="timer__unit">sek kvar</div>
-    </div>
+    <div class="question__title">${createTitle(true)}</div>
 
-    <div id="questionText" class="question__text slideTextIn">
-      ${question.text}
-    <i class="question__bg-icon ${findCategoryByName(currentCategory)?.icon}"></i>
-    </div>
-    <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
-
-    <div class="timer-progress">
-      <div class="timer-progress__bar" id="progressBar">
-        <div class="timer-progress__status" id="barStatus"></div>
+      <div class="timer grow">
+        <div class="timer__time" id="timer">10.0</div>
+        <div class="timer__unit">sek kvar</div>
       </div>
-    </div>
+
+      <div id="questionText" class="question__text-container slideTextIn">
+        <div class="question__text">
+          ${question.text}
+          <i class="question__bg-icon ${findCategoryByName(currentCategory)?.icon}"></i>
+        </div>
+      </div>
+
+      <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
+
+      <div class="timer-progress">
+        <div class="timer-progress__bar" id="progressBar">
+          <div class="timer-progress__status" id="barStatus"></div>
+        </div>
+      </div>
     `;
 
   // Add the question wrapper div to the quiz app container
