@@ -354,6 +354,18 @@ function findCategoryByName(name) {
   return categories.find(category => category.name === name);
 }
 
+function fadeOut(el, time) {
+  el.classList.add("fadeOut");
+  el.style.animationDuration = time + "ms";
+  setTimeout(() => el.classList.remove("fadeOut"), time);
+}
+
+function fadeIn(el, time) {
+  el.classList.add("fadeIn");
+  el.style.animationDuration = time + "ms";
+  setTimeout(() => el.classList.remove("fadeIn"), time);
+}
+
 
 /* ------------------------------------------------ */
 // PARSE QUESTIONS
@@ -402,7 +414,9 @@ function generateQuestions(category, amount, questionList) {
 document.body.addEventListener("click", (e) => {
   // Begin quiz when clicking the category
   if (e.target.closest(".category-button") || e.target.closest(".categories-mixed-button")?.getAttribute("data-id") === "Blandat") {
-    quizApp.innerHTML = "";
+    const fadeTime = 400;
+    fadeOut(quizApp, fadeTime);
+
     const chosenCategory = e.target.closest(".category-button")?.getAttribute("data-id") || "Blandat";
     selectedQuestions = generateQuestions(
       chosenCategory,
@@ -412,7 +426,12 @@ document.body.addEventListener("click", (e) => {
 
     currentCategory = chosenCategory;
     questionRunning = true;
-    renderQuestionPage(newQuestion());
+
+    setTimeout(() => {
+      quizApp.innerHTML = "";
+      renderQuestionPage(newQuestion());
+      fadeIn(quizApp, fadeTime);
+    }, fadeTime);
 
   } else if (e.target.closest("#restartButton")) {
     renderStartPage();
@@ -424,6 +443,7 @@ document.body.addEventListener("click", (e) => {
     showResult();
   }
 });
+
 
 /* ------------------------------------------------ */
 // RUN INITIAL CODE
