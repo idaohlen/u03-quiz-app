@@ -1,0 +1,12 @@
+/* Tablet */
+@media screen and (min-width: 530px) {
+  .question {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .timer-progress {
+    max-width: 90rem;
+  }
+}

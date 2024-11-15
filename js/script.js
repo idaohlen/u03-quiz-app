@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 5;
+const questionAmount = 10;
 const savedAnswers = [];
 
 let timerInterval;
@@ -91,7 +91,7 @@ function renderQuestionPage(question) {
     else if (i === 2) answerLetter = "C";
 
     answersHTML += `
-    
+
     <div data-id="${question._id["$oid"]}" data-answer="${answers[i]}" class="question__option">
       <div class="question__answer-letter">${answerLetter}</div>
       <div class="question__answer-text">${answers[i]}</div>
@@ -100,12 +100,6 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-    <div class="timer-progress">
-      <div class="timer-progress__bar" id="progressBar">
-        <div class="timer-progress__status" id="barStatus"></div>
-      </div>
-    </div>
-    
     <div class="timer grow">
       <div class="timer__time" id="timer">10.0</div>
       <div class="timer__unit">sek kvar</div>
@@ -115,7 +109,14 @@ function renderQuestionPage(question) {
       ${question.text}
     <i class="question__bg-icon ${findCategoryByName(currentCategory)?.icon}"></i>
     </div>
-    <div id="optionsContainer" class="question__options-container">${answersHTML}</div>`;
+    <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
+
+    <div class="timer-progress">
+      <div class="timer-progress__bar" id="progressBar">
+        <div class="timer-progress__status" id="barStatus"></div>
+      </div>
+    </div>
+    `;
 
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
