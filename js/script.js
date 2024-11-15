@@ -306,7 +306,7 @@ function showHighscore() {
       <div class="highscore">
         <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
         <div class="highscore__date">${highscore.date}</div>
-        <i class=" ${findCategoryByName(currentCategory)?.icon}"></i>
+        <i class="${findCategoryByName(highscore.category)?.icon}"></i>
       </div>
     `;
     };
