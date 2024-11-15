@@ -1,14 +1,40 @@
-h1 {
-    font-size: 7rem;
+.title {
+    font-size: clamp(1rem, 2vw + .5rem, 2rem);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.title__heading {
+    grid-column: 2;
+    font-size: 4em;
     color: white;
+    font-weight: 900;
     text-shadow: 2px 2px 4px var(--body-text-shadow);
 }
 
-h2 {
-    font-size: 1.8em;
-    color: #834E85;
-    text-align: center;
+.title__subtitle {
+    margin-left: -1.5em;
+    margin-top: -.7em;
+    grid-column: 2;
+    font-size: 1em;
+    font-weight: 800;
+    color: #daecff;
+    text-shadow: 1px 1px 3px var(--body-text-shadow);
 }
+
+.title__icon {
+    grid-row: 1 / span 2;
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: .1em;
+    color: white;
+    text-shadow: 2px 2px 4px var(--body-text-shadow);
+    filter: drop-shadow(1px 1px 3px var(--body-text-shadow));
+}
+
 
 /* Highscore */
 .highscore-container {
@@ -28,9 +54,11 @@ h2 {
     font-weight: 700;
 }
 
-.highscore__date{
+.highscore__date {
     color: #A374C6;
 }
+
+/* Categories */
 
 .categories-container {
     display: grid;
@@ -85,6 +113,9 @@ h2 {
     background: white;
     font-size: 4rem;
 }
+
+
+/* Buttons */
 
 .categories-mixed-button {
     margin-top: 1.5rem;

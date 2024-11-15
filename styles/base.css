@@ -33,37 +33,32 @@ html {
 
 body {
   position: relative;
-
-    font-size: 1.6rem;
-    color: var(--body-text);
-    background: linear-gradient(
-        135deg,
-        var(--body-bg-1),
-        var(--body-bg-2)
-    );
-    background-attachment: fixed;
+  background: linear-gradient(
+      135deg,
+      var(--body-bg-1),
+      var(--body-bg-2)
+      );
+      background-attachment: fixed;
+      font-size: 1.6rem;
+      color: var(--body-text);
 }
 
 #app {
     width: 100%;
     min-height: 100%;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
 }
 
-.underline{
-  text-decoration:underline;
-  text-underline-offset:3px;
-  text-decoration-thickness:1px;
-  text-decoration-color: #07C1DA;
-}
-
-.hidden{
-  display: none;
+h2 {
+    font-size: 1.8em;
+    color: #834E85;
+    text-align: center;
+    font-weight: 800;
 }
 
 /* Dialog modal */
@@ -78,7 +73,10 @@ body {
 }
 
 #dialogContent {
+    width: 100%;
+    height: 100%;
     padding: 3rem;
+    overflow: auto;
 }
 
 ::backdrop {
@@ -105,101 +103,112 @@ body {
 /* Buttons */
 
 .button {
-  width: 100%;
-  margin-inline: auto;
-  padding: 1rem;
-  padding-left: 1.4rem;
-  font-family: inherit;
-  font-size: 1.6rem;
-  font-weight: 700;
-  grid-column: 1 / -1;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  transition: all .4s;
-  outline: 3px solid transparent;
-  
-  .icon {
-    font-size: 3rem;
-  }
+    width: 100%;
+    margin-inline: auto;
+    padding: 1rem;
+    padding-left: 1.4rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 700;
+    grid-column: 1 / -1;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: all .4s;
+    outline: 3px solid transparent;
 
-  &:hover {
-      cursor: pointer;
-      outline-color: var(--category-color-2);
-      transform: scale(1.1);
-  }
+    .icon {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        outline-color: var(--category-color-2);
+        transform: scale(1.1);
+    }
 }
 
 .button:has(.icon) {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .button.button--dark {
-  color: white;
-  background: rgba(107, 49, 135, 0.605);
+    color: white;
+    background: rgba(107, 49, 135, 0.605);
 
-  &:hover {
-    outline-color: white;
-  }
+    &:hover {
+        outline-color: white;
+    }
 }
 
 /* Category colors */
 
 .category-music {
-  --category-color-1: #FE987E;
-  --category-color-2: #EC4DE0;
+    --category-color-1: #FE987E;
+    --category-color-2: #EC4DE0;
 }
 
 .category-movies {
-  --category-color-1: #6B79FF;
-  --category-color-2: #D61BFF;
+    --category-color-1: #6B79FF;
+    --category-color-2: #D61BFF;
 }
 
 .category-literature {
-  --category-color-1: #FFB832;
-  --category-color-2: #FF5E5D;
+    --category-color-1: #FFB832;
+    --category-color-2: #FF5E5D;
 }
 
 .category-geography {
-  --category-color-1: #05BCEF;
-  --category-color-2: #2EE657;
+    --category-color-1: #05BCEF;
+    --category-color-2: #2EE657;
 }
 
 .category-history {
-  --category-color-1: #07C1DA;
-  --category-color-2: #295DED;
+    --category-color-1: #07C1DA;
+    --category-color-2: #295DED;
 }
 
 .category-languages {
-  --category-color-1: #48E6E4;
-  --category-color-2: #E74EEA;
+    --category-color-1: #48E6E4;
+    --category-color-2: #E74EEA;
 }
+
+/* Helper classes */
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #07C1DA;
+  }
+  
+  .hidden {
+    display: none;
+  }
 
 /* Waves */
 
 .waves {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: 
-  url("../img/wave-pink.svg"),
-  url("../img/wave-pink.svg"),
-  url("../img/wave-pink.svg");
-  background-repeat: repeat-x;
-  background-size: 1600px 50%;
-  background-position: 0 130%, -50px 130%, 500px 130%;
-  animation: 20s waves linear infinite forwards;
-  opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: 
+    url("../img/wave-pink.svg"),
+    url("../img/wave-pink.svg"),
+    url("../img/wave-pink.svg");
+    background-repeat: repeat-x;
+    background-size: 1600px 50%;
+    background-position: 0 130%, -50px 130%, 500px 130%;
+    animation: 20s waves linear infinite forwards;
+    opacity: .5;
 }
 
 @keyframes waves {
-  to {
-    background-position: 1600px 130%, 3150px 130%, 5300px 130%;
-  }
+    to { background-position: 1600px 130%, 3150px 130%, 5300px 130% }
 }
