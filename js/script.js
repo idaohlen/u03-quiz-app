@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 10;
+const questionAmount = 1;
 const savedAnswers = [];
 
 let timerInterval;
@@ -178,7 +178,20 @@ function displayNextQuestion() {
   if (nextQuestion) {
     renderQuestionPage(nextQuestion);
   } else {
-    renderEndPage(); // No more questions, show the end page
+    // No more questions, show the end page
+    const fadeTime = 400;
+    fadeOut(quizApp, fadeTime);
+
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+
+    setTimeout(() => {
+      fadeIn(quizApp, fadeTime);
+      renderEndPage();
+    }, fadeTime + 200);
   }
 }
 
