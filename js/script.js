@@ -16,13 +16,12 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 1;
+const questionAmount = 10;
 const savedAnswers = [];
 
 let timerInterval;
 let timer;
 let baseTimer = 10000;
-let questionRunning = false;
 
 let correctAnswersAmount = 0;
 let highScore = 0;
@@ -123,7 +122,6 @@ function renderQuestionPage(question) {
   const questionOptions = document.querySelectorAll(".question__option");
 
   const handleClick = (e) => {
-    questionRunning = false;
     clearInterval(timerInterval);
 
     savedAnswers.push(
@@ -138,7 +136,7 @@ function renderQuestionPage(question) {
   };
 
   questionOptions.forEach((option, index) => {
-    option.addEventListener("click", handleClick);
+    setTimeout(() => option.addEventListener("click", handleClick), 1500);
     addSlideIn(option, index);
   });
 
@@ -157,7 +155,6 @@ function newQuestion() {
 
 function displayNextQuestion() {
   const currentQuestion = document.getElementById("questionWrapper");
-  questionRunning = true;
   if (currentQuestion) {
     quizApp.removeChild(currentQuestion);
   }
@@ -182,13 +179,11 @@ function startTimer(question, questionOptions) {
 
   setTimeout(() => {
     timerInterval = setInterval(progressTimer, 10);
-    if(!questionRunning) clearInterval(timerInterval);
 
     function progressTimer() {
       if(timer >= 0) {
         timer -= 10;
         // timerDiv.innerHTML = Math.ceil(timer/1000);
-        console.log(Math.abs(timer/1000).toFixed(1))
         timerDiv.innerHTML = Math.abs(timer/1000).toFixed(1);
         progressBar.style.width = (timer/100) + "%"; 
       }
@@ -393,7 +388,6 @@ document.body.addEventListener("click", (e) => {
     );
 
     currentCategory = chosenCategory;
-    questionRunning = true;
     renderQuestionPage(newQuestion());
 
   } else if (e.target.closest("#restartButton")) {
