@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 4;
+const questionAmount = 2;
 const savedAnswers = [];
 
 
@@ -306,6 +306,20 @@ function renderEndPage() {
     </div>
 `;
   quizApp.appendChild(endPageWrapper);
+
+
+  const resultItems = document.querySelectorAll(".result-item") 
+  resultItems.forEach((resultItem) => {
+    resultItem.addEventListener("click", (e) => {
+      const clickedResultItemId = (e.target.closest(".result-item").id).split("-").slice(-1);
+      const resultItemText = document.getElementById(`result-text-${clickedResultItemId}`)
+      const resultArrowIcon = document.getElementById(`result-arrow-${clickedResultItemId}`)
+      resultArrowIcon.classList.toggle("icon--arrow-up");
+      resultArrowIcon.classList.toggle("icon--arrow-down");
+
+      resultItemText.style.display = resultItemText.style.display !== "block" ? "block" : "none";
+    })
+  })
   saveToLocalStorage(highScore, currentCategory);
 }
 
@@ -321,13 +335,15 @@ function renderResult() {
     const isCorrect = result.selectedAnswer === result.correctAnswer;
 
       resultHTML += `
-      <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
-        <div class="result-item__question-number">${i + 1}</div>
-        <div class="result-item__question-text">${result.questionText}</div>
-        <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
-        <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
-        <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
-      </div>
+        <div id="result-item-${i}" class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+          <div class="result-item__question-number">${i + 1}</div>
+          <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
+          <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
+          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+          <div class="result-item__arrow"><i id="result-arrow-${i}" class="icon--arrow-down"></i></div>
+        </div>
+        <div id="result-text-${i}" class="result-item__question-text">${result.questionText}</div>
+
       `;
     });
 
@@ -344,6 +360,22 @@ function renderResult() {
 function showResult() {
   openModal();
   dialogContent.innerHTML = renderResult();
+
+  const resultItems = document.querySelectorAll(".result-item") 
+  resultItems.forEach((resultItem) => {
+    resultItem.addEventListener("click", (e) => {
+      
+      const clickedResultItemId = (e.target.closest(".result-item").id).split("-").slice(-1);
+      const resultItemTexts = document.querySelectorAll(`#result-text-${clickedResultItemId}`)
+      const resultArrowIcons = document.querySelectorAll(`#result-arrow-${clickedResultItemId}`)
+      resultArrowIcons.forEach(resultArrow => {
+        resultArrow.classList.toggle("icon--arrow-up");
+        resultArrow.classList.toggle("icon--arrow-down");
+      })
+      resultItemTexts.forEach(resultItem => resultItem.style.display = resultItem.style.display !== "block" ? "block" : "none");
+    })
+  })
+
 }
 
 function showHighscore() {

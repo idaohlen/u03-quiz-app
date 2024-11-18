@@ -65,20 +65,27 @@
 }
 
 .result-item__question-text {
+    margin-top: -1rem;
     display: none;
+    padding: 1rem;
+    background-color: #a3e5ff96;
+    color: black;
+    border-radius: 13px;
+    align-items: center;
 }
 
 .result-item__selected-answer {
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .result-item__correct-answer {
-    font-size: 1.2rem;
-    font-style: italic;
+  font-size: 1.6rem;
+  font-style: italic;
+
 }
 
-.result-item__question-number,
-.result-item__selected-answer {
+.result-item__question-number {
   font-size: 1.6rem;
 }
 
@@ -99,6 +106,15 @@
     margin-right: .5rem;
     font-size: 2rem;
 }
+.result-item__arrow {
+  grid-column: 4;
+  grid-row: 1 / 3;
+  margin-right: .5rem;
+  font-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+}
+
 
 /* Points */
 
