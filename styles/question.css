@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.question__title {
+  display: none;
+}
+
 .question__text {
     -webkit-user-select: none;
     user-select: none;
@@ -159,7 +163,7 @@
 
 .timer {
     --max-size: 10rem;
-    --time-font-size: clamp(3rem, 10vmin + 1rem, var(--max-size));
+    --time-font-size: clamp(5rem, 8vmin + 1rem, var(--max-size));
     --space: 4rem;
     height: calc(var(--time-font-size) + var(--space));
     display: flex;

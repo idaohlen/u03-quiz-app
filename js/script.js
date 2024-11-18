@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 10;
+const questionAmount = 4;
 const savedAnswers = [];
 
 
@@ -49,7 +49,7 @@ function renderStartPage() {
   });
 
   quizApp.innerHTML = `
-    ${createTitle()}
+    <div class="start-page__title">${createTitle()}</div>
 
     <div class="categories-container">
       ${categoriesHTML}
@@ -65,9 +65,9 @@ function renderStartPage() {
   `;
 }
 
-function createTitle(forQuestionPage = false) {
+function createTitle() {
   return `
-      <hgroup class="title ${forQuestionPage ? "title-question-page" : ""}">
+      <hgroup class="title">
         <h1 class="title__heading">QuizMix</h1>
         <p class="title__subtitle">By Tech Titans</p>
         <div class="title__icon"><i class="icon icon-chat_bubbles"></i></div>
@@ -108,7 +108,7 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-    <div class="question__title">${createTitle(true)}</div>
+    <div class="title question__title">${createTitle()}</div>
 
       <div class="timer grow">
         <div class="timer__time" id="timer">10.0</div>
@@ -263,6 +263,9 @@ function addSlideIn(option, index) {
 /* ------------------------------------------------ */
 
 function renderEndPage() {
+  const endPageWrapper = document.createElement("div");
+  endPageWrapper.classList.add("end-page");
+
   savedAnswers.forEach((result) => {
     if (result.selectedAnswer === result.correctAnswer) {
       correctAnswersAmount++;
@@ -270,12 +273,20 @@ function renderEndPage() {
     }
   });
 
-  quizApp.innerHTML = `
-    <h2 class="points">
-      <div class="points__amount">${highScore}</div>
-      <div class="points__unit">poäng</div>
-    </h2>
-    <div class="score">${correctAnswersAmount}/${questionAmount} rätt</div>
+  endPageWrapper.innerHTML = `
+    <div class="end-page__title">${createTitle()}</div>
+
+    <div class="end-page__points">
+      <h2 class="points">
+        <div class="points__amount">${highScore}</div>
+        <div class="points__unit">poäng</div>
+      </h2>
+      <div class="score">${correctAnswersAmount}/${questionAmount} rätt</div>
+    </div>
+
+    <div class="end-page__results">
+      ${renderResult()}
+    </div>
 
     <div class="button-container">
       <button id="resultButton" class="button result-button">
@@ -294,6 +305,7 @@ function renderEndPage() {
       </button>
     </div>
 `;
+  quizApp.appendChild(endPageWrapper);
   saveToLocalStorage(highScore, currentCategory);
 }
 
@@ -302,33 +314,36 @@ function renderEndPage() {
 // RESULTS & HIGHSCORE
 /* ------------------------------------------------ */
 
+function renderResult() {
+  let resultHTML = "";
+
+  savedAnswers.forEach((result, i) => {
+    const isCorrect = result.selectedAnswer === result.correctAnswer;
+
+      resultHTML += `
+      <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+        <div class="result-item__question-number">${i + 1}</div>
+        <div class="result-item__question-text">${result.questionText}</div>
+        <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
+        <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
+        <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+      </div>
+      `;
+    });
+
+    const resultsContainer = `
+      <div class="result-list">
+        <h2 class="result-title">Resultat</h2>
+        ${resultHTML}
+      </div>
+    `;
+
+    return resultsContainer;
+}
+
 function showResult() {
-  const resultsContainer = document.createElement("div");
-  resultsContainer.classList.add("result-list");
-
-  let resultHTML = "<h2>Resultat</h2>";
-
-    for(let i = 0; i < savedAnswers.length; i++){
-      const result = savedAnswers[i];
-      const isCorrect = result.selectedAnswer === result.correctAnswer;
-
-        resultHTML += `
-        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
-          <div class="result-item__question-number">${i + 1}</div>
-          <div class="result-item__question-text">${result.questionText}</div>
-          <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
-          <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
-          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
-        </div>
-        `;
-      };
-
-    resultsContainer.innerHTML = resultHTML;
-
-    // Show in modal on mobile:
-    openModal();
-    dialogContent.appendChild(resultsContainer);
-    // TODO: On desktop, show on page
+  openModal();
+  dialogContent.innerHTML = renderResult();
 }
 
 function showHighscore() {
@@ -344,13 +359,15 @@ function showHighscore() {
       const highscore= highscoreData[i];
       const dateFormatted = highscore.date.split(" ")
 
-      const dateHTML = `<span>${dateFormatted[0]}</span> <span>${dateFormatted[1]}</span>`
+      const dateHTML = `<span>${dateFormatted[0]}</span> <span class="highscore__time">${dateFormatted[1]}</span>`
 
       highscoreHTML += `
         <div class="highscore">
           <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
           <div class="highscore__date">${dateHTML}</div>
-          <i class="${findCategoryByName(highscore.category)?.icon}"></i>
+          <div class="highscore__icon ${findCategoryByName(highscore.category)?.class}" title="${highscore.category}">
+            <i class="icon ${findCategoryByName(highscore.category)?.icon}"></i>
+          </div>
         </div>
       `;
     };
