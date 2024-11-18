@@ -305,22 +305,9 @@ function renderEndPage() {
         <i class="icon icon-restart"></i>
       </button>
     </div>
-`;
+  `;
   quizApp.appendChild(endPageWrapper);
 
-
-  const resultItems = document.querySelectorAll(".result-item") 
-  resultItems.forEach((resultItem) => {
-    resultItem.addEventListener("click", (e) => {
-      const clickedResultItemId = (e.target.closest(".result-item").id).split("-").slice(-1);
-      const resultItemText = document.getElementById(`result-text-${clickedResultItemId}`)
-      const resultArrowIcon = document.getElementById(`result-arrow-${clickedResultItemId}`)
-      resultArrowIcon.classList.toggle("icon--arrow-up");
-      resultArrowIcon.classList.toggle("icon--arrow-down");
-
-      resultItemText.style.display = resultItemText.style.display !== "block" ? "block" : "none";
-    })
-  })
   saveToLocalStorage(highScore, currentCategory);
 }
 
@@ -336,15 +323,18 @@ function renderResult() {
     const isCorrect = result.selectedAnswer === result.correctAnswer;
 
       resultHTML += `
-        <div id="result-item-${i}" class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
           <div class="result-item__question-number">${i + 1}</div>
-          <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
-          <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
-          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
-          <div class="result-item__arrow"><i id="result-arrow-${i}" class="icon--arrow-down"></i></div>
-        </div>
-        <div id="result-text-${i}" class="result-item__question-text">${result.questionText}</div>
+          <div class="result-item__answer">
+            <div class="result-item__correct-answer">${result.correctAnswer}</div>
+            <div class="result-item__selected-answer ${!isCorrect ? "" : "hidden"}"><span class="result-item__selected-answer-label underline">Ditt svar: </span> ${result.selectedAnswer}</div>
+          </div>
 
+          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+          <div class="result-item__arrow"><i class="icon icon--arrow-down"></i></div>
+          <div class="result-item__question-text">${result.questionText}</div>
+        </div>
+        
       `;
     });
 
@@ -409,10 +399,8 @@ function showHighscore() {
   }
   highscoreContainer.innerHTML = highscoreHTML;
 
-  // Show in modal on mobile:
   openModal();
   dialogContent.appendChild(highscoreContainer);
-  // TODO: On desktop, show on page
 }
 
 function openModal() {
@@ -524,6 +512,20 @@ document.body.addEventListener("click", (e) => {
     closeModal();
   } else if (e.target.closest("#resultButton")) {
     showResult();
+  } else if (e.target.closest(".result-item")) {
+    // Show/hide question when viewing results
+    const resultItem = e.target.closest(".result-item");
+
+    const resultItemText = resultItem.querySelector(".result-item__question-text");
+    const resultArrowIcon = resultItem.querySelector(".result-item__arrow .icon");
+
+    resultArrowIcon.classList.toggle("icon--arrow-up");
+    resultArrowIcon.classList.toggle("icon--arrow-down");
+
+    const questionIsVisible = resultItemText.style.display === "block";
+
+    resultItemText.style.display = questionIsVisible ? "none" : "block";
+
   }
 });
 
