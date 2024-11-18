@@ -285,6 +285,7 @@ function renderEndPage() {
     </div>
 
     <div class="end-page__results">
+      <h2 class="result-title">Resultat</h2>
       ${renderResult()}
     </div>
 
@@ -349,7 +350,6 @@ function renderResult() {
 
     const resultsContainer = `
       <div class="result-list">
-        <h2 class="result-title">Resultat</h2>
         ${resultHTML}
       </div>
     `;
@@ -359,7 +359,10 @@ function renderResult() {
 
 function showResult() {
   openModal();
-  dialogContent.innerHTML = renderResult();
+  dialogContent.innerHTML = `
+    <h2 class="result-title">Resultat</h2>
+    ${renderResult()}
+  `;
 
   const resultItems = document.querySelectorAll(".result-item") 
   resultItems.forEach((resultItem) => {
