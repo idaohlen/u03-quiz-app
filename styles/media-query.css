@@ -73,6 +73,10 @@
     font-size: 15rem;
     z-index: -1;
   }
+  .question__question-counter {
+    position: relative;
+    left: 4%;
+  }
 
   .timer-progress {
     grid-column: 2;

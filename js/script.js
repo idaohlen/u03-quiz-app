@@ -142,7 +142,7 @@ function renderQuestionPage(question) {
   const questionCounter = document.getElementById("questionCounter");
 
   const procentFilled = (questionNumber/questionAmount * 100)
-  questionCounter.style.setProperty('background-image', `conic-gradient(red ${procentFilled}%, white 1%)`);
+  questionCounter.style.setProperty('background-image', `conic-gradient(var(--category-color-2) ${procentFilled}%, white 1%)`);
 
   const handleClick = (e) => {
     clearInterval(timerInterval);
