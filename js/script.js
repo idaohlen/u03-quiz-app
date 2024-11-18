@@ -19,6 +19,7 @@ const questionsFile = "./questionDataBase.questions.json";
 const questionAmount = 1;
 const savedAnswers = [];
 
+
 let timerInterval;
 let timer;
 let baseTimer = 10000;
@@ -327,10 +328,14 @@ function showHighscore() {
   if (highscoreData) {
     for (let i = 0; i < highscoreData.length; i++) {
       const highscore= highscoreData[i];
+      const dateFormatted = highscore.date.split(" ")
+
+      const dateHTML = `<span>${dateFormatted[0]}</span> <span>${dateFormatted[1]}</span>`
+
       highscoreHTML += `
         <div class="highscore">
           <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
-          <div class="highscore__date">${highscore.date}</div>
+          <div class="highscore__date">${dateHTML}</div>
           <i class="${findCategoryByName(highscore.category)?.icon}"></i>
         </div>
       `;
