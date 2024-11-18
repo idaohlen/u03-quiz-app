@@ -273,6 +273,38 @@ function renderEndPage() {
     }
   });
 
+  const newHighscore = saveToLocalStorage(highScore, currentCategory);
+  const highscores = getHighscoreData();
+  const findHighscore = highscores.findIndex(x => x.date === newHighscore.date);
+
+  let highscoreDate = newHighscore.date;
+  let highscoreHighlights = "";
+  let startIndex = 0;
+
+  if (findHighscore < 0) {
+    // Didn't make top 10, show the top 3
+    highscoreDate = null;
+    highscoreHighlights = highscores.slice(0, 3);
+  } else if (findHighscore === 0) {
+    // First place in highscore
+    highscoreHighlights = highscores.slice(0, 3);
+  } else if (findHighscore === highscores.length) {
+    // Last place in highscore
+    startIndex = 7;
+    highscoreHighlights = highscores.slice(-3);
+  } else if (highscores.length <= 3) {
+    // If there are 3 or less highscores, show them all
+    startIndex = 0;
+    highscoreHighlights = highscores;
+  } 
+  else {
+    startIndex = findHighscore - 1;
+    highscoreHighlights = [highscores[findHighscore - 1], newHighscore, highscores[findHighscore + 1]];
+  }
+
+
+  console.log(highscoreHighlights);
+
   endPageWrapper.innerHTML = `
     <div class="end-page__title">${createTitle()}</div>
 
@@ -289,7 +321,11 @@ function renderEndPage() {
       ${renderResult()}
     </div>
 
-    <div class="button-container">
+    <div class="bottom-container">
+      <div class="highscore-highlights">
+        ${renderHighscore(highscoreHighlights, startIndex, highscoreDate)}
+      </div>
+
       <button id="resultButton" class="button result-button">
         <div class="button__text">Visa resultat</div>
         <i class="icon icon-check"></i>
@@ -307,8 +343,6 @@ function renderEndPage() {
     </div>
   `;
   quizApp.appendChild(endPageWrapper);
-
-  saveToLocalStorage(highScore, currentCategory);
 }
 
 
@@ -371,32 +405,45 @@ function showResult() {
 
 }
 
+function renderHighscore(data, startIndex = 0, highscoreDate = null) {
+  let html = "";
+  data.forEach((highscore, i) => {
+    const dateFormatted = highscore.date.split(" ");
+
+    const dateHTML = `<span>${dateFormatted[0]}</span> <span class="highscore__time">${dateFormatted[1]}</span>`;
+
+    html += `
+      <div class="highscore ${highscoreDate === highscore.date ? "highscore__highlight" : ""}">
+        <div class="highscore__score">${startIndex + i + 1}. ${highscore.highscore}p</div>
+        <div class="highscore__date">${dateHTML}</div>
+        <div class="highscore__icon ${findCategoryByName(highscore.category)?.class}" title="${highscore.category}">
+          <i class="icon ${findCategoryByName(highscore.category)?.icon}"></i>
+        </div>
+      </div>
+    `;
+  });
+
+  return html;
+}
+
 function showHighscore() {
   const highscoreData = getHighscoreData();
 
   const highscoreContainer = document.createElement("div");
   highscoreContainer.classList.add("highscore-container");
 
-  let highscoreHTML = "<h2>Highscore</h2>";
+  let highscoreHTML = `
+    <h2>Highscore</h2>
+    <p>Inga highscores har registrerats.</p>
+  `;
 
-  if (highscoreData) {
-    for (let i = 0; i < highscoreData.length; i++) {
-      const highscore= highscoreData[i];
-      const dateFormatted = highscore.date.split(" ")
-
-      const dateHTML = `<span>${dateFormatted[0]}</span> <span class="highscore__time">${dateFormatted[1]}</span>`
-
-      highscoreHTML += `
-        <div class="highscore">
-          <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
-          <div class="highscore__date">${dateHTML}</div>
-          <div class="highscore__icon ${findCategoryByName(highscore.category)?.class}" title="${highscore.category}">
-            <i class="icon ${findCategoryByName(highscore.category)?.icon}"></i>
-          </div>
-        </div>
-      `;
-    };
+  if (highscoreData.length > 0) {
+    highscoreHTML = `
+      <h2>Highscore</h2>
+        ${renderHighscore(highscoreData)}
+    `;
   }
+
   highscoreContainer.innerHTML = highscoreHTML;
 
   openModal();

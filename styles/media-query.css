@@ -119,7 +119,7 @@
     justify-content: center;
   }
 
-  .button-container {
+  .bottom-container {
     grid-column: span 2;
     margin-inline: auto;
   }
@@ -131,6 +131,10 @@
   .score {
     max-width: 20rem;
     margin-inline: auto;
+  }
+
+  .highscore-highlights {
+    display: block;
   }
 }
 

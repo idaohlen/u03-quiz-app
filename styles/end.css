@@ -6,6 +6,15 @@
   display: none;
 }
 
+.bottom-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 30rem;
+}
+
 .end-page__results {
   display: none;
 }
@@ -127,6 +136,16 @@
 }
 
 
+/* Highscore */
+
+.highscore-highlights {
+  display: none;
+}
+
+.highscore__highlight {
+  outline: 2px solid red;
+}
+
 /* Points */
 
 .points {
@@ -167,15 +186,6 @@
 
 
 /* Buttons */
-
-.button-container {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    max-width: 30rem;
-}
 
 .result-button {
   background: rgba(62, 109, 146, 0.432);
