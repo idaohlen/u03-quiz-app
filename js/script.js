@@ -68,7 +68,7 @@ function renderStartPage() {
 function createTitle(forQuestionPage = false) {
   return `
       <hgroup class="title ${forQuestionPage ? "title-question-page" : ""}">
-        <h1 class="title__heading">QuizApp</h1>
+        <h1 class="title__heading">QuizMix</h1>
         <p class="title__subtitle">By Tech Titans</p>
         <div class="title__icon"><i class="icon icon-chat_bubbles"></i></div>
       </hgroup>
