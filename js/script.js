@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 1;
+const questionAmount = 10;
 const savedAnswers = [];
 
 let timerInterval;
@@ -78,6 +78,7 @@ function renderQuestionPage(question) {
   const questionWrapper = document.createElement("div");
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
+  const questionNumber = questionAmount - selectedQuestions.length
 
   // Put correct answer + incorrect answers into an array
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
@@ -115,25 +116,43 @@ function renderQuestionPage(question) {
       ${question.text}
     <i class="question__bg-icon ${findCategoryByName(currentCategory)?.icon}"></i>
     </div>
-    <div id="optionsContainer" class="question__options-container">${answersHTML}</div>`;
+    <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
+    <div id="questionCounter" class="question__question-counter">
+    <div class="question_counter-fill">
+    ${questionNumber}</div>
+    </div>`;
 
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
   const questionOptions = document.querySelectorAll(".question__option");
+  const questionCounter = document.getElementById("questionCounter");
+
+  const procentFilled = (questionNumber/questionAmount * 100)
+  questionCounter.style.setProperty('background-image', `conic-gradient(red ${procentFilled}%, white 1%)`);
 
   const handleClick = (e) => {
     questionRunning = false;
     clearInterval(timerInterval);
 
     savedAnswers.push(
-      saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer / 1000))
+      saveAnswer(
+        question,
+        e.target.closest(".question__option").getAttribute("data-answer"),
+        timer / 1000
+      )
     );
-    questionOptions.forEach(o => {
-      o.removeEventListener("click", handleClick)
-  });
-  addSlideOut(questionOptions);
-    setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
+    questionOptions.forEach((o) => {
+      o.removeEventListener("click", handleClick);
+    });
+    addSlideOut(questionOptions);
+    setTimeout(
+      () =>
+        document
+          .querySelector(".question__text")
+          .classList.toggle("slideTextOut"),
+      1000
+    );
     setTimeout(displayNextQuestion, 2000);
   };
 
@@ -188,7 +207,6 @@ function startTimer(question, questionOptions) {
       if(timer >= 0) {
         timer -= 10;
         // timerDiv.innerHTML = Math.ceil(timer/1000);
-        console.log(Math.abs(timer/1000).toFixed(1))
         timerDiv.innerHTML = Math.abs(timer/1000).toFixed(1);
         progressBar.style.width = (timer/100) + "%"; 
       }
