@@ -11,7 +11,7 @@
     color: white;
     border-radius: 13px;
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto auto;
     grid-template-rows:auto auto;
     gap: 0 1.2rem;
     align-items: center;
@@ -45,20 +45,27 @@
 }
 
 .result-item__question-text {
+    margin-top: -1rem;
     display: none;
+    padding: 1rem;
+    background: linear-gradient(to right,#b9fcff, #ebfdff);
+    color: black;
+    border-radius: 13px;
+    align-items: center;
 }
 
 .result-item__selected-answer {
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .result-item__correct-answer {
-    font-size: 1.2rem;
-    font-style: italic;
+  font-size: 1.6rem;
+  font-style: italic;
+
 }
 
-.result-item__question-number,
-.result-item__selected-answer {
+.result-item__question-number {
   font-size: 1.6rem;
 }
 

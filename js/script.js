@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 10;
+const questionAmount = 1;
 const savedAnswers = [];
 
 
@@ -313,22 +313,36 @@ function showResult() {
       const isCorrect = result.selectedAnswer === result.correctAnswer;
 
         resultHTML += `
-        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+        <div id="result-item-${i}" class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
           <div class="result-item__question-number">${i + 1}</div>
-          <div class="result-item__question-text">${result.questionText}</div>
-          <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
           <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
+          <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
           <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+          <div class="result-item__arrow .icon--arrow-up"></div>
         </div>
-        `;
-      };
+        <div id="result-text-${i}" class="result-item__question-text">${result.questionText}</div>
 
+        `;
+
+      };
     resultsContainer.innerHTML = resultHTML;
 
     // Show in modal on mobile:
     openModal();
     dialogContent.appendChild(resultsContainer);
     // TODO: On desktop, show on page
+
+
+    const resultItems = document.querySelectorAll(".result-item") 
+    resultItems.forEach((resultItem) => {
+      resultItem.addEventListener("click", (e) => {
+        const clickedResultItemId = (e.target.closest(".result-item").id).split("-").slice(-1);
+        const resultItemText = document.getElementById(`result-text-${clickedResultItemId}`)
+        console.log(resultItemText.style.display)
+        resultItemText.style.display = resultItemText.style.display !== "block" ? "block" : "none";
+      })
+    })
+
 }
 
 function showHighscore() {
