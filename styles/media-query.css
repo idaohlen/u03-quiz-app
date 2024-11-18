@@ -10,10 +10,6 @@
   .timer-progress {
     max-width: 90rem;
   }
-
-  /* .timer {
-    --max-size: 7rem;
-  } */
 }
 
 /* Desktop */
@@ -134,7 +130,13 @@
   }
 
   .highscore-highlights {
-    display: block;
+    display: flex;
   }
 }
 
+/* Hide highscore highlights if screen height is too small */
+@media screen and (max-height: 700px) {
+  .highscore-highlights {
+    display: none;
+  }
+}

@@ -126,6 +126,7 @@ h2 {
 
 .button {
     width: 100%;
+    max-width: 30rem;
     margin-inline: auto;
     padding: 1rem;
     padding-left: 1.4rem;

@@ -16,7 +16,7 @@ const categories = [
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 2;
+const questionAmount = 10;
 const savedAnswers = [];
 
 
@@ -312,6 +312,7 @@ function renderEndPage() {
       <h2 class="points">
         <div class="points__amount">${highScore}</div>
         <div class="points__unit">poäng</div>
+        ${findHighscore > -1 ? `<div class="points__highscore-marker title="Highscore!"><i class="icon icon-trophy"></i></div>` : ""}
       </h2>
       <div class="score">${correctAnswersAmount}/${questionAmount} rätt</div>
     </div>
