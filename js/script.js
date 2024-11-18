@@ -19,10 +19,10 @@ const questionsFile = "./questionDataBase.questions.json";
 const questionAmount = 10;
 const savedAnswers = [];
 
+
 let timerInterval;
 let timer;
 let baseTimer = 10000;
-let questionRunning = false;
 
 let correctAnswersAmount = 0;
 let highScore = 0;
@@ -49,22 +49,29 @@ function renderStartPage() {
   });
 
   quizApp.innerHTML = `
-    <hgroup class="title">
-      <h1 class="title__heading">QuizApp</h1>
-      <p class="title__subtitle">By Tech Titans</p>
-      <div class="title__icon"><i class="icon icon-chat_bubbles"></i></div>
-    </hgroup>
+    ${createTitle()}
+
     <div class="categories-container">
-    ${categoriesHTML}
-    <button class="button categories-mixed-button" data-id="Blandat">
-      <div class="button__text">Blandade frågor</div> 
-      <i class="icon icon-shuffle"></i>
-    </button>
-    <button class="button button--dark highscore-button" id="highscoreButton">
-      <div class="button__text">Top 10 Highscores</div>
-      <i class="icon icon-trophy"></i>
-    </button>
+      ${categoriesHTML}
+      <button class="button categories-mixed-button" data-id="Blandat">
+        <div class="button__text">Blandade frågor</div>
+        <i class="icon icon-shuffle"></i>
+      </button>
+      <button class="button button--dark highscore-button" id="highscoreButton">
+        <div class="button__text">Top 10 Highscores</div>
+        <i class="icon icon-trophy"></i>
+      </button>
     </div>
+  `;
+}
+
+function createTitle(forQuestionPage = false) {
+  return `
+      <hgroup class="title ${forQuestionPage ? "title-question-page" : ""}">
+        <h1 class="title__heading">QuizApp</h1>
+        <p class="title__subtitle">By Tech Titans</p>
+        <div class="title__icon"><i class="icon icon-chat_bubbles"></i></div>
+      </hgroup>
   `;
 }
 
@@ -92,7 +99,7 @@ function renderQuestionPage(question) {
     else if (i === 2) answerLetter = "C";
 
     answersHTML += `
-    
+
     <div data-id="${question._id["$oid"]}" data-answer="${answers[i]}" class="question__option">
       <div class="question__answer-letter">${answerLetter}</div>
       <div class="question__answer-text">${answers[i]}</div>
@@ -101,26 +108,32 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-    <div class="timer-progress">
-      <div class="timer-progress__bar" id="progressBar">
-        <div class="timer-progress__status" id="barStatus"></div>
-      </div>
-    </div>
-    
-    <div class="timer grow">
-      <div class="timer__time" id="timer">10.0</div>
-      <div class="timer__unit">sek kvar</div>
-    </div>
+    <div class="question__title">${createTitle(true)}</div>
 
-    <div id="questionText" class="question__text slideTextIn">
-      ${question.text}
-    <i class="question__bg-icon ${findCategoryByName(currentCategory)?.icon}"></i>
-    </div>
-    <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
-    <div id="questionCounter" class="question__question-counter">
-    <div class="question_counter-fill">
-    ${questionNumber}</div>
-    </div>`;
+      <div class="timer grow">
+        <div class="timer__time" id="timer">10.0</div>
+        <div class="timer__unit">sek kvar</div>
+      </div>
+
+      <div id="questionText" class="question__text-container slideTextIn">
+        <div class="question__text">
+          ${question.text}
+          <i class="question__bg-icon ${findCategoryByName(currentCategory)?.icon}"></i>
+        </div>
+      </div>
+
+      <div id="optionsContainer" class="question__options-container">${answersHTML}</div>
+
+      <div class="timer-progress">
+        <div class="timer-progress__bar" id="progressBar">
+          <div class="timer-progress__status" id="barStatus"></div>
+        </div>
+      </div>
+  
+      <div id="questionCounter" class="question__question-counter">
+        <div class="question_counter-fill">${questionNumber}</div>
+      </div>
+    `;
 
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
@@ -132,7 +145,6 @@ function renderQuestionPage(question) {
   questionCounter.style.setProperty('background-image', `conic-gradient(red ${procentFilled}%, white 1%)`);
 
   const handleClick = (e) => {
-    questionRunning = false;
     clearInterval(timerInterval);
 
     savedAnswers.push(
@@ -157,7 +169,7 @@ function renderQuestionPage(question) {
   };
 
   questionOptions.forEach((option, index) => {
-    option.addEventListener("click", handleClick);
+    setTimeout(() => option.addEventListener("click", handleClick), 1500);
     addSlideIn(option, index);
   });
 
@@ -176,7 +188,6 @@ function newQuestion() {
 
 function displayNextQuestion() {
   const currentQuestion = document.getElementById("questionWrapper");
-  questionRunning = true;
   if (currentQuestion) {
     quizApp.removeChild(currentQuestion);
   }
@@ -184,7 +195,20 @@ function displayNextQuestion() {
   if (nextQuestion) {
     renderQuestionPage(nextQuestion);
   } else {
-    renderEndPage(); // No more questions, show the end page
+    // No more questions, show the end page
+    const fadeTime = 400;
+    fadeOut(quizApp, fadeTime);
+
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+
+    setTimeout(() => {
+      fadeIn(quizApp, fadeTime);
+      renderEndPage();
+    }, fadeTime + 200);
   }
 }
 
@@ -201,14 +225,12 @@ function startTimer(question, questionOptions) {
 
   setTimeout(() => {
     timerInterval = setInterval(progressTimer, 10);
-    if(!questionRunning) clearInterval(timerInterval);
 
     function progressTimer() {
       if(timer >= 0) {
         timer -= 10;
-        // timerDiv.innerHTML = Math.ceil(timer/1000);
         timerDiv.innerHTML = Math.abs(timer/1000).toFixed(1);
-        progressBar.style.width = (timer/100) + "%"; 
+        progressBar.style.width = (timer/100) + "%";
       }
       else {
         clearInterval(timerInterval);
@@ -283,7 +305,7 @@ function renderEndPage() {
 function showResult() {
   const resultsContainer = document.createElement("div");
   resultsContainer.classList.add("result-list");
-  
+
   let resultHTML = "<h2>Resultat</h2>";
 
     for(let i = 0; i < savedAnswers.length; i++){
@@ -317,16 +339,20 @@ function showHighscore() {
 
   let highscoreHTML = "<h2>Highscore</h2>";
 
-  if (highscoreData) { 
-    for(let i=0;i<highscoreData.length;i++){
-      const highscore=highscoreData[i] 
+  if (highscoreData) {
+    for (let i = 0; i < highscoreData.length; i++) {
+      const highscore= highscoreData[i];
+      const dateFormatted = highscore.date.split(" ")
+
+      const dateHTML = `<span>${dateFormatted[0]}</span> <span>${dateFormatted[1]}</span>`
+
       highscoreHTML += `
-      <div class="highscore">
-        <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
-        <div class="highscore__date">${highscore.date}</div>
-        <i class="${findCategoryByName(highscore.category)?.icon}"></i>
-      </div>
-    `;
+        <div class="highscore">
+          <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
+          <div class="highscore__date">${dateHTML}</div>
+          <i class="${findCategoryByName(highscore.category)?.icon}"></i>
+        </div>
+      `;
     };
   }
   highscoreContainer.innerHTML = highscoreHTML;
@@ -339,11 +365,17 @@ function showHighscore() {
 
 function openModal() {
   dialogContent.innerHTML = "";
+  dialog.classList.add("grow");
+  setTimeout(() => dialog.classList.remove("grow"), 500);
   dialog.showModal();
 }
 
 function closeModal() {
-  dialog.close();
+  dialog.classList.add("shrink");
+  setTimeout(() => {
+    dialog.close();
+    dialog.classList.remove("shrink");
+  }, 500);
 }
 
 /* ------------------------------------------------ */
@@ -352,6 +384,18 @@ function closeModal() {
 
 function findCategoryByName(name) {
   return categories.find(category => category.name === name);
+}
+
+function fadeOut(el, time) {
+  el.classList.add("fadeOut");
+  el.style.animationDuration = time + "ms";
+  setTimeout(() => el.classList.remove("fadeOut"), time);
+}
+
+function fadeIn(el, time) {
+  el.classList.add("fadeIn");
+  el.style.animationDuration = time + "ms";
+  setTimeout(() => el.classList.remove("fadeIn"), time);
 }
 
 
@@ -402,7 +446,9 @@ function generateQuestions(category, amount, questionList) {
 document.body.addEventListener("click", (e) => {
   // Begin quiz when clicking the category
   if (e.target.closest(".category-button") || e.target.closest(".categories-mixed-button")?.getAttribute("data-id") === "Blandat") {
-    quizApp.innerHTML = "";
+    const fadeTime = 400;
+    fadeOut(quizApp, fadeTime);
+
     const chosenCategory = e.target.closest(".category-button")?.getAttribute("data-id") || "Blandat";
     selectedQuestions = generateQuestions(
       chosenCategory,
@@ -411,8 +457,12 @@ document.body.addEventListener("click", (e) => {
     );
 
     currentCategory = chosenCategory;
-    questionRunning = true;
-    renderQuestionPage(newQuestion());
+
+    setTimeout(() => {
+      quizApp.innerHTML = "";
+      renderQuestionPage(newQuestion());
+      fadeIn(quizApp, fadeTime);
+    }, fadeTime);
 
   } else if (e.target.closest("#restartButton")) {
     renderStartPage();
@@ -424,6 +474,7 @@ document.body.addEventListener("click", (e) => {
     showResult();
   }
 });
+
 
 /* ------------------------------------------------ */
 // RUN INITIAL CODE
