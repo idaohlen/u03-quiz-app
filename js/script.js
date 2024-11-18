@@ -13,12 +13,13 @@ const categories = [
   {name: "Språk", icon: "icon-chat", class: "category-languages"},
 ];
 
+const mixCategory = {name: "Blandat", icon: "icon-shuffle", class: "category-mix"}
+
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 10;
+const questionAmount = 2;
 const savedAnswers = [];
-
 
 let timerInterval;
 let timer;
@@ -471,7 +472,9 @@ function closeModal() {
 /* ------------------------------------------------ */
 
 function findCategoryByName(name) {
-  return categories.find(category => category.name === name);
+  const categoryFound = categories.find(category => category.name === name);
+  if (categoryFound) return categoryFound;
+  else return mixCategory;
 }
 
 function fadeOut(el, time) {
