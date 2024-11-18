@@ -14,8 +14,7 @@ export function shuffleArray(array) {
 //TODO: MAKE PURE?
 export function saveToLocalStorage(highscore, currentCategory) {
   let currentHighscores = JSON.parse(localStorage.getItem("Highscore"));
-  const date = new Date().toLocaleString();
-  console.log(currentCategory);
+  const date = new Date().toLocaleString("sv-se");
 
   if (currentHighscores) {
     const newEntry = {

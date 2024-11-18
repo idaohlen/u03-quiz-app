@@ -1,15 +1,16 @@
 
 .question {
-    width: 75%;
+    width: 100%;
     margin-inline: auto;
+    padding: 2rem;
     padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 1rem;
     text-align: center;
 }
 
 .question__text {
+    -webkit-user-select: none;
     user-select: none;
     position: relative;
     margin-bottom: 2rem;
@@ -40,10 +41,11 @@
 }
 
 .question__option {
-    user-select: none;
     --border: #b847a5;
     --letter-bg: #D462C3;
     --letter-text: white;
+    -webkit-user-select: none;
+    user-select: none;
     position: relative;
     white-space: normal;
     font-family: inherit;
@@ -56,7 +58,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    transform: translateX(-120%);
+    transform: translateX(-100vw);
     left: 0;
     transition: all .4s, transform 0.5s ease;
 
@@ -107,20 +109,21 @@
     position: absolute;
     width: 100%;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 2rem;
 }
 
 .timer-progress__bar {
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 3rem;
     background-color: white;
     border-radius: 5px;
     border: 2px solid white;
     overflow: hidden;
   }
-  
+
 .timer-progress__status {
     position: absolute;
     width: 0%;
@@ -133,15 +136,17 @@
 }
 
 .timer {
-    --time-font-size: clamp(3rem, 10vmin + 1rem, 10rem);
-    height: calc(var(--time-font-size) + 4rem);
+    --max-size: 10rem;
+    --time-font-size: clamp(3rem, 10vmin + 1rem, var(--max-size));
+    --space: 4rem;
+    height: calc(var(--time-font-size) + var(--space));
     display: flex;
     flex-direction: column;
 }
 
 .timer__time {
+    -webkit-user-select: none;
     user-select: none;
-
     color: var(--timer-text);
     font-size: var(--time-font-size);
     font-weight: 800;
@@ -193,8 +198,8 @@
     100% { transform: translateY(100vh) }
 }
 
-.grow { animation: growShrink .5s ease-in-out forwards }
-.shrink { animation: growShrink .5s ease-in-out backwards }
+.grow { animation: growShrink .4s forwards }
+.shrink { animation: growShrink .3s reverse forwards }
 
 @keyframes growShrink {
     0% { transform: scale(0) }
