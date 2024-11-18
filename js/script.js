@@ -85,6 +85,7 @@ function renderQuestionPage(question) {
   const questionWrapper = document.createElement("div");
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
+  const questionNumber = questionAmount - selectedQuestions.length
 
   // Put correct answer + incorrect answers into an array
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
@@ -128,24 +129,42 @@ function renderQuestionPage(question) {
           <div class="timer-progress__status" id="barStatus"></div>
         </div>
       </div>
+  
+      <div id="questionCounter" class="question__question-counter">
+        <div class="question_counter-fill">${questionNumber}</div>
+      </div>
     `;
 
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
   const questionOptions = document.querySelectorAll(".question__option");
+  const questionCounter = document.getElementById("questionCounter");
+
+  const procentFilled = (questionNumber/questionAmount * 100)
+  questionCounter.style.setProperty('background-image', `conic-gradient(red ${procentFilled}%, white 1%)`);
 
   const handleClick = (e) => {
     clearInterval(timerInterval);
 
     savedAnswers.push(
-      saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer / 1000))
+      saveAnswer(
+        question,
+        e.target.closest(".question__option").getAttribute("data-answer"),
+        timer / 1000
+      )
     );
-    questionOptions.forEach(o => {
-      o.removeEventListener("click", handleClick)
-  });
-  addSlideOut(questionOptions);
-    setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
+    questionOptions.forEach((o) => {
+      o.removeEventListener("click", handleClick);
+    });
+    addSlideOut(questionOptions);
+    setTimeout(
+      () =>
+        document
+          .querySelector(".question__text")
+          .classList.toggle("slideTextOut"),
+      1000
+    );
     setTimeout(displayNextQuestion, 2000);
   };
 

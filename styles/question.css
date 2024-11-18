@@ -98,6 +98,28 @@
   --letter-text: white;
 }
 
+.question__question-counter {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self:end;
+
+}
+
+.question_counter-fill {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 /* Progress bar / Timer */
 
@@ -167,6 +189,8 @@
         1px 1px 6px var(--timer-shadow)
     ;
 }
+
+
 
 /* Animations */
 
