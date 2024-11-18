@@ -56,7 +56,7 @@ body {
 
 h2 {
     font-size: 1.8em;
-    color: #834E85;
+    color: white;
     text-align: center;
     font-weight: 800;
 }
@@ -69,12 +69,12 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #bd9bcb;
+    background: #8dc6e4;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a975b8;
+    background: #6498b4;
 }
 
 /* Dialog modal */
@@ -93,6 +93,11 @@ h2 {
     height: 100%;
     padding: 3rem;
     overflow: auto;
+}
+
+#dialog h2 {
+    color: #834E85;
+    text-shadow: none;
 }
 
 ::backdrop {
@@ -115,6 +120,7 @@ h2 {
       color: var(--close-modal-text-hover);
     }
 }
+
 
 /* Buttons */
 
@@ -208,7 +214,7 @@ h2 {
 /* Waves */
 
 .waves {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -221,6 +227,7 @@ h2 {
     background-repeat: repeat-x;
     background-size: 1600px 50%;
     background-position: 0 130%, -50px 130%, 500px 130%;
+    background-attachment: fixed;
     animation: 20s waves linear infinite forwards;
     opacity: .5;
 }
