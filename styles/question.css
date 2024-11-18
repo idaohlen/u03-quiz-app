@@ -106,8 +106,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self:end;
-
+    position: absolute;
+    top: 10%;
 }
 
 .question_counter-fill {
