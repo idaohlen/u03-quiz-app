@@ -1,21 +1,26 @@
 .end-page {
-  display: grid;
+    display: grid;
 }
 
 .end-page__title {
-  display: none;
+    display: none;
+}
+
+.bottom-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
 }
 
 .end-page__results {
-  display: none;
-  height: 20rem;
-  width: 40rem;
-  overflow: auto;
-  padding: 1rem;
+    display: none;
 }
 
 .result-title {
-  text-shadow: 1px 1px 2px var(--body-text-shadow);
+    margin-bottom: .4rem;
+    text-shadow: 1px 1px 2px var(--body-text-shadow);
 }
 
 /*  Result */
@@ -23,18 +28,36 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    min-height: 20rem;
+    height: 30vh;
+    width: 40rem;
+    overflow: auto;
+    padding: 1rem;
+}
+
+#dialog .result-list {
+    height: auto;
+    width: auto;
+    overflow: visible;
 }
 
 .result-item {
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1.2rem;
     background: linear-gradient(to right,#2E84EE, #05BCEF);
     color: white;
     border-radius: 13px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows:auto auto;
-    gap: 0 1.2rem;
-    align-items: center;
+    overflow: hidden;
+    transition: box-shadow .4s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 6px white;
+    }
 }
 
 .result-item--wrong {
@@ -51,12 +74,12 @@
 }
 
 .result-item__question-number {
-    grid-row: span 2;
     background-color:#D4EBFF;
     color: #4659B6;
     border-radius: 50%;
     width: 3rem;
-    aspect-ratio: 1/1;
+    height: 3rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
     display: flex;
@@ -64,78 +87,140 @@
     align-items: center;
 }
 
-.result-item__question-text {
-    margin-top: -1rem;
-    display: none;
-    padding: 1rem;
-    background-color: #a3e5ff96;
-    color: black;
-    border-radius: 13px;
-    align-items: center;
+.result-item__answer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.result-item__correct-answer {
+  font-size: 1.6rem;
 }
 
 .result-item__selected-answer {
     font-weight: 600;
     font-size: 1.2rem;
+    font-style: italic;
 }
 
-.result-item__correct-answer {
-  font-size: 1.6rem;
-  font-style: italic;
-
-}
-
-.result-item__question-number {
-  font-size: 1.6rem;
-}
-
-.result-item__question-number,
-.result-item__selected-answer, 
 .result-item__icon {
     align-items: center;
     display: flex;
+    gap: .5rem;
 }
 
-.result-item__correct-answer {
-  text-align: left;
+.result-item__question-text {
+    display: none;
+    flex: 1 100%;
+    margin-top: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.151);
+    border: 1px solid rgba(255, 255, 255, 0.194);
+    border-radius: 10px;
 }
 
 .result-item__icon {
-    grid-column: 3;
-    grid-row: 1 / 3;
     margin-right: .5rem;
     font-size: 2rem;
 }
 .result-item__arrow {
-  grid-column: 4;
-  grid-row: 1 / 3;
-  margin-right: .5rem;
-  font-size: 2rem;
-  height: 2rem;
-  width: 2rem;
+    margin-right: .5rem;
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
 }
 
+
+/* Highscore */
+
+.highscore-highlights {
+    width: 100%;
+    max-width: 30rem;
+    margin-inline: auto;
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#app {
+    .highscore {
+        color: #0077AA;
+        gap: .7rem;
+        padding: .5rem .5rem .5rem 1rem;
+        background: rgba(255, 255, 255, 0.646);
+    }
+
+    .highscore__date {
+        color: #60ABD9;
+        font-size: 1.2rem;
+    }
+
+    .highscore__time {
+        display: none;
+    }
+
+    .highscore__icon {
+        padding: .7rem;
+    }
+
+    .highscore__icon .icon {
+        font-size: 1.2rem;
+    }
+    
+}
+
+.highscore__highlight {
+    background: white!important;
+    outline: 2px solid rgb(155, 87, 150);
+}
 
 /* Points */
 
 .points {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .points__amount {
-  line-height: 1;
-    font-size: 3.2em;
-    font-weight: 900;
-    background: linear-gradient(#FFBC5A, #F33591);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: 
-      drop-shadow(0 2px 1px var(--body-text-shadow))
-      drop-shadow(0 0 2px white)
-      drop-shadow(-2px 0 2px white)
-      drop-shadow(2px 0 2px white)
-      drop-shadow(0 0 20px white);
+  flex: 1 100%;
+    line-height: 1;
+      font-size: 3.2em;
+      font-weight: 900;
+      background: linear-gradient(#FFBC5A, #F33591);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: 
+        drop-shadow(0 2px 1px var(--body-text-shadow))
+        drop-shadow(0 0 2px white)
+        drop-shadow(-2px 0 2px white)
+        drop-shadow(2px 0 2px white)
+        drop-shadow(0 0 20px white);
+}
+
+.points__highscore-marker {
+  margin-left: 1rem;
+    width: 4rem;
+    height: 4rem;
+    top: -1.5rem;
+    right: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: linear-gradient(rgb(182, 78, 196), rgb(120, 85, 247));
+}
+
+.points__highscore-marker .icon {
+  background: white;
 }
 
 .points__unit {
@@ -146,47 +231,38 @@
 }
 
 .score {
-  padding: 1rem 3rem;
-  background: white;
-  border-radius: 100px;
-  color: #0077AA;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
+    padding: 1rem 3rem;
+    background: white;
+    border-radius: 100px;
+    color: #0077AA;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
 }
 
 
 /* Buttons */
 
-.button-container {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    max-width: 30rem;
-}
-
 .result-button {
-  background: rgba(62, 109, 146, 0.432);
-  border: 2px solid rgba(255, 255, 255, 0.447);
-  color: white;
-  outline: 1px solid transparent;
+    background: rgba(62, 109, 146, 0.432);
+    border: 2px solid rgba(255, 255, 255, 0.447);
+    color: white;
+    outline: 1px solid transparent;
 
-  &:hover {
-    border-color: white;
-    outline: 1px solid white;
-  }
+    &:hover {
+      border-color: white;
+      outline: 1px solid white;
+    }
 }
 
 .result-button .icon {
-  font-size: 2rem;
-  background: white;
+    font-size: 2rem;
+    background: white;
 }
 
 .restart-button .icon {
-  font-size: 2.5rem;
-  background: linear-gradient(
-    var(--category-color-1),
-    var(--category-color-2)
-    );
+    font-size: 2.5rem;
+    background: linear-gradient(
+      var(--category-color-1),
+      var(--category-color-2)
+      );
 }

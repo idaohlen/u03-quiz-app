@@ -16,24 +16,22 @@ export function saveToLocalStorage(highscore, currentCategory) {
   let currentHighscores = JSON.parse(localStorage.getItem("Highscore"));
   const date = new Date().toLocaleString("sv-se");
 
+  const newEntry = {
+    highscore: highscore,
+    date: date,
+    category: currentCategory,
+  };
+
   if (currentHighscores) {
-    const newEntry = {
-      highscore: highscore,
-      date: date,
-      category: currentCategory,
-    };
     currentHighscores.push(newEntry);
     localStorage.setItem("Highscore", JSON.stringify(currentHighscores));
   } else {
-    const newEntry = {
-      highscore: highscore,
-      date: date,
-      category: currentCategory,
-    };
     const newHighscores = [];
     newHighscores.push(newEntry);
     localStorage.setItem("Highscore", JSON.stringify(newHighscores));
   }
+
+  return newEntry;
 }
 
 export function saveAnswer(question, answer, time) {

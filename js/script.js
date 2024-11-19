@@ -13,12 +13,13 @@ const categories = [
   {name: "Språk", icon: "icon-chat", class: "category-languages"},
 ];
 
+const mixCategory = {name: "Blandat", icon: "icon-shuffle", class: "category-mix"}
+
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
 const questionAmount = 2;
 const savedAnswers = [];
-
 
 let timerInterval;
 let timer;
@@ -273,6 +274,38 @@ function renderEndPage() {
     }
   });
 
+  const newHighscore = saveToLocalStorage(highScore, currentCategory);
+  const highscores = getHighscoreData();
+  const findHighscore = highscores.findIndex(x => x.date === newHighscore.date);
+
+  let highscoreDate = newHighscore.date;
+  let highscoreHighlights = "";
+  let startIndex = 0;
+
+  if (findHighscore < 0) {
+    // Didn't make top 10, show the top 3
+    highscoreDate = null;
+    highscoreHighlights = highscores.slice(0, 3);
+  } else if (findHighscore === 0) {
+    // First place in highscore
+    highscoreHighlights = highscores.slice(0, 3);
+  } else if (findHighscore === highscores.length) {
+    // Last place in highscore
+    startIndex = 7;
+    highscoreHighlights = highscores.slice(-3);
+  } else if (highscores.length <= 3) {
+    // If there are 3 or less highscores, show them all
+    startIndex = 0;
+    highscoreHighlights = highscores;
+  } 
+  else {
+    startIndex = findHighscore - 1;
+    highscoreHighlights = [highscores[findHighscore - 1], newHighscore, highscores[findHighscore + 1]];
+  }
+
+
+  console.log(highscoreHighlights);
+
   endPageWrapper.innerHTML = `
     <div class="end-page__title">${createTitle()}</div>
 
@@ -280,15 +313,21 @@ function renderEndPage() {
       <h2 class="points">
         <div class="points__amount">${highScore}</div>
         <div class="points__unit">poäng</div>
+        ${findHighscore > -1 ? `<div class="points__highscore-marker title="Highscore!"><i class="icon icon-trophy"></i></div>` : ""}
       </h2>
       <div class="score">${correctAnswersAmount}/${questionAmount} rätt</div>
     </div>
 
     <div class="end-page__results">
+      <h2 class="result-title">Resultat</h2>
       ${renderResult()}
     </div>
 
-    <div class="button-container">
+    <div class="bottom-container">
+      <div class="highscore-highlights">
+        ${renderHighscore(highscoreHighlights, startIndex, highscoreDate)}
+      </div>
+
       <button id="resultButton" class="button result-button">
         <div class="button__text">Visa resultat</div>
         <i class="icon icon-check"></i>
@@ -304,23 +343,8 @@ function renderEndPage() {
         <i class="icon icon-restart"></i>
       </button>
     </div>
-`;
+  `;
   quizApp.appendChild(endPageWrapper);
-
-
-  const resultItems = document.querySelectorAll(".result-item") 
-  resultItems.forEach((resultItem) => {
-    resultItem.addEventListener("click", (e) => {
-      const clickedResultItemId = (e.target.closest(".result-item").id).split("-").slice(-1);
-      const resultItemText = document.getElementById(`result-text-${clickedResultItemId}`)
-      const resultArrowIcon = document.getElementById(`result-arrow-${clickedResultItemId}`)
-      resultArrowIcon.classList.toggle("icon--arrow-up");
-      resultArrowIcon.classList.toggle("icon--arrow-down");
-
-      resultItemText.style.display = resultItemText.style.display !== "block" ? "block" : "none";
-    })
-  })
-  saveToLocalStorage(highScore, currentCategory);
 }
 
 
@@ -335,21 +359,23 @@ function renderResult() {
     const isCorrect = result.selectedAnswer === result.correctAnswer;
 
       resultHTML += `
-        <div id="result-item-${i}" class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
           <div class="result-item__question-number">${i + 1}</div>
-          <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
-          <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
-          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
-          <div class="result-item__arrow"><i id="result-arrow-${i}" class="icon--arrow-down"></i></div>
-        </div>
-        <div id="result-text-${i}" class="result-item__question-text">${result.questionText}</div>
+          <div class="result-item__answer">
+            <div class="result-item__correct-answer">${result.correctAnswer}</div>
+            <div class="result-item__selected-answer ${!isCorrect ? "" : "hidden"}"><span class="result-item__selected-answer-label underline">Ditt svar: </span> ${result.selectedAnswer}</div>
+          </div>
 
+          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+          <div class="result-item__arrow"><i class="icon icon--arrow-down"></i></div>
+          <div class="result-item__question-text">${result.questionText}</div>
+        </div>
+        
       `;
     });
 
     const resultsContainer = `
       <div class="result-list">
-        <h2 class="result-title">Resultat</h2>
         ${resultHTML}
       </div>
     `;
@@ -359,7 +385,10 @@ function renderResult() {
 
 function showResult() {
   openModal();
-  dialogContent.innerHTML = renderResult();
+  dialogContent.innerHTML = `
+    <h2 class="result-title">Resultat</h2>
+    ${renderResult()}
+  `;
 
   const resultItems = document.querySelectorAll(".result-item") 
   resultItems.forEach((resultItem) => {
@@ -378,38 +407,49 @@ function showResult() {
 
 }
 
+function renderHighscore(data, startIndex = 0, highscoreDate = null) {
+  let html = "";
+  data.forEach((highscore, i) => {
+    const dateFormatted = highscore.date.split(" ");
+
+    const dateHTML = `<span>${dateFormatted[0]}</span> <span class="highscore__time">${dateFormatted[1]}</span>`;
+
+    html += `
+      <div class="highscore ${highscoreDate === highscore.date ? "highscore__highlight" : ""}">
+        <div class="highscore__score">${startIndex + i + 1}. ${highscore.highscore}p</div>
+        <div class="highscore__date">${dateHTML}</div>
+        <div class="highscore__icon ${findCategoryByName(highscore.category)?.class}" title="${highscore.category}">
+          <i class="icon ${findCategoryByName(highscore.category)?.icon}"></i>
+        </div>
+      </div>
+    `;
+  });
+
+  return html;
+}
+
 function showHighscore() {
   const highscoreData = getHighscoreData();
 
   const highscoreContainer = document.createElement("div");
   highscoreContainer.classList.add("highscore-container");
 
-  let highscoreHTML = "<h2>Highscore</h2>";
+  let highscoreHTML = `
+    <h2>Highscore</h2>
+    <p>Inga highscores har registrerats.</p>
+  `;
 
-  if (highscoreData) {
-    for (let i = 0; i < highscoreData.length; i++) {
-      const highscore= highscoreData[i];
-      const dateFormatted = highscore.date.split(" ")
-
-      const dateHTML = `<span>${dateFormatted[0]}</span> <span class="highscore__time">${dateFormatted[1]}</span>`
-
-      highscoreHTML += `
-        <div class="highscore">
-          <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
-          <div class="highscore__date">${dateHTML}</div>
-          <div class="highscore__icon ${findCategoryByName(highscore.category)?.class}" title="${highscore.category}">
-            <i class="icon ${findCategoryByName(highscore.category)?.icon}"></i>
-          </div>
-        </div>
-      `;
-    };
+  if (highscoreData.length > 0) {
+    highscoreHTML = `
+      <h2>Highscore</h2>
+        ${renderHighscore(highscoreData)}
+    `;
   }
+
   highscoreContainer.innerHTML = highscoreHTML;
 
-  // Show in modal on mobile:
   openModal();
   dialogContent.appendChild(highscoreContainer);
-  // TODO: On desktop, show on page
 }
 
 function openModal() {
@@ -432,7 +472,9 @@ function closeModal() {
 /* ------------------------------------------------ */
 
 function findCategoryByName(name) {
-  return categories.find(category => category.name === name);
+  const categoryFound = categories.find(category => category.name === name);
+  if (categoryFound) return categoryFound;
+  else return mixCategory;
 }
 
 function fadeOut(el, time) {
@@ -521,6 +563,20 @@ document.body.addEventListener("click", (e) => {
     closeModal();
   } else if (e.target.closest("#resultButton")) {
     showResult();
+  } else if (e.target.closest(".result-item")) {
+    // Show/hide question when viewing results
+    const resultItem = e.target.closest(".result-item");
+
+    const resultItemText = resultItem.querySelector(".result-item__question-text");
+    const resultArrowIcon = resultItem.querySelector(".result-item__arrow .icon");
+
+    resultArrowIcon.classList.toggle("icon--arrow-up");
+    resultArrowIcon.classList.toggle("icon--arrow-down");
+
+    const questionIsVisible = resultItemText.style.display === "block";
+
+    resultItemText.style.display = questionIsVisible ? "none" : "block";
+
   }
 });
 
