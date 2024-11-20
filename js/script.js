@@ -28,6 +28,7 @@ let baseTimer = 10000;
 let correctAnswersAmount = 0;
 let highScore = 0;
 
+let playing = false;
 let currentCategory;
 
 
@@ -264,6 +265,7 @@ function addSlideIn(option, index) {
 /* ------------------------------------------------ */
 
 function renderEndPage() {
+  playing = false;
   const endPageWrapper = document.createElement("div");
   endPageWrapper.classList.add("end-page");
 
@@ -537,6 +539,10 @@ function generateQuestions(category, amount, questionList) {
 document.body.addEventListener("click", (e) => {
   // Begin quiz when clicking the category
   if (e.target.closest(".category-button") || e.target.closest(".categories-mixed-button")?.getAttribute("data-id") === "Blandat") {
+    if (playing) return;
+
+    playing = true;
+
     const fadeTime = 400;
     fadeOut(quizApp, fadeTime);
 
@@ -554,7 +560,6 @@ document.body.addEventListener("click", (e) => {
       renderQuestionPage(newQuestion());
       fadeIn(quizApp, fadeTime);
     }, fadeTime);
-
   } else if (e.target.closest("#restartButton")) {
     renderStartPage();
   } else if (e.target.closest("#highscoreButton")) {
