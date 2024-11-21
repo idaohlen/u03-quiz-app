@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Challenge yourself with our timer quiz app! Featuring several categories such as music, movies and history.">
-    <meta property="og:description" content="Challenge yourself with our timer quiz app! Featuring several categories such as music, movies and history.">
-    <meta property="og:title" content="QuizMix av Tech Titans">
-    <meta property="og:type" content="website">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Challenge yourself with our timer quiz app! Featuring several categories such as music, movies and history." />
+    <meta
+      property="og:description"
+      content="Challenge yourself with our timer quiz app! Featuring several categories such as music, movies and history." />
+    <meta property="og:title" content="QuizMix av Tech Titans" />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content="img/og-preview.jpg" />
     <title>QuizMix by Tech Titans</title>
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet" />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index.css" />
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Quiz",
-            "name": "QuizMix",
-            "questionsCategories": [
-            "Music",
-            "Movies",
-            "Literature",
-            "Geography",
-            "History",
-            "Language"],
-        }
+      {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": "QuizMix",
+        "questionsCategories": ["Music", "Movies", "Literature", "Geography", "History", "Language"]
+      }
     </script>
     <!-- Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <!-- Scripts -->
     <script type="module" src="js/script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-        <h1>QuizMix</h1>
+      <h1>QuizMix</h1>
     </div>
-    
-  <div class="waves"></div>
-  
-  <dialog id="dialog">
+
+    <div class="waves"></div>
+
+    <dialog id="dialog">
       <button id="closeModalButton"><i class="icon-close"></i></button>
       <div id="dialogContent"></div>
-  </dialog>
-</body>
+    </dialog>
+  </body>
 </html>

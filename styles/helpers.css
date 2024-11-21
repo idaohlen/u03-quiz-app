@@ -1,4 +1,6 @@
-/* Helper classes */
+/* --------------------------------- */
+/* HELPERS */
+/* --------------------------------- */
 
 .underline {
   text-decoration: underline;
@@ -9,4 +11,77 @@
 
 .hidden {
   display: none;
+}
+
+
+/* --------------------------------- */
+/* ANIMATIONS */
+/* --------------------------------- */
+
+.slideIn {
+  animation: slideFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideOut {
+  animation: slideToRight 1s ease-in-out forwards;
+}
+
+@keyframes slideToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.slideTextIn {
+  animation: slideToMid 1s ease-in-out forwards;
+}
+
+@keyframes slideToMid {
+  0% {
+    transform: translateY(-50vh);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.slideTextOut {
+  animation: slideToBottom 1s ease-in-out forwards;
+}
+
+@keyframes slideToBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.grow {
+  animation: growShrink 0.4s forwards;
+}
+.shrink {
+  animation: growShrink 0.3s reverse forwards;
+}
+
+@keyframes growShrink {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

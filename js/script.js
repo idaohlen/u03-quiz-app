@@ -284,6 +284,7 @@ function renderEndPage() {
   let highscoreHighlights = "";
   let startIndex = 0;
 
+  // Highscore highlights on desktop
   if (findHighscore < 0) {
     // Didn't make top 10, show the top 3
     highscoreDate = null;
@@ -304,9 +305,6 @@ function renderEndPage() {
     startIndex = findHighscore - 1;
     highscoreHighlights = [highscores[findHighscore - 1], newHighscore, highscores[findHighscore + 1]];
   }
-
-
-  console.log(highscoreHighlights);
 
   endPageWrapper.innerHTML = `
     <div class="end-page__title">${createTitle()}</div>
