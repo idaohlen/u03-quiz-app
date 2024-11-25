@@ -3,6 +3,10 @@
 Chas Academy FJS24
 
 Grupp 8: Tech Titans
+[johansson-andreas](https://github.com/johansson-andreas)
+[Ida Öhlén](https://github.com/idaohlen)
+[Martin Södersten](https://github.com/Martinsodersten)
+[Therése Perswalld](https://github.com/TheresePerswalld)
 
 ## Sammanfattning
 Vi har byggt en quiz app där användaren kan välja mellan ett urval av ämnen, och presenteras därefter med ett antal frågor inom den kategorin som denne sedan har 10 sekunder på sig per fråga att svara på. För varje fråga presenteras 3 svarsalternativ där endast ett av dem är korrekt. Väljer användaren rätt svar tilldelas poäng beroende på hur snabbt man har svarat på frågan, och svarar man fel, eller om inget svar väljs, så får man inga poäng på den frågan. I slutet av quizet jämförs summan av poängen med en highscore-lista av 10 tidigare resultat som sparats i webbläsarens local storage, ifall användare har spelat förut. Har man tillräckligt bra poäng läggs det till i highscore-listan (i local storage) och det sämsta resultatet tas bort. När man är färdig kan man även se vilka frågor man har svarat rätt på, och har man inte det så kan man se det korrekta svaret.
