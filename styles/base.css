@@ -1,3 +1,7 @@
+/* --------------------------------- */
+/* BASE */
+/* --------------------------------- */
+
 :root {
     --body-bg-1: #45D0FF;
     --body-bg-2: #FF67E3;
@@ -33,7 +37,7 @@ html {
 
 body {
   position: relative;
-  background: linear-gradient(
+  background: var(--body-bg-1) linear-gradient(
       135deg,
       var(--body-bg-1),
       var(--body-bg-2)
@@ -56,11 +60,10 @@ body {
 
 h2 {
     font-size: 1.8em;
-    color: #834E85;
+    color: white;
     text-align: center;
     font-weight: 800;
 }
-
 
 /* Scrollbar */
 
@@ -69,12 +72,12 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #bd9bcb;
+    background: #8dc6e4;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a975b8;
+    background: #6498b4;
 }
 
 /* Dialog modal */
@@ -85,7 +88,6 @@ h2 {
     border-radius: 5px;
     height: 60vh;
     width: 100%;
-    max-width: 60vw;
 }
 
 #dialogContent {
@@ -93,6 +95,11 @@ h2 {
     height: 100%;
     padding: 3rem;
     overflow: auto;
+}
+
+#dialog h2 {
+    color: #834E85;
+    text-shadow: none;
 }
 
 ::backdrop {
@@ -116,10 +123,12 @@ h2 {
     }
 }
 
+
 /* Buttons */
 
 .button {
     width: 100%;
+    max-width: 30rem;
     margin-inline: auto;
     padding: 1rem;
     padding-left: 1.4rem;
@@ -192,23 +201,10 @@ h2 {
     --category-color-2: #E74EEA;
 }
 
-/* Helper classes */
-
-.underline {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
-    text-decoration-color: #07C1DA;
-  }
-
-  .hidden {
-    display: none;
-  }
-
 /* Waves */
 
 .waves {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -221,6 +217,7 @@ h2 {
     background-repeat: repeat-x;
     background-size: 1600px 50%;
     background-position: 0 130%, -50px 130%, 500px 130%;
+    background-attachment: fixed;
     animation: 20s waves linear infinite forwards;
     opacity: .5;
 }

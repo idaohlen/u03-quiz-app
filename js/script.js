@@ -13,12 +13,13 @@ const categories = [
   {name: "Språk", icon: "icon-chat", class: "category-languages"},
 ];
 
+const mixCategory = {name: "Blandat", icon: "icon-shuffle", class: "category-mix"}
+
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 10;
+const questionAmount = 2;
 const savedAnswers = [];
-
 
 let timerInterval;
 let timer;
@@ -27,6 +28,7 @@ const baseTimer = 10000;
 let correctAnswersAmount = 0;
 let highScore = 0;
 
+let playing = false;
 let currentCategory;
 
 
@@ -51,7 +53,7 @@ function renderStartPage() {
   });
 
   quizApp.innerHTML = `
-    ${createTitle()}
+    <div class="start-page__title">${createTitle()}</div>
 
     <div class="categories-container">
       ${categoriesHTML}
@@ -67,12 +69,10 @@ function renderStartPage() {
   `;
 }
 
-
-// Render app title
-function createTitle(forQuestionPage = false) {
+function createTitle() {
   return `
-      <hgroup class="title ${forQuestionPage ? "title-question-page" : ""}">
-        <h1 class="title__heading">QuizApp</h1>
+      <hgroup class="title">
+        <h1 class="title__heading">QuizMix</h1>
         <p class="title__subtitle">By Tech Titans</p>
         <div class="title__icon"><i class="icon icon-chat_bubbles"></i></div>
       </hgroup>
@@ -89,6 +89,7 @@ function renderQuestionPage(question) {
   const questionWrapper = document.createElement("div");
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
+  const questionNumber = questionAmount - selectedQuestions.length
 
   // Put correct answer + incorrect answers into an array and shuffle display order of options
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
@@ -111,7 +112,7 @@ function renderQuestionPage(question) {
 
   // Add HTML content to the question wrapper
   questionWrapper.innerHTML = `
-    <div class="question__title">${createTitle(true)}</div>
+    <div class="title question__title">${createTitle()}</div>
 
       <div class="timer grow">
         <div class="timer__time" id="timer">10.0</div>
@@ -132,30 +133,42 @@ function renderQuestionPage(question) {
           <div class="timer-progress__status" id="barStatus"></div>
         </div>
       </div>
+  
+      <div id="questionCounter" class="question__question-counter">
+        <div class="question_counter-fill">${questionNumber}</div>
+      </div>
     `;
 
   // Add the question wrapper div to the quiz app container
   quizApp.appendChild(questionWrapper);
 
   const questionOptions = document.querySelectorAll(".question__option");
+  const questionCounter = document.getElementById("questionCounter");
+
+  const procentFilled = (questionNumber/questionAmount * 100)
+  questionCounter.style.setProperty('background-image', `conic-gradient(var(--category-color-2) ${procentFilled}%, white 1%)`);
 
   const handleClick = (e) => {
     clearInterval(timerInterval);
 
     savedAnswers.push(
-      saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer / 1000))
+      saveAnswer(
+        question,
+        e.target.closest(".question__option").getAttribute("data-answer"),
+        timer / 1000
+      )
     );
-
-    questionOptions.forEach(o => {
-      o.removeEventListener("click", handleClick)
-  });
-
-    //Adds slide out with increasing delay to each option
+    questionOptions.forEach((o) => {
+      o.removeEventListener("click", handleClick);
+    });
     addSlideOut(questionOptions);
-
-    setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
-    
-    //After 2 sec delay display next question
+    setTimeout(
+      () =>
+        document
+          .querySelector(".question__text")
+          .classList.toggle("slideTextOut"),
+      1000
+    );
     setTimeout(displayNextQuestion, 2000);
   };
 
@@ -269,8 +282,10 @@ function addSlideIn(option, index) {
 /* ------------------------------------------------ */
 
 function renderEndPage() {
+  playing = false;
+  const endPageWrapper = document.createElement("div");
+  endPageWrapper.classList.add("end-page");
 
-  //Calculate number of correct answers and highscore
   savedAnswers.forEach((result) => {
     if (result.selectedAnswer === result.correctAnswer) {
       correctAnswersAmount++;
@@ -278,14 +293,58 @@ function renderEndPage() {
     }
   });
 
-  quizApp.innerHTML = `
-    <h2 class="points">
-      <div class="points__amount">${highScore}</div>
-      <div class="points__unit">poäng</div>
-    </h2>
-    <div class="score">${correctAnswersAmount}/${questionAmount} rätt</div>
+  const newHighscore = saveToLocalStorage(highScore, currentCategory);
+  const highscores = getHighscoreData();
+  const findHighscore = highscores.findIndex(x => x.date === newHighscore.date);
 
-    <div class="button-container">
+  let highscoreDate = newHighscore.date;
+  let highscoreHighlights = "";
+  let startIndex = 0;
+
+  // Highscore highlights on desktop
+  if (findHighscore < 0) {
+    // Didn't make top 10, show the top 3
+    highscoreDate = null;
+    highscoreHighlights = highscores.slice(0, 3);
+  } else if (findHighscore === 0) {
+    // First place in highscore
+    highscoreHighlights = highscores.slice(0, 3);
+  } else if (findHighscore === highscores.length) {
+    // Last place in highscore
+    startIndex = 7;
+    highscoreHighlights = highscores.slice(-3);
+  } else if (highscores.length <= 3) {
+    // If there are 3 or less highscores, show them all
+    startIndex = 0;
+    highscoreHighlights = highscores;
+  } 
+  else {
+    startIndex = findHighscore - 1;
+    highscoreHighlights = [highscores[findHighscore - 1], newHighscore, highscores[findHighscore + 1]];
+  }
+
+  endPageWrapper.innerHTML = `
+    <div class="end-page__title">${createTitle()}</div>
+
+    <div class="end-page__points">
+      <h2 class="points">
+        <div class="points__amount">${highScore}</div>
+        <div class="points__unit">poäng</div>
+        ${findHighscore > -1 ? `<div class="points__highscore-marker title="Highscore!"><i class="icon icon-trophy"></i></div>` : ""}
+      </h2>
+      <div class="score">${correctAnswersAmount}/${questionAmount} rätt</div>
+    </div>
+
+    <div class="end-page__results">
+      <h2 class="result-title">Resultat</h2>
+      ${renderResult()}
+    </div>
+
+    <div class="bottom-container">
+      <div class="highscore-highlights">
+        ${renderHighscore(highscoreHighlights, startIndex, highscoreDate)}
+      </div>
+
       <button id="resultButton" class="button result-button">
         <div class="button__text">Visa resultat</div>
         <i class="icon icon-check"></i>
@@ -301,10 +360,8 @@ function renderEndPage() {
         <i class="icon icon-restart"></i>
       </button>
     </div>
-`;
-
-  //Save highscore and which category the highscore should be associated with
-  saveToLocalStorage(highScore, currentCategory);
+  `;
+  quizApp.appendChild(endPageWrapper);
 }
 
 
@@ -312,34 +369,80 @@ function renderEndPage() {
 // RESULTS & HIGHSCORE
 /* ------------------------------------------------ */
 
-function showResult() {
-  const resultsContainer = document.createElement("div");
-  resultsContainer.classList.add("result-list");
+function renderResult() {
+  let resultHTML = "";
 
-  let resultHTML = "<h2>Resultat</h2>";
-
-  //Loop through answers and create html for each question and if the answer is correct or not
-  for(let i = 0; i < savedAnswers.length; i++){
-    const result = savedAnswers[i];
+  savedAnswers.forEach((result, i) => {
     const isCorrect = result.selectedAnswer === result.correctAnswer;
 
       resultHTML += `
-      <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
-        <div class="result-item__question-number">${i + 1}</div>
-        <div class="result-item__question-text">${result.questionText}</div>
-        <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
-        <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
-        <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
-      </div>
+        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+          <div class="result-item__question-number">${i + 1}</div>
+          <div class="result-item__answer">
+            <div class="result-item__correct-answer">${result.correctAnswer}</div>
+            <div class="result-item__selected-answer ${!isCorrect ? "" : "hidden"}"><span class="result-item__selected-answer-label underline">Ditt svar: </span> ${result.selectedAnswer}</div>
+          </div>
+
+          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+          <div class="result-item__arrow"><i class="icon icon--arrow-down"></i></div>
+          <div class="result-item__question-text">${result.questionText}</div>
+        </div>
+        
       `;
-    };
+    });
 
-  resultsContainer.innerHTML = resultHTML;
+    const resultsContainer = `
+      <div class="result-list">
+        ${resultHTML}
+      </div>
+    `;
 
-  // Show in modal on mobile:
+    return resultsContainer;
+}
+
+function showResult() {
   openModal();
-  dialogContent.appendChild(resultsContainer);
-  // TODO: On desktop, show on page
+  dialogContent.innerHTML = `
+    <h2 class="result-title">Resultat</h2>
+    ${renderResult()}
+  `;
+
+  const resultItems = document.querySelectorAll(".result-item") 
+  resultItems.forEach((resultItem) => {
+    resultItem.addEventListener("click", (e) => {
+      
+      const clickedResultItemId = (e.target.closest(".result-item").id).split("-").slice(-1);
+      const resultItemTexts = document.querySelectorAll(`#result-text-${clickedResultItemId}`)
+      const resultArrowIcons = document.querySelectorAll(`#result-arrow-${clickedResultItemId}`)
+      resultArrowIcons.forEach(resultArrow => {
+        resultArrow.classList.toggle("icon--arrow-up");
+        resultArrow.classList.toggle("icon--arrow-down");
+      })
+      resultItemTexts.forEach(resultItem => resultItem.style.display = resultItem.style.display !== "block" ? "block" : "none");
+    })
+  })
+
+}
+
+function renderHighscore(data, startIndex = 0, highscoreDate = null) {
+  let html = "";
+  data.forEach((highscore, i) => {
+    const dateFormatted = highscore.date.split(" ");
+
+    const dateHTML = `<span>${dateFormatted[0]}</span> <span class="highscore__time">${dateFormatted[1]}</span>`;
+
+    html += `
+      <div class="highscore ${highscoreDate === highscore.date ? "highscore__highlight" : ""}">
+        <div class="highscore__score">${startIndex + i + 1}. ${highscore.highscore}p</div>
+        <div class="highscore__date">${dateHTML}</div>
+        <div class="highscore__icon ${findCategoryByName(highscore.category)?.class}" title="${highscore.category}">
+          <i class="icon ${findCategoryByName(highscore.category)?.icon}"></i>
+        </div>
+      </div>
+    `;
+  });
+
+  return html;
 }
 
 function showHighscore() {
@@ -349,34 +452,22 @@ function showHighscore() {
   const highscoreContainer = document.createElement("div");
   highscoreContainer.classList.add("highscore-container");
 
-  let highscoreHTML = "<h2>Highscore</h2>";
+  let highscoreHTML = `
+    <h2>Highscore</h2>
+    <p>Inga highscores har registrerats.</p>
+  `;
 
-  if (highscoreData) {
-
-    //Create highscore entry for each object in the object array
-    for (let i = 0; i < highscoreData.length; i++) {
-      const highscore= highscoreData[i];
-
-      //Split date to display it on two rows
-      const dateFormatted = highscore.date.split(" ")
-
-      const dateHTML = `<span>${dateFormatted[0]}</span> <span>${dateFormatted[1]}</span>`
-
-      highscoreHTML += `
-        <div class="highscore">
-          <div class="highscore__score">${i + 1}. ${highscore.highscore}p</div>
-          <div class="highscore__date">${dateHTML}</div>
-          <i class="${findCategoryByName(highscore.category)?.icon}"></i>
-        </div>
-      `;
-    };
+  if (highscoreData.length > 0) {
+    highscoreHTML = `
+      <h2>Highscore</h2>
+        ${renderHighscore(highscoreData)}
+    `;
   }
+
   highscoreContainer.innerHTML = highscoreHTML;
 
-  // Show in modal on mobile:
   openModal();
   dialogContent.appendChild(highscoreContainer);
-  // TODO: On desktop, show on page
 }
 
 function openModal() {
@@ -401,7 +492,9 @@ function closeModal() {
 /* ------------------------------------------------ */
 
 function findCategoryByName(name) {
-  return categories.find(category => category.name === name);
+  const categoryFound = categories.find(category => category.name === name);
+  if (categoryFound) return categoryFound;
+  else return mixCategory;
 }
 
 //Fade out transition used for transition between home page and question
@@ -471,6 +564,10 @@ function generateQuestions(category, amount, questionList) {
 document.body.addEventListener("click", (e) => {
   // Begin quiz when clicking the category
   if (e.target.closest(".category-button") || e.target.closest(".categories-mixed-button")?.getAttribute("data-id") === "Blandat") {
+    if (playing) return;
+
+    playing = true;
+
     const fadeTime = 400;
     fadeOut(quizApp, fadeTime);
 
@@ -488,7 +585,6 @@ document.body.addEventListener("click", (e) => {
       renderQuestionPage(newQuestion());
       fadeIn(quizApp, fadeTime);
     }, fadeTime);
-
   } else if (e.target.closest("#restartButton")) {
     renderStartPage();
   } else if (e.target.closest("#highscoreButton")) {
@@ -497,6 +593,20 @@ document.body.addEventListener("click", (e) => {
     closeModal();
   } else if (e.target.closest("#resultButton")) {
     showResult();
+  } else if (e.target.closest(".result-item")) {
+    // Show/hide question when viewing results
+    const resultItem = e.target.closest(".result-item");
+
+    const resultItemText = resultItem.querySelector(".result-item__question-text");
+    const resultArrowIcon = resultItem.querySelector(".result-item__arrow .icon");
+
+    resultArrowIcon.classList.toggle("icon--arrow-up");
+    resultArrowIcon.classList.toggle("icon--arrow-down");
+
+    const questionIsVisible = resultItemText.style.display === "block";
+
+    resultItemText.style.display = questionIsVisible ? "none" : "block";
+
   }
 });
 
