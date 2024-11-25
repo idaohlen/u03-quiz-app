@@ -11,7 +11,6 @@ export function shuffleArray(array) {
   return shuffledArray;
 }
 
-//TODO: MAKE PURE?
 export function saveToLocalStorage(highscore, currentCategory) {
   let currentHighscores = JSON.parse(localStorage.getItem("Highscore"));
   const date = new Date().toLocaleString("sv-se");
@@ -44,6 +43,7 @@ export function saveAnswer(question, answer, time) {
   return answerEntry;
 }
 
+//Parses the localstorage highscores and returns the 10 highest scores
 export function getHighscoreData() {
   const savedHsData = JSON.parse(localStorage.getItem("Highscore")) || [];
   
