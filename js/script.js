@@ -22,7 +22,7 @@ const savedAnswers = [];
 
 let timerInterval;
 let timer;
-let baseTimer = 10000;
+const baseTimer = 10000;
 
 let correctAnswersAmount = 0;
 let highScore = 0;
@@ -35,6 +35,8 @@ let currentCategory;
 /* ------------------------------------------------ */
 
 function renderStartPage() {
+
+  // Resets saved answer object and current highscore/correct answer count
   savedAnswers.splice(0);
   correctAnswersAmount = 0;
   highScore = 0;
@@ -65,6 +67,8 @@ function renderStartPage() {
   `;
 }
 
+
+// Render app title
 function createTitle(forQuestionPage = false) {
   return `
       <hgroup class="title ${forQuestionPage ? "title-question-page" : ""}">
@@ -86,7 +90,7 @@ function renderQuestionPage(question) {
   questionWrapper.id = "questionWrapper";
   questionWrapper.classList.add("question");
 
-  // Put correct answer + incorrect answers into an array
+  // Put correct answer + incorrect answers into an array and shuffle display order of options
   const answers = shuffleArray([question.correctAnswer, ...question.incorrectAnswers]);
 
   let answersHTML = "";
@@ -141,18 +145,30 @@ function renderQuestionPage(question) {
     savedAnswers.push(
       saveAnswer(question, e.target.closest(".question__option").getAttribute("data-answer"), (timer / 1000))
     );
+
     questionOptions.forEach(o => {
       o.removeEventListener("click", handleClick)
   });
-  addSlideOut(questionOptions);
+
+    //Adds slide out with increasing delay to each option
+    addSlideOut(questionOptions);
+
     setTimeout(() => document.querySelector(".question__text").classList.toggle("slideTextOut"), 1000);
+    
+    //After 2 sec delay display next question
     setTimeout(displayNextQuestion, 2000);
   };
 
+
   questionOptions.forEach((option, index) => {
+
+    //Adds click event after 1.5s to each option to prevent clicking while the option is sliding in
     setTimeout(() => option.addEventListener("click", handleClick), 1500);
+
+    //Adds slide in animation to each question option with increasing delay
     addSlideIn(option, index);
   });
+
 
   startTimer(question, questionOptions);
 }
@@ -199,21 +215,30 @@ function displayNextQuestion() {
 /* ------------------------------------------------ */
 
 function startTimer(question, questionOptions) {
+
+  //Resets timer to base timer value
   timer = baseTimer;
   const timerDiv = document.getElementById("timer")
   const progressBar = document.getElementById("barStatus");
   progressBar.style.width = "100%";
 
   setTimeout(() => {
+
+    //Start timerInterval and run progressTimer function every 10 millisecond
     timerInterval = setInterval(progressTimer, 10);
 
+    //Function to progress imer and decrease timer variable by 10
     function progressTimer() {
       if(timer >= 0) {
         timer -= 10;
+
+
         timerDiv.innerHTML = Math.abs(timer/1000).toFixed(1);
         progressBar.style.width = (timer/100) + "%";
       }
       else {
+
+        //If timer is < 0 the user didnt choose an answer in time so we save a pass answer to the save answers object and progress to next question
         clearInterval(timerInterval);
         savedAnswers.push(saveAnswer(question, "Svarade inte", 0));
         addSlideOut(questionOptions);
@@ -244,6 +269,8 @@ function addSlideIn(option, index) {
 /* ------------------------------------------------ */
 
 function renderEndPage() {
+
+  //Calculate number of correct answers and highscore
   savedAnswers.forEach((result) => {
     if (result.selectedAnswer === result.correctAnswer) {
       correctAnswersAmount++;
@@ -275,6 +302,8 @@ function renderEndPage() {
       </button>
     </div>
 `;
+
+  //Save highscore and which category the highscore should be associated with
   saveToLocalStorage(highScore, currentCategory);
 }
 
@@ -289,30 +318,32 @@ function showResult() {
 
   let resultHTML = "<h2>Resultat</h2>";
 
-    for(let i = 0; i < savedAnswers.length; i++){
-      const result = savedAnswers[i];
-      const isCorrect = result.selectedAnswer === result.correctAnswer;
+  //Loop through answers and create html for each question and if the answer is correct or not
+  for(let i = 0; i < savedAnswers.length; i++){
+    const result = savedAnswers[i];
+    const isCorrect = result.selectedAnswer === result.correctAnswer;
 
-        resultHTML += `
-        <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
-          <div class="result-item__question-number">${i + 1}</div>
-          <div class="result-item__question-text">${result.questionText}</div>
-          <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
-          <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
-          <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
-        </div>
-        `;
-      };
+      resultHTML += `
+      <div class="result-item ${!isCorrect ? "result-item--wrong" : ""}">
+        <div class="result-item__question-number">${i + 1}</div>
+        <div class="result-item__question-text">${result.questionText}</div>
+        <div class="result-item__selected-answer" style="${isCorrect ? "grid-row:span 2":""}">${result.selectedAnswer}</div>
+        <div class="result-item__correct-answer ${!isCorrect ? "" : "hidden"}"><span class="underline">Korrekt svar:</span> ${result.correctAnswer}</div>
+        <div class="result-item__icon"><i class="${!isCorrect ? "icon-close" : "icon-check"}"></i></div>
+      </div>
+      `;
+    };
 
-    resultsContainer.innerHTML = resultHTML;
+  resultsContainer.innerHTML = resultHTML;
 
-    // Show in modal on mobile:
-    openModal();
-    dialogContent.appendChild(resultsContainer);
-    // TODO: On desktop, show on page
+  // Show in modal on mobile:
+  openModal();
+  dialogContent.appendChild(resultsContainer);
+  // TODO: On desktop, show on page
 }
 
 function showHighscore() {
+  //Retrieves the highscore data from localstorage
   const highscoreData = getHighscoreData();
 
   const highscoreContainer = document.createElement("div");
@@ -321,8 +352,12 @@ function showHighscore() {
   let highscoreHTML = "<h2>Highscore</h2>";
 
   if (highscoreData) {
+
+    //Create highscore entry for each object in the object array
     for (let i = 0; i < highscoreData.length; i++) {
       const highscore= highscoreData[i];
+
+      //Split date to display it on two rows
       const dateFormatted = highscore.date.split(" ")
 
       const dateHTML = `<span>${dateFormatted[0]}</span> <span>${dateFormatted[1]}</span>`
@@ -346,6 +381,8 @@ function showHighscore() {
 
 function openModal() {
   dialogContent.innerHTML = "";
+
+  //Add grow transition and removes after a certain amount
   dialog.classList.add("grow");
   setTimeout(() => dialog.classList.remove("grow"), 500);
   dialog.showModal();
@@ -367,6 +404,7 @@ function findCategoryByName(name) {
   return categories.find(category => category.name === name);
 }
 
+//Fade out transition used for transition between home page and question
 function fadeOut(el, time) {
   el.classList.add("fadeOut");
   el.style.animationDuration = time + "ms";
@@ -396,6 +434,8 @@ async function parseQuestions(fileName) {
 function generateQuestions(category, amount, questionList) {
   let categoryQuestions;
   if (category !== "Blandat") {
+
+    //Return all questions that has a certain tag
     categoryQuestions = questionList.filter((question) =>
       question.tags.includes(category)
     );
@@ -408,7 +448,11 @@ function generateQuestions(category, amount, questionList) {
       `Not enough questions for category "${category}" in the JSON file`
     );
   let generatedQuestions = [];
+
+  //Adds questions for the selected category until we have enough questions
   while (generatedQuestions.length < amount) {
+
+    //Push a spliced question from a randomly generated index in the array of possible questions
     generatedQuestions.push(
       categoryQuestions.splice(
         Math.floor(Math.random() * categoryQuestions.length),
@@ -462,4 +506,6 @@ document.body.addEventListener("click", (e) => {
 /* ------------------------------------------------ */
 
 renderStartPage();
+
+//Async function to parse the question json and create the array of possible questions
 allQuestions = await parseQuestions(questionsFile);
