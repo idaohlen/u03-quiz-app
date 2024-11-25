@@ -18,7 +18,7 @@ const mixCategory = {name: "Blandat", icon: "icon-shuffle", class: "category-mix
 let allQuestions;
 let selectedQuestions;
 const questionsFile = "./questionDataBase.questions.json";
-const questionAmount = 3;
+const questionAmount = 10;
 const savedAnswers = [];
 
 let timerInterval;

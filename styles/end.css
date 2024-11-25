@@ -56,7 +56,6 @@
   background: linear-gradient(to right, #2e84ee, #05bcef);
   color: white;
   border-radius: 13px;
-  overflow: hidden;
   transition: box-shadow 0.4s;
 
   &:hover {
