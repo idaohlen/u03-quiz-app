@@ -3,7 +3,7 @@
 Chas Academy FJS24
 
 Grupp 8: Tech Titans
-- [Andreas Johannson](https://github.com/johansson-andreas)
+- [Andreas Johansson](https://github.com/johansson-andreas)
 - [Ida Öhlén](https://github.com/idaohlen)
 - [Martin Södersten](https://github.com/Martinsodersten)
 - [Therése Perswalld](https://github.com/TheresePerswalld)
